@@ -25,7 +25,7 @@ jobs:
 
       - name: Send POST request with Postman
         run: |
-          npx newman run https://patchnote.dragonnest.com/category/list?PatchNoteNo=78&CategoryNo=0 --export-environment-json postman_env.json --export-collection-json patchnote.json
+          npx newman run https://patchnote.dragonnest.com/category/list?PatchNoteNo=78&CategoryNo=0 --export-collection-json patchnote.json
 
       - name: Commit and push patchnote.json
         run: |
