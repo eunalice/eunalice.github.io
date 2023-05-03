@@ -1,0 +1,33 @@
+name: Update Patch Note
+
+on:
+  watch:
+    types: [started]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Send POST request with Postman
+        run: |
+          npx newman run https://patchnote.dragonnest.com/category/list?PatchNoteNo=78&CategoryNo=0 --export-environment postman_env.json --export-collection patchnote.json
+
+      - name: Commit and push patchnote.json
+        run: |
+          git config --local user.email "dn535759@gmail.com"
+          git config --local user.name "eunalice"
+          git add patchnote.json
+          git commit -m "Update patchnote.json"
+          git push
