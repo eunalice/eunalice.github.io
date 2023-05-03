@@ -25,7 +25,7 @@ jobs:
 
       - name: Send POST request with Postman
         run: |
-          npx newman run postman_collection.json --export-collection-json patchnote.json
+          npx newman run postman_collection.json --export-collection patchnote.json
 
       - name: Commit and push patchnote.json
         run: |
