@@ -1,0 +1,3642 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>龍之谷韓服 Patchnote 2026.11</title>
+<style>
+:root{--bg:#f6f4ef;--fg:#1d2330;--mut:#6b7280;--card:#fff;--ac:#9a3412;--ln:#e5e1d8;--hd:#1f2937}
+@media(prefers-color-scheme:dark){:root{--bg:#14161c;--fg:#e8e6e1;--mut:#9aa0ab;--card:#1c1f27;--ac:#f59e6b;--ln:#2d313b;--hd:#0e1015}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 "Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif}
+header{background:var(--hd);color:#f3f0e8;padding:22px 20px 14px}
+header h1{margin:0 0 4px;font-size:21px;font-weight:700}
+header p{margin:0;color:#b9bdc7;font-size:13px}
+nav{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--ln);display:flex;gap:4px;overflow-x:auto;padding:8px 12px;align-items:center}
+nav a{white-space:nowrap;text-decoration:none;color:var(--fg);padding:6px 11px;border-radius:7px;font-size:13.5px;border:1px solid transparent}
+nav a b{color:var(--ac);margin-right:3px}
+nav a.on{background:var(--ac);color:#fff;border-color:var(--ac)}nav a.on b{color:#fff}
+.mode{margin-left:auto;display:flex;gap:2px;flex:none;padding-left:10px}
+.mode button{font:inherit;font-size:12.5px;padding:5px 10px;border:1px solid var(--ln);background:var(--card);color:var(--fg);cursor:pointer}
+.mode button:first-child{border-radius:7px 0 0 7px}.mode button:last-child{border-radius:0 7px 7px 0}
+.mode button.on{background:var(--fg);color:var(--bg)}
+main{max-width:980px;margin:0 auto;padding:18px 16px 60px}
+.pane{display:none}.pane.on{display:block}
+h2{font-size:22px;margin:6px 0 4px}
+.sub{color:var(--mut);font-size:13px;margin:0 0 10px}
+h3{font-size:17px;margin:26px 0 6px;padding-left:10px;border-left:4px solid var(--ac)}
+h4{font-size:15px;margin:16px 0 2px;color:var(--ac)}
+p{margin:3px 0}
+.im{margin:8px 0;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start}.im img{height:auto;max-width:100%;min-width:0;border-radius:6px}td img{max-width:260px;height:auto;border-radius:6px}
+.tw-wrap{overflow-x:auto;margin:8px 0 14px;border:1px solid var(--ln);border-radius:8px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{border-bottom:1px solid var(--ln);border-right:1px solid var(--ln);padding:5px 9px;text-align:left;vertical-align:top}
+th{background:rgba(154,52,18,.10);font-weight:600}
+tr:last-child td{border-bottom:0}td:last-child,th:last-child{border-right:0}
+.kr{display:none;color:var(--mut)}
+body.m-kr .tw{display:none}body.m-kr .kr{display:inline;color:inherit}
+body.m-both .kr{display:block;font-size:12px;color:var(--mut);line-height:1.4}
+body.m-both td .tw,body.m-both th .tw{display:block}
+.note{background:var(--card);border:1px solid var(--ln);border-radius:8px;padding:10px 14px;font-size:13px;color:var(--mut);margin-bottom:14px}
+@media(max-width:640px){
+body{font-size:14.5px;line-height:1.65}
+.top{right:auto;left:50%;margin-left:-22px;bottom:16px}
+header{padding:16px 14px 10px}header h1{font-size:18px}
+nav{position:static;flex-wrap:wrap;overflow:visible;padding:6px 8px;gap:4px}
+.mode{order:-1;width:100%;margin:0 0 4px;padding:0}.mode button{flex:1;padding:6px 4px}
+nav a{padding:5px 8px;font-size:12.5px}
+main{padding:12px 10px 40px}
+h2{font-size:19px}h3{font-size:15.5px;margin:20px 0 6px}
+table{font-size:12.5px}th,td{padding:4px 6px;white-space:normal;min-width:56px}
+td img{max-width:120px}
+.im img{flex-basis:calc(50% - 4px)!important}.im img:only-child{flex-basis:100%!important}
+}
+.top{position:fixed;right:16px;bottom:18px;z-index:9;width:44px;height:44px;border-radius:50%;border:1px solid var(--ln);background:var(--ac);color:#fff;font-size:20px;line-height:1;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .2s}.top.on{opacity:.92;pointer-events:auto}
+</style>
+</head>
+<body class="m-tw">
+<header>
+<h1>龍之谷韓服 Patchnote 2026.11</h1>
+<p>2026.11.05</p>
+</header>
+<nav id="nav"><a href="#c1" data-t="c1"><b>1</b> [超越] 夢幻龍玉</a><a href="#c2" data-t="c2"><b>2</b> 滿潮迴廊</a><a href="#c3" data-t="c3"><b>3</b> 變更/追加 1</a><a href="#c4" data-t="c4"><b>4</b> 變更/追加 2</a><a href="#c5" data-t="c5"><b>5</b> 角色平衡</a><a href="#c6" data-t="c6"><b>6</b> 活動 EVENT</a><a href="#c7" data-t="c7"><b>7</b> 購物商城便利性改善</a><a href="#c8" data-t="c8"><b>8</b> 商城道具</a><a href="#c9" data-t="c9"><b>9</b> 錯誤修正事項</a>
+<div class="mode"><button data-m="m-tw" class="on">繁中</button><button data-m="m-both">對照</button><button data-m="m-kr">韓文</button></div></nav>
+<main>
+<section id="c1" class="pane"><h2><span class="tw">[超越] 夢幻龍玉</span><span class="kr">[초월] 몽환의 용옥</span></h2><h3><span class="tw">◆ 賽季技能效果發動</span><span class="kr">◆ 시즌 스킬 효과 발동</span></h3>
+<p><span class="tw">• 將對應當前賽季的技能強化龍玉裝備在任意欄位，即可發動賽季技能的效果。</span><span class="kr">• 현재 시즌에 해당하는 스킬 강화 용옥을 원하는 슬롯에 장착하면 시즌 스킬의 효과가 발동합니다.</span></p>
+<p><span class="tw">※ 賽季、賽季對象技能強化龍玉、賽季技能的效果，可能隨更新狀況而有所變動。</span><span class="kr">※ 시즌, 시즌 대상 스킬 강화 용옥, 시즌 스킬의 효과는 업데이트 상황에 따라 변경될 수 있습니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="1000" height="585" style="flex:0 1 1000px" src="img2611/2026110219431350082.webp"></div>
+<h3><span class="tw">◆ 技能強化龍玉裝備欄位 - 開放第6欄</span><span class="kr">◆ 스킬 강화 용옥 장착 슬롯 - 6번 개방</span></h3>
+<p><span class="tw">• 技能強化龍玉分頁共有6個欄位。</span><span class="kr">• 스킬 강화 용옥 탭에는 총 6개의 슬롯이 존재합니다.</span></p>
+<p><span class="tw">• 鎖定中的欄位使用貨幣解鎖後即可使用，且僅能在村莊內開放鎖定的欄位。</span><span class="kr">• 잠겨있는 슬롯은 재화를 사용하여 잠금 해제 후 사용이 가능하며 잠긴 슬롯의 개방은 마을에서만 가능합니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="814" height="494" style="flex:0 1 814px" src="img2611/2026110219433423393.webp"></div>
+<h3><span class="tw">◆ [超越] 夢幻龍玉</span><span class="kr">◆ [초월] 몽환의 용옥</span></h3>
+<p><span class="tw">• 新增新的技能強化龍玉——[超越] 夢幻龍玉。</span><span class="kr">• 새로운 스킬 강화 용옥인 [초월] 몽환의 용옥이 추가됩니다.</span></p>
+<p><span class="tw">• [超越] 夢幻龍玉從100等級起可裝備。</span><span class="kr">• [초월] 몽환의 용옥은 100레벨부터 장착할 수 있습니다.</span></p>
+<p><span class="tw">• 強化與現有夢幻龍玉相同的對象技能，且無法與現有夢幻龍玉同時裝備。</span><span class="kr">• 기존 몽환의 용옥과 동일한 대상 스킬을 강화하며, 기존 몽환의 용옥과 동시에 장착할 수 없습니다.</span></p>
+<h3><span class="tw">◆ 獲得方式</span><span class="kr">◆ 획득 방법</span></h3>
+<p><span class="tw">※ 偉業獎勵每個角色可獲得1次。</span><span class="kr">※ 위업 보상은 캐릭터 당 1회 획득할 수 있습니다.</span></p>
+<p><span class="tw">※ 以偉業獎勵獲得的龍玉無法交易。</span><span class="kr">※ 위업 보상으로 획득한 용옥은 거래가 불가능합니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">獲得處</span><span class="kr">획득처</span></th>
+<th><span class="tw">獲得道具</span><span class="kr">획득 아이템</span></th>
+<th><span class="tw">獲得方式</span><span class="kr">획득 방식</span></th>
+</tr>
+<tr>
+<td><span class="tw">滿潮迴廊</span><span class="kr">만조의 회랑</span></td>
+<td><span class="tw">[超越] 夢幻龍玉</span><span class="kr">[초월] 몽환의 용옥</span></td>
+<td><span class="tw">依機率獲得各職業龍玉其中1個</span><span class="kr">확률에 따라 직업별 용옥 중 1개 획득</span></td>
+</tr>
+<tr>
+<td><span class="tw">滿潮迴廊 通關300次偉業</span><span class="kr">만조의 회랑 300회 클리어 위업</span></td>
+<td><span class="tw">[超越] 夢幻龍玉(活動)</span><span class="kr">[초월] 몽환의 용옥(이벤트)</span></td>
+<td><span class="tw">獲得自己職業的龍玉 1個</span><span class="kr">본인 직업 용옥 1개 획득</span></td>
+</tr>
+<tr>
+<td><span class="tw">+16強化～+20強化 夢幻龍玉進化</span><span class="kr">+16강 ~ +20강 몽환의 용옥 진화</span></td>
+<td><span class="tw">[超越] 夢幻龍玉</span><span class="kr">[초월] 몽환의 용옥</span></td>
+<td><span class="tw">獲得與現有夢幻龍玉相同的[超越] 夢幻龍玉 1個</span><span class="kr">기존 몽환의 용옥과 동일한 [초월] 몽환의 용옥 1개 획득</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 技能強化龍玉欄位</span><span class="kr">◆ 스킬 강화 용옥 슬롯</span></h3>
+<p><span class="tw">• 可使用滿潮洋流石與金幣開放第6個欄位。</span><span class="kr">• 만조의 해류석과 골드를 사용하여 6번째 슬롯을 개방할 수 있습니다.</span></p>
+<p><span class="tw">• 滿潮洋流石可於滿潮迴廊獵犬事件中獲得。</span><span class="kr">• 만조의 해류석은 만조의 회랑 하운드 이벤트에서 획득할 수 있습니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">開放欄位</span><span class="kr">개방 슬롯</span></th>
+<th><span class="tw">所需材料</span><span class="kr">필요 재료</span></th>
+<th><span class="tw">材料數量</span><span class="kr">재료 개수</span></th>
+<th><span class="tw">所需金幣</span><span class="kr">필요 골드</span></th>
+</tr>
+<tr>
+<td><span class="tw">第6個技能龍玉欄位</span><span class="kr">6번째 스킬 용옥 슬롯</span></td>
+<td><span class="tw">滿潮洋流石</span><span class="kr">만조의 해류석</span></td>
+<td><span class="tw">250個</span><span class="kr">250개</span></td>
+<td><span class="tw">100,000金幣</span><span class="kr">100,000골드</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ [超越] 夢幻龍玉</span><span class="kr">◆ [초월] 몽환의 용옥</span></h3>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="238" height="619" style="flex:0 1 238px" src="img2611/2026110300304274527.webp"></div>
+<p><span class="tw">▶ [超越] 夢幻龍玉是強化與現有夢幻龍玉對象技能相同之技能的龍玉，僅限對應專屬職業的角色才能裝備該龍玉。</span><span class="kr">▶ [초월] 몽환의 용옥은 기존 몽환의 용옥 대상 스킬과 동일한 스킬을 강화하는 용옥이며, 전용 직업에 해당하는 캐릭터만이 그 용옥을 장착할 수 있습니다.</span></p>
+<p><span class="tw">▶ [超越] 夢幻龍玉自+0強化起，即套用最終傷害增加300%、冷卻時間減少20、所有屬性攻擊力增加10%的效果。</span><span class="kr">▶ [초월] 몽환의 용옥은 0강화부터 파이널 대미지 300% 증가, 쿨타임 20 감소, 모든 속성 공격력 10% 증가 효과가 적용됩니다.</span></p>
+<p><span class="tw">▶ [超越] 夢幻龍玉可進行強化，隨著「強化階段」提升，對象技能的最終傷害也會增加。</span><span class="kr">▶ [초월] 몽환의 용옥은 강화 할 수 있으며 ‘강화 단계’가 올라감에 따라 대상 스킬의 파이널 대미지가 증가합니다</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="480" height="300" style="flex:0 1 480px" src="img2611/2026110220095894908.webp"><img loading="lazy" decoding="async" alt="" width="480" height="300" style="flex:0 1 480px" src="img2611/2026110220100937671.webp"></div>
+<p><span class="tw">毀滅者　掠奪者</span><span class="kr">디스트로이어 레이븐</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="480" height="300" style="flex:0 1 480px" src="img2611/2026110220101923948.webp"><img loading="lazy" decoding="async" alt="" width="480" height="300" style="flex:0 1 480px" src="img2611/202611022010285314.webp"></div>
+<p><span class="tw">卡牌戲法師　喚靈使者</span><span class="kr">링마스터 소울이터</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="480" height="300" style="flex:0 1 480px" src="img2611/2026110220103656033.webp"><img loading="lazy" decoding="async" alt="" width="480" height="300" style="flex:0 1 480px" src="img2611/2026110220104421037.webp"></div>
+<p><span class="tw">光影術士　十字軍</span><span class="kr">스매셔 크루세이더</span></p>
+<h3><span class="tw">◆ [超越] 夢幻龍玉 強化對象技能</span><span class="kr">◆ [초월] 몽환의 용옥 강화 대상 스킬</span></h3>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">職業</span><span class="kr">직업</span></th>
+<th><span class="tw">強化對象技能</span><span class="kr">강화 대상 스킬</span></th>
+</tr>
+<tr>
+<td><span class="tw">劍鬥士</span><span class="kr">글라디에이터</span></td>
+<td><span class="tw">拔刀姿態 EX</span><span class="kr">해킹 스탠스 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">月光劍豪</span><span class="kr">문로드</span></td>
+<td><span class="tw">半月斬 EX</span><span class="kr">하프문 슬래쉬 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">狂戰士</span><span class="kr">바바리안</span></td>
+<td><span class="tw">[覺醒] 重踏</span><span class="kr">[각성] 스톰프</span></td>
+</tr>
+<tr>
+<td><span class="tw">毀滅者</span><span class="kr">디스트로이어</span></td>
+<td><span class="tw">懲戒波 EX</span><span class="kr">퍼니싱 스윙 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">闇黑復仇者</span><span class="kr">다크어벤저</span></td>
+<td><span class="tw">[惡夢] 黑色刺針</span><span class="kr">[악몽] 다크 스팅어</span></td>
+</tr>
+<tr>
+<td><span class="tw">馭龍劍騎</span><span class="kr">미스틱나이트</span></td>
+<td><span class="tw">魔劍斬 EX</span><span class="kr">뱅 소드 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">幻劍宗師</span><span class="kr">그랜드마스터</span></td>
+<td><span class="tw">大迴旋斬 EX (武器切換)</span><span class="kr">스핀 드리프트 EX (웨폰체인지)</span></td>
+</tr>
+<tr>
+<td><span class="tw">悖論戰士</span><span class="kr">패러독스워리어</span></td>
+<td><span class="tw">三位一體攻擊</span><span class="kr">트리니티 어택</span></td>
+</tr>
+<tr>
+<td><span class="tw">天弓射手</span><span class="kr">스나이퍼</span></td>
+<td><span class="tw">聚能射擊</span><span class="kr">차지 샷</span><br><span class="tw">聚能射擊 EX</span><span class="kr">차지 샷 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">馭魔箭手</span><span class="kr">아틸러리</span></td>
+<td><span class="tw">疾風猛攻EX</span><span class="kr">스위프트 스톰 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">影舞者</span><span class="kr">템페스트</span></td>
+<td><span class="tw">螺旋風暴 EX</span><span class="kr">스파이럴 볼텍스 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">風行者</span><span class="kr">윈드워커</span></td>
+<td><span class="tw">螺旋踢 EX</span><span class="kr">스파이럴 킥 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">銀月獵手</span><span class="kr">실버헌터</span></td>
+<td><span class="tw">箭雨齊發</span><span class="kr">에리얼 와일드 샷</span><br><span class="tw">[神聖] 箭雨齊發</span><span class="kr">[신성] 에리얼 와일드 샷</span></td>
+</tr>
+<tr>
+<td><span class="tw">炎之幻姬</span><span class="kr">셀레아나</span></td>
+<td><span class="tw">地獄業火EX</span><span class="kr">인페르노 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">冰之女王</span><span class="kr">엘레스트라</span></td>
+<td><span class="tw">冰原EX</span><span class="kr">프리징 필드 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">光影術士</span><span class="kr">스매셔</span></td>
+<td><span class="tw">聚能激光 EX</span><span class="kr">리니어 레이 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">時空領主</span><span class="kr">마제스티</span></td>
+<td><span class="tw">黑洞召喚 EX</span><span class="kr">서먼 블랙홀 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">黑暗法師</span><span class="kr">블랙마라</span></td>
+<td><span class="tw">[強化] 空虛盤旋</span><span class="kr">[강화] 보이드 코일</span></td>
+</tr>
+<tr>
+<td><span class="tw">聖騎士</span><span class="kr">가디언</span></td>
+<td><span class="tw">神聖復仇 EX</span><span class="kr">디바인 벤전스 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">十字軍</span><span class="kr">크루세이더</span></td>
+<td><span class="tw">雷霆一擊 EX</span><span class="kr">스마이트 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">聖徒</span><span class="kr">세인트</span></td>
+<td><span class="tw">神聖枷鎖 EX</span><span class="kr">미스틱 체인 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">審判者</span><span class="kr">인퀴지터</span></td>
+<td><span class="tw">[覺醒] 電光箭</span><span class="kr">[각성] 라이트닝 볼트</span></td>
+</tr>
+<tr>
+<td><span class="tw">黑暗異教徒</span><span class="kr">아크헤러틱</span></td>
+<td><span class="tw">[噩夢]邪惡之手</span><span class="kr">[악몽]이블 핸드</span></td>
+</tr>
+<tr>
+<td><span class="tw">炮擊之星</span><span class="kr">슈팅스타</span></td>
+<td><span class="tw">火砲衝擊波EX</span><span class="kr">캐논 블래스터 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">機甲司令</span><span class="kr">기어마스터</span></td>
+<td><span class="tw">[覺醒] 機械寒冰噴射器</span><span class="kr">[각성] 미케닉 아이스 펌프</span></td>
+</tr>
+<tr>
+<td><span class="tw">鍊魔使</span><span class="kr">어뎁트</span></td>
+<td><span class="tw">冰拳衝擊EX</span><span class="kr">아이스 펀치 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">鍊癒使</span><span class="kr">피지션</span></td>
+<td><span class="tw">注射器 EX</span><span class="kr">인젝터 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">縱雷機師</span><span class="kr">레이메카닉</span></td>
+<td><span class="tw">[進化] 原子翼刀</span><span class="kr">[진] 아토믹 블레이드</span><br><span class="tw">[騎乘] 原子翼刀</span><span class="kr">[탑승] 아토믹 블레이드</span></td>
+</tr>
+<tr>
+<td><span class="tw">暗黑召喚師</span><span class="kr">다크서머너</span></td>
+<td><span class="tw">闇爪升龍擊EX</span><span class="kr">체인 클로 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">喚靈使者</span><span class="kr">소울이터</span></td>
+<td><span class="tw">符鳥式神EX</span><span class="kr">스피릿 페이퍼 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">劍刃舞者</span><span class="kr">블레이드댄서</span></td>
+<td><span class="tw">閃耀之舞EX</span><span class="kr">트윙클 스핀 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">闇影支配者</span><span class="kr">스피릿댄서</span></td>
+<td><span class="tw">黎明之刃 EX</span><span class="kr">제너럴 던블레이드 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">天羽神姬</span><span class="kr">오라클엘더</span></td>
+<td><span class="tw">[神聖]  銳不可擋</span><span class="kr">[신성] 샤프니스 오브 허리케인</span></td>
+</tr>
+<tr>
+<td><span class="tw">撕裂者</span><span class="kr">리퍼</span></td>
+<td><span class="tw">火焰破壞者 EX</span><span class="kr">플레임 로커스트 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">掠奪者</span><span class="kr">레이븐</span></td>
+<td><span class="tw">掌聲響起 EX</span><span class="kr">어플러즈 EX</span><br><span class="tw">[覺醒] 掌聲響起</span><span class="kr">[각성] 어플러즈</span></td>
+</tr>
+<tr>
+<td><span class="tw">光輝使者</span><span class="kr">라이트퓨리</span></td>
+<td><span class="tw">撼動查克拉 EX</span><span class="kr">풀 브라이트 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">深淵行者</span><span class="kr">어비스워커</span></td>
+<td><span class="tw">離子爆裂 EX</span><span class="kr">플라즈마 버스트 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">噬血闇靈</span><span class="kr">블리드팬텀</span></td>
+<td><span class="tw">[殘酷] 危機四伏</span><span class="kr">[크루얼] 솔 브레이커</span></td>
+</tr>
+<tr>
+<td><span class="tw">疾風魅影</span><span class="kr">플러리</span></td>
+<td><span class="tw">螺旋刺 EX</span><span class="kr">스탭 스크류 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">幻魔槍騎</span><span class="kr">스팅브리저</span></td>
+<td><span class="tw">凌空投擲 EX</span><span class="kr">피어싱 스파이크 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">冰霜舞姬</span><span class="kr">아발란체</span></td>
+<td><span class="tw">前進突刺 EX</span><span class="kr">게일 스탭 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">緋紅戰姬</span><span class="kr">란드그리드</span></td>
+<td><span class="tw">攻其不備 EX</span><span class="kr">혼 레이드 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">闇夜魅影</span><span class="kr">베나플라가</span></td>
+<td><span class="tw">[墮落]血箭</span><span class="kr">[타락] 블러드 샷</span></td>
+</tr>
+<tr>
+<td><span class="tw">捍衛者</span><span class="kr">디펜시오</span></td>
+<td><span class="tw">天外飛仙 EX</span><span class="kr">리핑오버 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">破壞者</span><span class="kr">루이나</span></td>
+<td><span class="tw">波動穿刺 EX</span><span class="kr">플로스루 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">疾光武姬</span><span class="kr">임팩터</span></td>
+<td><span class="tw">L-破壞者 EX</span><span class="kr">L-버스터 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">電光禦使</span><span class="kr">러스터</span></td>
+<td><span class="tw">雷射光刃 EX</span><span class="kr">레이저 피어서 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">維斯蒂亞雷納</span><span class="kr">비스티아 레이나</span></td>
+<td><span class="tw">閃耀踢擊</span><span class="kr">트윙클 킥</span></td>
+</tr>
+<tr>
+<td><span class="tw">決鬥者</span><span class="kr">듀얼리스트</span></td>
+<td><span class="tw">氣刃 EX</span><span class="kr">에어로 소드 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">陷阱大師</span><span class="kr">트릭스터</span></td>
+<td><span class="tw">絕對領域 EX</span><span class="kr">클러치 필드 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">亡靈獵手</span><span class="kr">레버넌트</span></td>
+<td><span class="tw">一刀兩斷 EX</span><span class="kr">컷 오프 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">獨行俠</span><span class="kr">매버릭</span></td>
+<td><span class="tw">致命吸引 EX</span><span class="kr">클러 크레인 EX</span></td>
+</tr>
+<tr>
+<td><span class="tw">謫仙使</span><span class="kr">성휘무제</span></td>
+<td><span class="tw">玄影劍 (謫仙使顯現中)</span><span class="kr">현영검 (성휘무제 현현 중)</span></td>
+</tr>
+<tr>
+<td><span class="tw">卡牌戲法師</span><span class="kr">링마스터</span></td>
+<td><span class="tw">啵啵皮唷</span><span class="kr">포잉 피요</span><br><span class="tw">啵啵皮唷 瞬息萬變</span><span class="kr">포잉 피요 인스턴트</span></td>
+</tr>
+</table></div>
+<p><span class="tw">▶ 部分職業的技能，在龍玉強化動作的同時會追加技能效果。</span><span class="kr">▶ 일부 직업의 스킬은 용옥 액션 강화와 함께 스킬 효과가 추가됩니다.</span></p>
+<h3><span class="tw">◆ [超越] 夢幻龍玉 強化</span><span class="kr">◆ [초월] 몽환의 용옥 강화</span></h3>
+<p><span class="tw">• [超越] 夢幻龍玉最高可強化至+15。</span><span class="kr">• [초월] 몽환의 용옥은 최대 15강까지 강화할 수 있습니다.</span></p>
+<p><span class="tw">• 使用夢境儀式與超越回流石作為強化材料。</span><span class="kr">• 강화 재료로 꿈결의 의식과 초월의 환류석을 사용합니다.</span></p>
+<p><span class="tw">• 夢境儀式及超越回流石可於擊敗滿潮迴廊首領時獲得。</span><span class="kr">• 꿈결의 의식 및 초월의 환류석은 만조의 회랑 보스 처치 시 획득할 수 있습니다.</span></p>
+<p><span class="tw">• 超越回流石從+6強化起作為強化材料使用。</span><span class="kr">• 초월의 환류석은 6강부터 강화 재료로 사용됩니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">強化階段</span><span class="kr">강화 단계</span></th>
+<th><span class="tw">強化機率</span><span class="kr">강화 확률</span></th>
+<th><span class="tw">所需金幣</span><span class="kr">필요 골드</span></th>
+<th><span class="tw">夢境儀式</span><span class="kr">꿈결의 의식</span></th>
+<th><span class="tw">超越回流石</span><span class="kr">초월의 환류석</span></th>
+</tr>
+<tr>
+<td>1</td>
+<td>100%</td>
+<td>1,000</td>
+<td><span class="tw">600個</span><span class="kr">600개</span></td>
+<td>-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>100%</td>
+<td>1,000</td>
+<td><span class="tw">800個</span><span class="kr">800개</span></td>
+<td>-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>100%</td>
+<td>1,000</td>
+<td><span class="tw">800個</span><span class="kr">800개</span></td>
+<td>-</td>
+</tr>
+<tr>
+<td>4</td>
+<td>100%</td>
+<td>1,000</td>
+<td><span class="tw">1,000個</span><span class="kr">1,000개</span></td>
+<td>-</td>
+</tr>
+<tr>
+<td>5</td>
+<td>100%</td>
+<td>1,000</td>
+<td><span class="tw">1,000個</span><span class="kr">1,000개</span></td>
+<td>-</td>
+</tr>
+<tr>
+<td>6</td>
+<td>50%</td>
+<td>1,000</td>
+<td><span class="tw">800個</span><span class="kr">800개</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+</tr>
+<tr>
+<td>7</td>
+<td>30%</td>
+<td>1,000</td>
+<td><span class="tw">800個</span><span class="kr">800개</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+</tr>
+<tr>
+<td>8</td>
+<td>20%</td>
+<td>1,000</td>
+<td><span class="tw">600個</span><span class="kr">600개</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+</tr>
+<tr>
+<td>9</td>
+<td>15%</td>
+<td>1,000</td>
+<td><span class="tw">600個</span><span class="kr">600개</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+</tr>
+<tr>
+<td>10</td>
+<td>10%</td>
+<td>1,000</td>
+<td><span class="tw">600個</span><span class="kr">600개</span></td>
+<td><span class="tw">2個</span><span class="kr">2개</span></td>
+</tr>
+<tr>
+<td>11</td>
+<td>5%</td>
+<td>1,000</td>
+<td><span class="tw">500個</span><span class="kr">500개</span></td>
+<td><span class="tw">2個</span><span class="kr">2개</span></td>
+</tr>
+<tr>
+<td>12</td>
+<td>5%</td>
+<td>1,000</td>
+<td><span class="tw">500個</span><span class="kr">500개</span></td>
+<td><span class="tw">2個</span><span class="kr">2개</span></td>
+</tr>
+<tr>
+<td>13</td>
+<td>4%</td>
+<td>1,000</td>
+<td><span class="tw">500個</span><span class="kr">500개</span></td>
+<td><span class="tw">3個</span><span class="kr">3개</span></td>
+</tr>
+<tr>
+<td>14</td>
+<td>3%</td>
+<td>1,000</td>
+<td><span class="tw">500個</span><span class="kr">500개</span></td>
+<td><span class="tw">3個</span><span class="kr">3개</span></td>
+</tr>
+<tr>
+<td>15</td>
+<td>2%</td>
+<td>1,000</td>
+<td><span class="tw">500個</span><span class="kr">500개</span></td>
+<td><span class="tw">3個</span><span class="kr">3개</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ [超越] 夢幻龍玉 強化效果</span><span class="kr">◆ [초월] 몽환의 용옥 강화 효과</span></h3>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="218" height="340" style="flex:0 1 218px" src="img2611/2026110219454965135.webp"></div>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">強化階段</span><span class="kr">강화 단계</span></th>
+<th><span class="tw">技能最終</span><span class="kr">스킬 파이널</span><br><span class="tw">傷害增加</span><span class="kr">대미지 증가</span></th>
+<th><span class="tw">對象技能</span><span class="kr">대상 스킬</span><br><span class="tw">冷卻時間減少</span><span class="kr">쿨타임 감소</span></th>
+<th><span class="tw">所有屬性</span><span class="kr">모든 속성</span><br><span class="tw">攻擊力增加</span><span class="kr">공격력 증가</span></th>
+</tr>
+<tr>
+<td>0</td>
+<td>300%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>1</td>
+<td>425%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>2</td>
+<td>550%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>3</td>
+<td>675%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>4</td>
+<td>800%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1000%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1200%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>7</td>
+<td>1425%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>8</td>
+<td>1675%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>9</td>
+<td>1950%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>10</td>
+<td>2250%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>11</td>
+<td>2650%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>12</td>
+<td>3150%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>13</td>
+<td>3750%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>14</td>
+<td>4500%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>15</td>
+<td>5500%</td>
+<td>20%</td>
+<td>10%</td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ [超越] 夢幻龍玉 分解</span><span class="kr">◆ [초월] 몽환의 용옥 분해</span></h3>
+<p><span class="tw">• 可分解+0～+15強化的[超越] 夢幻龍玉。</span><span class="kr">• 0~15강 [초월] 몽환의 용옥을 분해할 수 있습니다.</span></p>
+<p><span class="tw">• 分解時，可依機率獲得下表獎勵中的其中1種。</span><span class="kr">• 분해 시 아래 표의 보상 중 1종을 확률에 따라 획득할 수 있습니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">分解對象</span><span class="kr">분해 대상</span></th>
+<th><span class="tw">獲得道具</span><span class="kr">획득 아이템</span></th>
+<th><span class="tw">數量</span><span class="kr">개수</span></th>
+</tr>
+<tr>
+<td rowspan="3"><span class="tw">[超越] 夢幻龍玉</span><span class="kr">[초월] 몽환의 용옥</span></td>
+<td><span class="tw">滿潮迴廊地圖</span><span class="kr">만조의 회랑 지도</span></td>
+<td><span class="tw">3個</span><span class="kr">3개</span></td>
+</tr>
+<tr>
+<td><span class="tw">滿潮迴廊地圖</span><span class="kr">만조의 회랑 지도</span></td>
+<td><span class="tw">15個</span><span class="kr">15개</span></td>
+</tr>
+<tr>
+<td><span class="tw">無瑕之核</span><span class="kr">무결의 핵</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+</tr>
+<tr>
+<td rowspan="2"><span class="tw">[超越] 夢幻龍玉(活動)</span><span class="kr">[초월] 몽환의 용옥(이벤트)</span></td>
+<td><span class="tw">滿潮迴廊地圖</span><span class="kr">만조의 회랑 지도</span></td>
+<td><span class="tw">3個</span><span class="kr">3개</span></td>
+</tr>
+<tr>
+<td><span class="tw">滿潮迴廊地圖</span><span class="kr">만조의 회랑 지도</span></td>
+<td><span class="tw">15個</span><span class="kr">15개</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 新道具資訊</span><span class="kr">◆ 신규 아이템 정보</span></h3>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">道具</span><span class="kr">아이템</span></th>
+<th><span class="tw">交易</span><span class="kr">거래</span></th>
+<th><span class="tw">伺服器倉庫</span><span class="kr">서버 창고</span></th>
+<th><span class="tw">分解</span><span class="kr">분해</span></th>
+</tr>
+<tr>
+<td><span class="tw">[超越] 夢幻龍玉</span><span class="kr">[초월] 몽환의 용옥</span></td>
+<td><span class="tw">封印時可交易(4次)</span><span class="kr">봉인 시 가능(4회)</span></td>
+<td><span class="tw">封印時可交易(4次)</span><span class="kr">봉인 시 가능(4회)</span></td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">[超越] 夢幻龍玉(活動)</span><span class="kr">[초월] 몽환의 용옥(이벤트)</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">滿潮迴廊地圖</span><span class="kr">만조의 회랑 지도</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">夢境儀式</span><span class="kr">꿈결의 의식</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">滿潮洋流石</span><span class="kr">만조의 해류석</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">超越回流石</span><span class="kr">초월의 환류석</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">超越齒輪</span><span class="kr">초월의 톱니바퀴</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">超越鑰匙</span><span class="kr">초월의 열쇠</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+</table></div></section>
+<section id="c2" class="pane"><h2><span class="tw">滿潮迴廊</span><span class="kr">만조의 회랑</span></h2><h3><span class="tw">◆ 滿潮迴廊</span><span class="kr">◆ 만조의 회랑</span></h3>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="603" height="376" style="flex:0 1 603px" src="img2611/2026110219462978937.webp"></div>
+<p><span class="tw">• 夕陽的紅光被染上更深的黑暗，將展開與變得更加強大的怪物之間的1對1死鬥。</span><span class="kr">• 낙조의 붉은빛이 더욱 짙은 어둠으로 물들어, 한층 더 강력해진 몬스터들과의 1대 1 사투가 펼쳐집니다.</span></p>
+<p><span class="tw">• 請戰勝變得更強的試煉，獲取更強力的材料吧。</span><span class="kr">• 강해진 시련을 이겨내고 더욱 강력한 재료를 획득해 보세요.</span></p>
+<h3><span class="tw">◆ 滿潮迴廊 入場資訊</span><span class="kr">◆ 만조의 회랑 입장 정보</span></h3>
+<p><span class="tw">• 可透過位於紅蓮宮街市的[時空裂縫]傳送門進入[滿潮迴廊]。</span><span class="kr">• 홍련궁 저잣거리에 있는 [시공의 균열] 게이트를 이용해서 [만조의 회랑]에 입장할 수 있습니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="496" height="403" style="flex:0 1 496px" src="img2611/2026110219465812348.webp"></div>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">入場等級</span><span class="kr">입장 레벨</span></th>
+<td><span class="tw">100Lv以上</span><span class="kr">100Lv 이상</span></td>
+</tr>
+<tr>
+<th><span class="tw">可入場人數</span><span class="kr">입장 가능 인원</span></th>
+<td><span class="tw">1人</span><span class="kr">1인</span></td>
+</tr>
+<tr>
+<th><span class="tw">入場所需道具</span><span class="kr">입장 시 필요 아이템</span></th>
+<td><span class="tw">滿潮迴廊地圖</span><span class="kr">만조의 회랑 지도</span></td>
+</tr>
+<tr>
+<th><span class="tw">每週可通關次數</span><span class="kr">주간 클리어 가능 횟수</span></th>
+<td><span class="tw">無</span><span class="kr">없음</span></td>
+</tr>
+<tr>
+<th><span class="tw">一般復活可用次數</span><span class="kr">일반 부활 가능 횟수</span></th>
+<td><span class="tw">5次</span><span class="kr">5회</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 滿潮迴廊 獎勵</span><span class="kr">◆ 만조의 회랑 보상</span></h3>
+<p><span class="tw">• 可於滿潮迴廊獲得新的技能強化龍玉——[超越] 夢幻龍玉的相關道具。</span><span class="kr">• 만조의 회랑에서 새로운 스킬 강화 용옥인 [초월] 몽환의 용옥 관련 아이템을 획득할 수 있습니다.</span></p>
+<p><span class="tw">• 龍玉不分職業，隨機獲得1種。</span><span class="kr">• 용옥은 직업 구분 없이 무작위 1종을 획득합니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">獲得道具</span><span class="kr">획득 아이템</span></th>
+<th><span class="tw">內容</span><span class="kr">내용</span></th>
+<th><span class="tw">獲得處</span><span class="kr">획득처</span></th>
+<th><span class="tw">獲得方式</span><span class="kr">획득 방식</span></th>
+</tr>
+<tr>
+<td><span class="tw">夢境儀式</span><span class="kr">꿈결의 의식</span></td>
+<td><span class="tw">強化材料</span><span class="kr">강화 재료</span></td>
+<td><span class="tw">擊敗首領</span><span class="kr">보스 처치</span></td>
+<td><span class="tw">確定</span><span class="kr">확정</span></td>
+</tr>
+<tr>
+<td><span class="tw">[超越] 夢幻龍玉</span><span class="kr">[초월] 몽환의 용옥</span></td>
+<td><span class="tw">技能強化龍玉</span><span class="kr">스킬 강화 용옥</span></td>
+<td><span class="tw">擊敗首領</span><span class="kr">보스 처치</span></td>
+<td><span class="tw">機率</span><span class="kr">확률</span></td>
+</tr>
+<tr>
+<td><span class="tw">超越回流石</span><span class="kr">초월의 환류석</span></td>
+<td><span class="tw">強化材料</span><span class="kr">강화 재료</span></td>
+<td><span class="tw">擊敗首領</span><span class="kr">보스 처치</span></td>
+<td><span class="tw">機率</span><span class="kr">확률</span></td>
+</tr>
+<tr>
+<td><span class="tw">滿潮洋流石</span><span class="kr">만조의 해류석</span></td>
+<td><span class="tw">技能龍玉欄位開放，</span><span class="kr">스킬 용옥 슬롯 개방,</span><br><span class="tw">門票兌換</span><span class="kr">입장권 교환</span></td>
+<td><span class="tw">獵犬事件</span><span class="kr">하운드 이벤트</span></td>
+<td><span class="tw">確定</span><span class="kr">확정</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 門票商店</span><span class="kr">◆ 입장권 상점</span></h3>
+<p><span class="tw">• 次元商店與滿潮/夕陽迴廊商店中新增滿潮迴廊地圖。</span><span class="kr">• 차원 상점과 만조/낙조의 회랑 상점에 만조의 회랑 지도가 추가됩니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">商店</span><span class="kr">상점</span></th>
+<th><span class="tw">販售道具</span><span class="kr">판매 아이템</span></th>
+<th><span class="tw">所需貨幣</span><span class="kr">필요 재화</span></th>
+<th><span class="tw">購買限制</span><span class="kr">구매 제한</span></th>
+</tr>
+<tr>
+<td><span class="tw">次元商店</span><span class="kr">차원 상점</span></td>
+<td><span class="tw">滿潮迴廊地圖</span><span class="kr">만조의 회랑 지도</span></td>
+<td><span class="tw">沙漠氣息花苞 50個</span><span class="kr">모래 숨결 꽃망울 50개</span></td>
+<td><span class="tw">每角色每週50次</span><span class="kr">캐릭터 당 주간 50회</span></td>
+</tr>
+<tr>
+<td><span class="tw">滿潮/夕陽迴廊商店</span><span class="kr">만조/낙조의 회랑 상점</span></td>
+<td><span class="tw">滿潮迴廊地圖</span><span class="kr">만조의 회랑 지도</span></td>
+<td><span class="tw">滿潮洋流石 20個</span><span class="kr">만조의 해류석 20개</span></td>
+<td><span class="tw">每角色每週300次</span><span class="kr">캐릭터 당 주간 300회</span></td>
+</tr>
+<tr>
+<td><span class="tw">滿潮/夕陽迴廊商店</span><span class="kr">만조/낙조의 회랑 상점</span></td>
+<td><span class="tw">超越回流石</span><span class="kr">초월의 환류석</span></td>
+<td><span class="tw">無瑕之核 1個</span><span class="kr">무결의 핵 1개</span></td>
+<td><span class="tw">每角色每週3次</span><span class="kr">캐릭터 당 주간 3회</span></td>
+</tr>
+<tr>
+<td><span class="tw">滿潮/夕陽迴廊商店</span><span class="kr">만조/낙조의 회랑 상점</span></td>
+<td><span class="tw">超越齒輪</span><span class="kr">초월의 톱니바퀴</span></td>
+<td><span class="tw">無瑕之核 1個</span><span class="kr">무결의 핵 1개</span></td>
+<td>-</td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 門票 每週任務獎勵</span><span class="kr">◆ 입장권 주간 임무 보상</span></h3>
+<p><span class="tw">• 每週任務獎勵中新增滿潮迴廊地圖。</span><span class="kr">• 주간 임무 보상에 만조의 회랑 지도가 추가됩니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">每週任務</span><span class="kr">주간 임무</span></th>
+<th><span class="tw">追加獎勵</span><span class="kr">추가 보상</span></th>
+</tr>
+<tr>
+<td><span class="tw">達成每週委託6次</span><span class="kr">주간 의뢰 6회 달성</span></td>
+<td><span class="tw">滿潮迴廊地圖 15個</span><span class="kr">만조의 회랑 지도 15개</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 稻香苑 大型採集</span><span class="kr">◆ 도향원 대형 채집</span></h3>
+<p><span class="tw">• 於稻香苑關卡進行大型採集時，有一定機率獲得滿潮迴廊地圖。</span><span class="kr">• 도향원 스테이지 대형 채집 시 만조의 회랑 지도를 일정 확률로 획득할 수 있습니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">對象關卡</span><span class="kr">대상 스테이지</span></th>
+<th><span class="tw">追加獎勵</span><span class="kr">추가 보상</span></th>
+</tr>
+<tr>
+<td><span class="tw">軍團補給地</span><span class="kr">군단 보급지</span></td>
+<td><span class="tw">滿潮迴廊地圖 10個</span><span class="kr">만조의 회랑 지도 10개</span></td>
+</tr>
+<tr>
+<td><span class="tw">寒氣逼人的老街</span><span class="kr">얼어붙은 시가지</span></td>
+<td><span class="tw">滿潮迴廊地圖 10個</span><span class="kr">만조의 회랑 지도 10개</span></td>
+</tr>
+<tr>
+<td><span class="tw">赤岩谷廢墟</span><span class="kr">적암곡 폐허</span></td>
+<td><span class="tw">滿潮迴廊地圖 10個</span><span class="kr">만조의 회랑 지도 10개</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 染血的根部 追加獎勵</span><span class="kr">◆ 붉게 물든 뿌리굴 추가 보상</span></h3>
+<p><span class="tw">• 染血的根部獎勵中新增滿潮迴廊地圖。</span><span class="kr">• 붉게 물든 뿌리굴 보상에 만조의 회랑 지도가 추가됩니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">對象關卡</span><span class="kr">대상 스테이지</span></th>
+<th><span class="tw">追加獎勵</span><span class="kr">추가 보상</span></th>
+</tr>
+<tr>
+<td><span class="tw">染血的根部</span><span class="kr">붉게 물든 뿌리굴</span></td>
+<td><span class="tw">滿潮迴廊地圖 10個</span><span class="kr">만조의 회랑 지도 10개</span></td>
+</tr>
+</table></div></section>
+<section id="c3" class="pane"><h2><span class="tw">變更/追加 1</span><span class="kr">변경/추가 1</span></h2><p class="sub">分裂迷宮賽季變更 / 金龍巢穴變更 / 悖論冰晶龍巢穴變更 / 內容門票購買貨幣變更 / 銅鐵哥布林商店變更 / 婚禮任務簡化 / 其他</p><h3><span class="tw">◆ 分裂迷宮 – 試煉深層 [賽季5 - 詛咒的深層]</span><span class="kr">◆ 분열된 미로 – 시련의 심층 [시즌5 - 저주의 심층]</span></h3>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="689" height="461" style="flex:0 1 689px" src="img2611/2026110219475141761.webp"></div>
+<p><span class="tw">• 在分裂迷宮的深處，發現了殘酷到令勇者難以戰勝的詛咒深層。</span><span class="kr">• 용자님들이 이겨내기 어려울 만큼 잔혹한 저주의 심층이 분열된 미로 깊숙한 곳에서 발견되었습니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">入場難度</span><span class="kr">입장 난이도</span></th>
+<th><span class="tw">希望之花</span><span class="kr">희망의 꽃</span><br><span class="tw">可復活次數</span><span class="kr">부활 가능 횟수</span></th>
+<th><span class="tw">消耗門票</span><span class="kr">입장권 소모</span></th>
+<th><span class="tw">中間關卡</span><span class="kr">중간 관문</span><br><span class="tw">通關獎勵</span><span class="kr">클리어 보상</span></th>
+<th><span class="tw">套用試煉</span><span class="kr">시련 적용</span></th>
+</tr>
+<tr>
+<td><span class="tw">普通</span><span class="kr">보통</span></td>
+<td><span class="tw">10次</span><span class="kr">10회</span></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">昇天神域 1樓 ～</span><span class="kr">어센션 1층 ~</span><br><span class="tw">昇天神域 2樓</span><span class="kr">어센션 2층</span></td>
+<td><span class="tw">5次</span><span class="kr">5회</span></td>
+<td><span class="tw">分裂的漩渦，1個</span><span class="kr">분열의 소용돌이, 1개</span></td>
+<td>O</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">昇天神域 3樓以上</span><span class="kr">어센션 3층 이상</span></td>
+<td><span class="tw">5次</span><span class="kr">5회</span></td>
+<td><span class="tw">分裂的漩渦，1個</span><span class="kr">분열의 소용돌이, 1개</span></td>
+<td>O</td>
+<td>O</td>
+</tr>
+</table></div>
+<p><span class="tw">- 自分裂迷宮昇天神域3樓以上起，會套用使體力減少且喪失恢復能力的詛咒的深層。</span><span class="kr">- 분열된 미로 어센션 3층 이상부터 체력이 감소하며 회복 능력이 사라져버리는 저주의 심층이 적용됩니다.</span></p>
+<p><span class="tw">- 發現新的試煉深層時，賽季將會更換，套用的試煉也會隨之改變。</span><span class="kr">- 새로운 시련의 심층이 발견 되면, 시즌이 변경되며 적용 되는 시련이 변경됩니다.</span></p>
+<h3><span class="tw">◆ 金龍巢穴 難度調降</span><span class="kr">◆ 골드드래곤 네스트 난이도 하향</span></h3>
+<p><span class="tw">• 為了讓您能更無負擔地挑戰金龍巢穴，Normal、Hardcore的混沌迷宮樓層數將調降。</span><span class="kr">• 골드드래곤 네스트에 보다 부담 없이 도전하실 수 있도록 Normal, Hardcore의 디멘션 층수가 하향됩니다.</span></p>
+<p><span class="tw">• 變更後的混沌迷宮樓層數如下。</span><span class="kr">• 변경되는 디멘션 층수는 아래와 같습니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">對象關卡</span><span class="kr">대상 던전</span></th>
+<th><span class="tw">變更前</span><span class="kr">변경 전</span></th>
+<th><span class="tw">變更後</span><span class="kr">변경 후</span></th>
+</tr>
+<tr>
+<td><span class="tw">金龍巢穴</span><span class="kr">골드드래곤 네스트</span></td>
+<td><span class="tw">混沌迷宮 10樓</span><span class="kr">디멘션 10층</span></td>
+<td><span class="tw">混沌迷宮 9樓</span><span class="kr">디멘션 9층</span></td>
+</tr>
+<tr>
+<td><span class="tw">金龍巢穴 Hardcore</span><span class="kr">골드드래곤 네스트 Hardcore</span></td>
+<td><span class="tw">混沌迷宮 10樓</span><span class="kr">디멘션 10층</span></td>
+<td><span class="tw">混沌迷宮 9樓</span><span class="kr">디멘션 9층</span></td>
+</tr>
+</table></div>
+<p><span class="tw">• 隨著混沌迷宮樓層數調降，怪物的體力、攻擊力會降低，迷宮殺氣所造成的負擔也會減輕。</span><span class="kr">• 디멘션 층수 하향에 따라 몬스터의 체력, 공격력이 낮아지며 라비린스 살기에 의한 부담이 감소합니다.</span></p>
+<p><span class="tw">• 歡迎怪物的體力將維持在與原先相近的水準。</span><span class="kr">• 웰컴 몬스터의 체력은 기존과 유사한 수준으로 유지됩니다.</span></p>
+<p><span class="tw">• 配合變更後的混沌迷宮樓層數，金龍巢穴項目的說明將一併修正。</span><span class="kr">• 변경된 디멘션 층수에 맞춰 골드드래곤 네스트 항목의 도움말이 수정됩니다.</span></p>
+<p><span class="tw">• 金龍巢穴 Zero不在變更範圍內。</span><span class="kr">• 골드드래곤 네스트 Zero는 변경되지 않습니다.</span></p>
+<h3><span class="tw">◆ 金龍巢穴 第2關</span><span class="kr">◆ 골드드래곤 네스트 2관문</span></h3>
+<p><span class="tw">• 黑騎士威爾斯肯特的混沌的時間招式進行期間，無法召喚杰倫特。</span><span class="kr">• 검은 기사 벨스커드의 혼돈의 시간 패턴 도중에는 제레인트를 소환할 수 없습니다.</span></p>
+<h3><span class="tw">◆ 金龍巢穴 門票購買限制擴大</span><span class="kr">◆ 골드드래곤 네스트 입장권 구매 제한 확대</span></h3>
+<p><span class="tw">• 為了增加挑戰金龍巢穴的機會，將擴大門票購買限制。</span><span class="kr">• 골드드래곤 네스트에 도전할 기회를 늘릴 수 있도록 입장권 구매 제한이 확대됩니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">道具名稱</span><span class="kr">아이템 명</span></th>
+<th><span class="tw">變更前</span><span class="kr">변경 전</span></th>
+<th><span class="tw">變更後</span><span class="kr">변경 후</span></th>
+</tr>
+<tr>
+<td><span class="tw">金色羽毛</span><span class="kr">금빛 깃털</span></td>
+<td><span class="tw">2次</span><span class="kr">2회</span></td>
+<td><span class="tw">3次</span><span class="kr">3회</span></td>
+</tr>
+<tr>
+<td><span class="tw">強力的金色羽毛</span><span class="kr">강렬한 금빛 깃털</span></td>
+<td><span class="tw">2次</span><span class="kr">2회</span></td>
+<td><span class="tw">3次</span><span class="kr">3회</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 悖論冰晶龍巢穴 入場方式變更</span><span class="kr">◆ 패러독스 프로즌드래곤 네스트 입장 방식 변경</span></h3>
+<p><span class="tw">• 悖論冰晶龍巢穴變更為需要門票才能入場的方式。</span><span class="kr">• 패러독스 프로즌드래곤 네스트가 입장권을 요구하는 방식으로 변경됩니다.</span></p>
+<p><span class="tw">• 變更為通關關卡時增加通關次數。</span><span class="kr">• 던전을 클리어했을 때 클리어 횟수가 증가하도록 변경됩니다.</span></p>
+<p><span class="tw">• 以歡迎怪物模式入場時，同樣需要門票。</span><span class="kr">• 웰컴 몬스터 모드로 입장할 때에도 입장권이 필요합니다.</span></p>
+<p><span class="tw">• 變更為在歡迎怪物模式中，僅於開啟箱子時才會增加通關次數。</span><span class="kr">• 웰컴 몬스터 모드에서 상자를 오픈할 때에만 클리어 횟수가 증가하도록 변경됩니다.</span></p>
+<p><span class="tw">• 門票可於拉達梅斯 – 警備兵 馬克 – 悖論商店購買。</span><span class="kr">• 입장권은 라다메스 – 경비병 마크 – 패러독스 상점에서 구매 가능합니다.</span></p>
+<p><span class="tw">• Light難度門票：紅色霜花</span><span class="kr">• Light 난이도 입장권 : 붉은 서리꽃</span></p>
+<p><span class="tw">• Normal難度門票：悖論紅色霜花</span><span class="kr">• Normal 난이도 입장권 : 모순의 붉은 서리꽃</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">內容</span><span class="kr">컨텐츠</span></th>
+<th><span class="tw">門票道具清單</span><span class="kr">입장권 아이템 목록</span></th>
+<th><span class="tw">購買貨幣</span><span class="kr">구매 재화</span></th>
+<th><span class="tw">購買限制</span><span class="kr">구매 제한</span></th>
+</tr>
+<tr>
+<td><span class="tw">悖論冰晶龍巢穴 Light</span><span class="kr">패러독스 프로즌드래곤 Light</span></td>
+<td><span class="tw">紅色霜花</span><span class="kr">붉은 서리꽃</span></td>
+<td><span class="tw">次元的石榴石 25個</span><span class="kr">차원의 잔흔 25개</span></td>
+<td><span class="tw">每角色每週3次</span><span class="kr">캐릭터 주간 3회</span></td>
+</tr>
+<tr>
+<td><span class="tw">悖論冰晶龍巢穴 Normal</span><span class="kr">패러독스 프로즌드래곤 Normal</span></td>
+<td><span class="tw">悖論紅色霜花</span><span class="kr">모순의 붉은 서리꽃</span></td>
+<td><span class="tw">次元的石榴石 25個</span><span class="kr">차원의 잔흔 25개</span></td>
+<td><span class="tw">每角色每週3次</span><span class="kr">캐릭터 주간 3회</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 內容門票購買貨幣變更</span><span class="kr">◆ 컨텐츠 입장권 구매 재화 변경</span></h3>
+<p><span class="tw">• 部分內容門票購買所需的貨幣種類已變更</span><span class="kr">• 일부 컨텐츠 입장권 구매에 필요한 재화의 종류가 변경되었습니다</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">門票道具清單</span><span class="kr">입장권 아이템 목록</span></th>
+<th><span class="tw">原有貨幣</span><span class="kr">기존 재화</span></th>
+<th><span class="tw">變更後貨幣</span><span class="kr">변경 재화</span></th>
+</tr>
+<tr>
+<td><span class="tw">冷冰冰的迷霧蘑菇</span><span class="kr">서리 낀 안개버섯</span></td>
+<td><span class="tw">高級石榴石</span><span class="kr">상급 가넷</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">冷冰冰的黑檀珠</span><span class="kr">차가운 흑단 구슬</span></td>
+<td><span class="tw">高級石榴石</span><span class="kr">상급 가넷</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">艾德里的日誌碎片</span><span class="kr">알드릭의 조각난 일지</span></td>
+<td><span class="tw">高級生命淨水</span><span class="kr">상급 생명의 정수</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">最後的冰霜花</span><span class="kr">마지막 서리꽃</span></td>
+<td><span class="tw">青金石</span><span class="kr">청금석</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">被解放的最後冰霜花</span><span class="kr">해방된 마지막 서리꽃</span></td>
+<td><span class="tw">青金石</span><span class="kr">청금석</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">被污染的黑網</span><span class="kr">오염된 칠흑의 그물</span></td>
+<td><span class="tw">高級石榴石</span><span class="kr">상급 가넷</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">一次性傳送器</span><span class="kr">일회용 전송기</span></td>
+<td><span class="tw">青金石</span><span class="kr">청금석</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">超越傳送器</span><span class="kr">초월 전송기</span></td>
+<td><span class="tw">青金石</span><span class="kr">청금석</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">放電的傳送器</span><span class="kr">방전된 전송기</span></td>
+<td><span class="tw">青金石</span><span class="kr">청금석</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">方舟卡片鑰匙</span><span class="kr">방주 카드키</span></td>
+<td><span class="tw">高級生命淨水</span><span class="kr">상급 생명의 정수</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">寒冰噩夢碎片</span><span class="kr">악몽의 얼어붙은 파편</span></td>
+<td><span class="tw">惡夢的碎片</span><span class="kr">악몽의 조각</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">金獸人的召喚書</span><span class="kr">김오크의 소환장</span></td>
+<td><span class="tw">伯剋霍的心臟碎片</span><span class="kr">벌크홉의 심장 조각</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">植物館館長檢舉書</span><span class="kr">식물갤의 고발장</span></td>
+<td><span class="tw">亡靈的珠子碎片</span><span class="kr">무에르토스의 구슬 조각</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">搜查委託書 : 颱風金的府邸</span><span class="kr">수색 의뢰장 : 타이푼 킴의 저택</span></td>
+<td><span class="tw">布倫希爾德的冰晶碎片</span><span class="kr">브륀힐드의 얼음 조각</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">搜索委託書：大主教的冰窖</span><span class="kr">수색 의뢰장 : 아크비숍의 석빙고</span></td>
+<td><span class="tw">布倫希爾德的冰晶碎片</span><span class="kr">브륀힐드의 얼음 조각</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+<tr>
+<td><span class="tw">時空跳躍體</span><span class="kr">시공간 도약체</span></td>
+<td><span class="tw">高級生命淨水</span><span class="kr">상급 생명의 정수</span></td>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 唉呀呀女神大人商店結束營運</span><span class="kr">◆ 어이쿠 여신님 상점 종료</span></h3>
+<p><span class="tw">• 唉呀呀女神大人商店即將結束營運。</span><span class="kr">• 어이쿠 여신님 상점이 종료됩니다.</span></p>
+<p><span class="tw">• 剩餘的唉呀呀女神大人點數，在2027年2月更新前，可於[黃金哥布林的甜蜜商店]兌換為其他點數。</span><span class="kr">• 잔여 어이쿠 여신님 포인트는 2027년 2월 업데이트 전까지 [황블이의 꿀 뚝뚝 상점]에서 다른 포인트로 교환 가능합니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">日程</span><span class="kr">일정</span></th>
+<th><span class="tw">內容</span><span class="kr">내용</span></th>
+</tr>
+<tr>
+<td><span class="tw">2026年11月5日（四）維護</span><span class="kr">2026년 11월 5일(목) 점검</span></td>
+<td><span class="tw">[唉呀呀女神大人商店] 結束營運</span><span class="kr">[어이쿠 여신님 상점] 종료</span></td>
+</tr>
+<tr>
+<td><span class="tw">11月5日（四）維護後 ～</span><span class="kr">11월 5일(목) 점검 후 ~</span><br><span class="tw">2027年2月更新維護前</span><span class="kr">2027년 2월 업데이트 점검 전</span></td>
+<td><span class="tw">於[黃金哥布林的甜蜜商店]將「唉呀呀女神大人點數」</span><span class="kr">[황블이의 꿀 뚝뚝 상점]에서 &#x27;어이쿠 여신님 포인트&#x27;를</span><br><span class="tw">可兌換為「銅鐵哥布林的可疑點數」或「黃金哥布林的甜蜜點數」</span><span class="kr">&#x27;동블이의 수상한 포인트&#x27; 또는 &#x27;황블이의 꿀 뚝뚝 포인트&#x27;로 교환 가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">2027年2月更新維護</span><span class="kr">2027년 2월 업데이트 점검</span></td>
+<td><span class="tw">點數兌換功能結束，並將剩餘的「唉呀呀女神大人點數」</span><span class="kr">포인트 교환 기능 종료 및 잔여 &#x27;어이쿠 여신님 포인트&#x27;를</span><br><span class="tw">一律轉換為「銅鐵哥布林的可疑點數」</span><span class="kr">&#x27;동블이의 수상한 포인트&#x27;로 일괄 전환</span></td>
+</tr>
+</table></div>
+<p><span class="tw">• 2027年2月更新時，將一律轉換為「銅鐵哥布林的可疑點數」，</span><span class="kr">• 2027년 2월 업데이트 시 &#x27;동블이의 수상한 포인트&#x27;로 일괄 전환되오니,</span></p>
+<p><span class="tw">希望兌換為「黃金哥布林的甜蜜點數」的勇者，請務必於兌換期間內使用。</span><span class="kr">&#x27;황블이의 꿀 뚝뚝 포인트&#x27;로 교환읠 희망하시는 용자님께선 반드시 교환 기간 내 이용해주시기 바랍니다.</span></p>
+<h3><span class="tw">◆ 銅鐵哥布林商店變更</span><span class="kr">◆ 동블이 상점 변경</span></h3>
+<p><span class="tw">• 銅鐵哥布林的可疑點數商店的商品將進行變更及新增。</span><span class="kr">• 동블이의 수상한 포인트 상점 구성품이 변경 및 추가됩니다.</span></p>
+<p><span class="tw">• 銅鐵哥布林的寶物分頁</span><span class="kr">• 동블이의 보물 탭</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">販售道具</span><span class="kr">판매 아이템</span></th>
+<th><span class="tw">數量</span><span class="kr">수량</span></th>
+<th><span class="tw">所需點數</span><span class="kr">필요 포인트</span></th>
+<th><span class="tw">購買限制</span><span class="kr">구매 제한</span></th>
+</tr>
+<tr>
+<td><span class="tw">骨龍燃燒的心臟(無法交易)</span><span class="kr">고룡의 불타는 심장(거래 불가)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>30,000</td>
+<td><span class="tw">每世界30天1次</span><span class="kr">월드당 30일 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">自然進化加速器</span><span class="kr">자연 진화 가속기</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>15,000</td>
+<td><span class="tw">每世界30天1次</span><span class="kr">월드당 30일 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">骨龍的骨片</span><span class="kr">고룡의 골편</span></td>
+<td><span class="tw">20個</span><span class="kr">20개</span></td>
+<td>1,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">裝滿未知氣息的瓶子</span><span class="kr">미지의 기운이 담긴 병</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>3,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">變異型龍玉進化器 ver.3(無法交易)</span><span class="kr">변이형 용옥 진화기 ver.3(거래불가)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>7,500</td>
+<td><span class="tw">每世界每週2次</span><span class="kr">월드 주간 2회</span></td>
+</tr>
+<tr>
+<td><span class="tw">時間寶石選擇袋</span><span class="kr">시간의 보석 선택 주머니</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>3,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">潛在的千人隊長印章</span><span class="kr">잠재된 천인대장의 인장</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>25,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">潛在的黑色戒指懲罰者印章</span><span class="kr">잠재된 검은반지 퍼니셔의 인장</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>20,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">潛在的恩加託 軍團長印章</span><span class="kr">잠재된 엔가타 군단장의 인장</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>15,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">潛在的百人隊長印章</span><span class="kr">잠재된 백인대장의 인장</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>10,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">永恆的盼望的碎片</span><span class="kr">영원한 갈망의 파편</span></td>
+<td><span class="tw">5個</span><span class="kr">5개</span></td>
+<td>2,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">永劫的渴望碎片</span><span class="kr">영겁의 갈망의 파편</span></td>
+<td><span class="tw">5個</span><span class="kr">5개</span></td>
+<td>2,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">夢之盡頭 主武器/副武器(無法交易)</span><span class="kr">꿈의 끝 주무기/보조무기(거래불가)</span><br><span class="tw">選擇袋</span><span class="kr">선택 주머니</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>2,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">巴武帕被破壞的喇叭</span><span class="kr">바오파의 파괴된 나팔</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>1,000</td>
+<td><span class="tw">每世界每週5次</span><span class="kr">월드 주간 5회</span></td>
+</tr>
+<tr>
+<td><span class="tw">汶巴拉被破壞的槌子</span><span class="kr">움발라의 파괴된 망치</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>1,000</td>
+<td><span class="tw">每世界每週5次</span><span class="kr">월드 주간 5회</span></td>
+</tr>
+<tr>
+<td><span class="tw">梅盧卡被破壞的靈魂</span><span class="kr">멜루카의 파괴된 영혼</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>1,000</td>
+<td><span class="tw">每世界每週5次</span><span class="kr">월드 주간 5회</span></td>
+</tr>
+<tr>
+<td><span class="tw">蒂塔尼溫被破壞的能量</span><span class="kr">티타니온의 파괴된 에너지</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>1,000</td>
+<td><span class="tw">每世界每週5次</span><span class="kr">월드 주간 5회</span></td>
+</tr>
+<tr>
+<td><span class="tw">墮落的黑龍記憶</span><span class="kr">타락한 흑룡의 기억</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+</table></div>
+<p><span class="tw">• 銅鐵哥布林的貴重物品分頁</span><span class="kr">• 동블이의 귀중품 탭</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">販售道具</span><span class="kr">판매 아이템</span></th>
+<th><span class="tw">數量</span><span class="kr">수량</span></th>
+<th><span class="tw">所需點數</span><span class="kr">필요 포인트</span></th>
+<th><span class="tw">購買限制</span><span class="kr">구매 제한</span></th>
+</tr>
+<tr>
+<td><span class="tw">扎根盼望的碎片</span><span class="kr">뿌리 깊은 갈망의 파편</span></td>
+<td><span class="tw">20個</span><span class="kr">20개</span></td>
+<td>2,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">扭曲的根</span><span class="kr">뒤틀린 뿌리</span></td>
+<td><span class="tw">10個</span><span class="kr">10개</span></td>
+<td>2,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">形狀不明的古代根源</span><span class="kr">모양을 알 수 없는 고대인의 근원</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>5,000</td>
+<td><span class="tw">每世界每週2次</span><span class="kr">월드 주간 2회</span></td>
+</tr>
+<tr>
+<td><span class="tw">噩夢之邀請函</span><span class="kr">악몽의 초대장</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>3,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">龍鱗加工板</span><span class="kr">용 비늘 세공판</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>2,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">混濁的希望</span><span class="kr">탁한 희망</span></td>
+<td><span class="tw">20個</span><span class="kr">20개</span></td>
+<td>2,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">月蝕聖痕</span><span class="kr">월식의 성흔</span></td>
+<td><span class="tw">200個</span><span class="kr">200개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+<tr>
+<td><span class="tw">月蝕寶玉上古選擇袋子</span><span class="kr">월식 보옥 에이션트 선택 주머니</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>1,500</td>
+<td><span class="tw">每世界每週4次</span><span class="kr">월드 주간 4회</span></td>
+</tr>
+<tr>
+<td><span class="tw">月蝕龍玉傳奇選擇袋子</span><span class="kr">월식의 용옥 레전드 선택 주머니</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>500</td>
+<td><span class="tw">每世界每週10次</span><span class="kr">월드 주간 10회</span></td>
+</tr>
+<tr>
+<td><span class="tw">古代人的圖紙碎片</span><span class="kr">고대인의 도면 조각</span></td>
+<td><span class="tw">75個</span><span class="kr">75개</span></td>
+<td>500</td>
+<td><span class="tw">每世界每週5次</span><span class="kr">월드 주간 5회</span></td>
+</tr>
+<tr>
+<td><span class="tw">卓越的古代智慧</span><span class="kr">뛰어난 고대의 지혜</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>500</td>
+<td><span class="tw">每世界每週5次</span><span class="kr">월드 주간 5회</span></td>
+</tr>
+<tr>
+<td><span class="tw">金蓮寶</span><span class="kr">금련보</span></td>
+<td><span class="tw">500個</span><span class="kr">500개</span></td>
+<td>500</td>
+<td><span class="tw">每世界每週20次</span><span class="kr">월드 주간 20회</span></td>
+</tr>
+<tr>
+<td><span class="tw">次元的氣息</span><span class="kr">차원의 기운</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>2,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">引導之星</span><span class="kr">길잡이 별</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>1,000</td>
+<td><span class="tw">每世界每週2次</span><span class="kr">월드 주간 2회</span></td>
+</tr>
+<tr>
+<td><span class="tw">凝聚的次元的氣息</span><span class="kr">응축된 차원의 기운</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+<tr>
+<td><span class="tw">永恆的強化紋章(史詩) 隨機袋子</span><span class="kr">영원한 강화문장(에픽) 랜덤 주머니</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>500</td>
+<td><span class="tw">每世界每週2次</span><span class="kr">월드 주간 2회</span></td>
+</tr>
+<tr>
+<td><span class="tw">永恆的托利斯曼(2階段)選擇袋子</span><span class="kr">영원한 탈리스만(2단계) 선택 주머니</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>500</td>
+<td><span class="tw">每世界每週2次</span><span class="kr">월드 주간 2회</span></td>
+</tr>
+<tr>
+<td><span class="tw">四季寶石選擇袋</span><span class="kr">계절의 보석 선택 주머니</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>3,000</td>
+<td><span class="tw">每世界每週1次</span><span class="kr">월드 주간 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">次元的地圖碎片</span><span class="kr">차원의 지도 조각</span></td>
+<td><span class="tw">50個</span><span class="kr">50개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+<tr>
+<td><span class="tw">永恆的次元標誌</span><span class="kr">영원한 차원의 징표</span></td>
+<td><span class="tw">50個</span><span class="kr">50개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+</table></div>
+<p><span class="tw">• 銅鐵哥布林的雜物分頁</span><span class="kr">• 동블이의 잡동사니 탭</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">販售道具</span><span class="kr">판매 아이템</span></th>
+<th><span class="tw">數量</span><span class="kr">수량</span></th>
+<th><span class="tw">所需點數</span><span class="kr">필요 포인트</span></th>
+<th><span class="tw">購買限制</span><span class="kr">구매 제한</span></th>
+</tr>
+<tr>
+<td><span class="tw">高級石榴石</span><span class="kr">상급 가넷</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>500</td>
+<td><span class="tw">每世界每日1次</span><span class="kr">월드 일일 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">高級生命淨水</span><span class="kr">상급 생명의 정수</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>500</td>
+<td><span class="tw">每世界每日1次</span><span class="kr">월드 일일 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">伯剋霍‧亡靈‧布倫希爾德 材料袋</span><span class="kr">벌무브 재료 주머니</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>500</td>
+<td><span class="tw">每角色每日1次</span><span class="kr">캐릭터 일일 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">伯剋霍‧亡靈‧布倫希爾德 高級材料袋</span><span class="kr">벌무브 상급 재료 주머니</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>1,000</td>
+<td><span class="tw">每角色每日1次</span><span class="kr">캐릭터 일일 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">未知的古代飾品碎片</span><span class="kr">미지의 고대 액세서리 파편</span></td>
+<td><span class="tw">50個</span><span class="kr">50개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+<tr>
+<td><span class="tw">古代人知識</span><span class="kr">고대인의 지식</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+<tr>
+<td><span class="tw">古代人紋樣</span><span class="kr">고대인의 문양</span></td>
+<td><span class="tw">1,000個</span><span class="kr">1,000개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+<tr>
+<td><span class="tw">時空石[強風]</span><span class="kr">시공의 돌[강풍]</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>500</td>
+<td><span class="tw">每角色每日1次</span><span class="kr">캐릭터 일일 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">尊爵VIP兌換道具</span><span class="kr">프리미엄 VIP 쿠폰 아이템</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>2,000</td>
+<td><span class="tw">每角色30天1次</span><span class="kr">캐릭터당 30일 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">新手救星</span><span class="kr">쾌적한 프리미엄 혜택</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>100</td>
+<td><span class="tw">每角色30天1次</span><span class="kr">캐릭터당 30일 1회</span></td>
+</tr>
+<tr>
+<td><span class="tw">生命之古代頭盔碎片</span><span class="kr">생명의 고대 투구 파편</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+<tr>
+<td><span class="tw">東方之古代上衣碎片</span><span class="kr">동방의 고대 상의 파편</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+<tr>
+<td><span class="tw">拂曉之古代下裝碎片</span><span class="kr">여명의 고대 하의 파편</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+<tr>
+<td><span class="tw">叢林之古代手套碎片</span><span class="kr">정글의 고대 장갑 파편</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+<tr>
+<td><span class="tw">深淵之古代鞋子碎片</span><span class="kr">심연의 고대 신발 파편</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+<tr>
+<td><span class="tw">異世界的古代武器碎片</span><span class="kr">이세계의 고대 무기 파편</span></td>
+<td><span class="tw">50個</span><span class="kr">50개</span></td>
+<td>500</td>
+<td><span class="tw">無限制</span><span class="kr">제한 없음</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 新道具內容物</span><span class="kr">◆ 신규 아이템 구성품</span></h3>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">袋子</span><span class="kr">주머니</span></th>
+<th><span class="tw">內容物</span><span class="kr">구성품</span></th>
+<th><span class="tw">獲得數量</span><span class="kr">획득 수량</span></th>
+</tr>
+<tr>
+<td><span class="tw">時間寶石選擇袋</span><span class="kr">시간의 보석 선택 주머니</span></td>
+<td><span class="tw">黎明露光寶石</span><span class="kr">새벽의 이슬빛 보석</span></td>
+<td><span class="tw">5個</span><span class="kr">5개</span></td>
+</tr>
+<tr>
+<td><span class="tw">時間寶石選擇袋</span><span class="kr">시간의 보석 선택 주머니</span></td>
+<td><span class="tw">正午陽光寶石</span><span class="kr">정오의 태양빛 보석</span></td>
+<td><span class="tw">10個</span><span class="kr">10개</span></td>
+</tr>
+<tr>
+<td><span class="tw">時間寶石選擇袋</span><span class="kr">시간의 보석 선택 주머니</span></td>
+<td><span class="tw">黃昏晚霞寶石</span><span class="kr">황혼의 노을빛 보석</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+</tr>
+<tr>
+<td><span class="tw">時間寶石選擇袋</span><span class="kr">시간의 보석 선택 주머니</span></td>
+<td><span class="tw">午夜流星寶石</span><span class="kr">자정의 유성빛 보석</span></td>
+<td><span class="tw">200個</span><span class="kr">200개</span></td>
+</tr>
+<tr>
+<td><span class="tw">伯剋霍‧亡靈‧布倫希爾德 材料袋</span><span class="kr">벌무브 재료 주머니</span></td>
+<td><span class="tw">伯剋霍的心臟碎片</span><span class="kr">벌크홉의 심장 조각</span></td>
+<td><span class="tw">1,000個</span><span class="kr">1,000개</span></td>
+</tr>
+<tr>
+<td><span class="tw">伯剋霍‧亡靈‧布倫希爾德 材料袋</span><span class="kr">벌무브 재료 주머니</span></td>
+<td><span class="tw">亡靈的珠子碎片</span><span class="kr">무에르토스의 구슬 조각</span></td>
+<td><span class="tw">1,000個</span><span class="kr">1,000개</span></td>
+</tr>
+<tr>
+<td><span class="tw">伯剋霍‧亡靈‧布倫希爾德 材料袋</span><span class="kr">벌무브 재료 주머니</span></td>
+<td><span class="tw">布倫希爾德的冰晶碎片</span><span class="kr">브륀힐드의 얼음 조각</span></td>
+<td><span class="tw">1,000個</span><span class="kr">1,000개</span></td>
+</tr>
+<tr>
+<td><span class="tw">伯剋霍‧亡靈‧布倫希爾德 高級材料袋</span><span class="kr">벌무브 상급 재료 주머니</span></td>
+<td><span class="tw">伯剋霍之力</span><span class="kr">벌크홉의 힘</span></td>
+<td><span class="tw">5個</span><span class="kr">5개</span></td>
+</tr>
+<tr>
+<td><span class="tw">伯剋霍‧亡靈‧布倫希爾德 高級材料袋</span><span class="kr">벌무브 상급 재료 주머니</span></td>
+<td><span class="tw">亡靈的魔力</span><span class="kr">무에르토스의 마력</span></td>
+<td><span class="tw">5個</span><span class="kr">5개</span></td>
+</tr>
+<tr>
+<td><span class="tw">伯剋霍‧亡靈‧布倫希爾德 高級材料袋</span><span class="kr">벌무브 상급 재료 주머니</span></td>
+<td><span class="tw">布倫希爾德的面具</span><span class="kr">브륀힐드의 가면</span></td>
+<td><span class="tw">5個</span><span class="kr">5개</span></td>
+</tr>
+</table></div>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">道具</span><span class="kr">아이템</span></th>
+<th><span class="tw">交易</span><span class="kr">거래</span></th>
+<th><span class="tw">伺服器倉庫</span><span class="kr">서버창고</span></th>
+</tr>
+<tr>
+<td><span class="tw">時間寶石選擇袋</span><span class="kr">시간의 보석 선택 주머니</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">伯剋霍‧亡靈‧布倫希爾德 材料袋</span><span class="kr">벌무브 재료 주머니</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">伯剋霍‧亡靈‧布倫希爾德 高級材料袋</span><span class="kr">벌무브 상급 재료 주머니</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 婚禮任務簡化</span><span class="kr">◆ 언약 퀘스트 간소화</span></h3>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="1000" height="690" style="flex:0 1 1000px" src="img2611/2026110219491537405.webp"></div>
+<h3><span class="tw">◆ 自動獲得古代的力量任務</span><span class="kr">◆ 고대의 힘 퀘스트 자동 획득</span></h3>
+<p><span class="tw">▶ 今後完成英雄技能任務時，將自動獲得古代的力量任務。</span><span class="kr">▶ 앞으로 영웅 스킬 퀘스트 완료 시 고대의 힘 퀘스트를 자동으로 획득합니다.</span></p>
+<h3><span class="tw">◆ 戰鬥修練場 怪物體力調升</span><span class="kr">◆ 전투 수련장 몬스터 체력 상향</span></h3>
+<p><span class="tw">▶ 已配合勇者們的實力，調升戰鬥修練場怪物的體力。敬請多加利用。</span><span class="kr">▶ 전투 수련장 몬스터의 체력을 용사님들의 강함에 맞추어 상향하였습니다. 많은 이용 부탁드립니다.</span></p>
+<h3><span class="tw">◆ 新增次元經驗值關卡</span><span class="kr">◆ 차원 경험치 스테이지 추가</span></h3>
+<p><span class="tw">• 通關方舟墜落地點關卡時，可獲得次元經驗值。</span><span class="kr">• 방주 추락 지점 스테이지 클리어 시 차원 경험치를 획득할 수 있습니다.</span></p></section>
+<section id="c4" class="pane"><h2><span class="tw">變更/追加 2</span><span class="kr">변경/추가 2</span></h2><p class="sub">聖誕夜哥淑箱子 / 神聖・墮落的壺</p><h3><span class="tw">◆ 聖誕夜哥淑箱子</span><span class="kr">◆ 크리스마스 이브 고숙이 상쟈</span></h3>
+<p><span class="tw">• 值此年末，新增聖誕夜哥淑箱子。</span><span class="kr">• 연말을 맞아 크리스마스 이브 고숙이 상쟈가 추가됩니다.</span></p>
+<p><span class="tw">• 可使用陳年鑰匙1個開啟。</span><span class="kr">• 손때 묻은 열쇠 1개를 사용하여 개봉할 수 있습니다.</span></p>
+<p><span class="tw">• 獲得方式</span><span class="kr">• 획득 방법</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">獲得處</span><span class="kr">획득처</span></th>
+<th><span class="tw">獲得道具</span><span class="kr">획득 아이템</span></th>
+<th><span class="tw">數量</span><span class="kr">수량</span></th>
+</tr>
+<tr>
+<td><span class="tw">擊敗異界龍玉侵略者</span><span class="kr">이계의 용옥 침략자 처치</span></td>
+<td><span class="tw">聖誕夜哥淑箱子</span><span class="kr">크리스마스 이브 고숙이 상쟈</span></td>
+<td><span class="tw">3個</span><span class="kr">3개</span></td>
+</tr>
+<tr>
+<td><span class="tw">擊敗稻香苑關卡安息處</span><span class="kr">도향원 스테이지 안식처 처치</span></td>
+<td><span class="tw">聖誕夜哥淑箱子</span><span class="kr">크리스마스 이브 고숙이 상쟈</span></td>
+<td><span class="tw">5個或15個</span><span class="kr">5개 또는 15개</span></td>
+</tr>
+</table></div>
+<p><span class="tw">• 開啟箱子後，可獲得以下內容物中的其中1種。</span><span class="kr">• 상자를 열면 아래 구성품 중 1종을 획득할 수 있습니다.</span></p>
+<p><span class="tw">• 依據韓國《遊戲產業振興法》，公開的機率為四捨五入（或無條件捨去）後的數值，總和可能不等於100%。</span><span class="kr">• 공개된 확률은 게임산업진흥에 관한 법률에 따라 반올림 (또는 내림)한 값으로 총 합산이 100%가 아닐 수 있습니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">道具名稱</span><span class="kr">아이템명</span></th>
+<th><span class="tw">數量</span><span class="kr">수량</span></th>
+<th><span class="tw">獲得機率</span><span class="kr">획득 확률</span></th>
+<th><span class="tw">交易</span><span class="kr">거래</span></th>
+</tr>
+<tr>
+<td><span class="tw">神聖/墮落的壺 選擇袋</span><span class="kr">신성/타락의 항아리 선택 주머니</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0200%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">永恆的托利斯曼(5階段)(活動)選擇袋子</span><span class="kr">영원한 탈리스만(5단계)(이벤트) 선택 주머니</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0050%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">艾奥娜飾品選擇箱子</span><span class="kr">아이오나 악세서리 선택 상자</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0300%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">[20% 機率] 冰凝槌子 (~+4)</span><span class="kr">[20% 확률] 차가움이 서린 망치 (~+4강)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.7500%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">[20% 機率] 冰凝槌子 (+5~+9)</span><span class="kr">[20% 확률] 차가움이 서린 망치 (+5~+9강)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.5000%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">金光誓言</span><span class="kr">금빛 서약</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0700%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">無瑕之核</span><span class="kr">무결의 핵</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.8000%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">稱號：聖誕老人的好秘友</span><span class="kr">칭호 : 산타의 비밀친구</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>1.5000%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">稱號：騎著馴鹿到處跑的</span><span class="kr">칭호 : 순록을 타고 다니는</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>2.0000%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">稱號：神奇哥淑</span><span class="kr">칭호 : 갓고숙이</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0100%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">稱號：哥淑大法師</span><span class="kr">칭호 : 대고숙이</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0100%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">稱號：超級哥淑</span><span class="kr">칭호 : 초고숙이</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0200%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">永劫的變異型龍玉進化器</span><span class="kr">영겁의 변이형 용옥 진화기</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0300%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">永劫的異界變異型龍玉</span><span class="kr">영겁의 이계의 변이형 용옥</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>1.0000%</td>
+<td><span class="tw">封印時可交易</span><span class="kr">봉인 시 가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">永恆的托利斯曼(4階段) 選擇袋</span><span class="kr">영원한 탈리스만(4단계) 선택 주머니</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.2000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">天界的碎塊</span><span class="kr">천계의 파편</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>6.5000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">天界的碎塊</span><span class="kr">천계의 파편</span></td>
+<td><span class="tw">2個</span><span class="kr">2개</span></td>
+<td>3.2500%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">胸針鉤環</span><span class="kr">브로치 고리</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>10.0000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">胸針鉤環</span><span class="kr">브로치 고리</span></td>
+<td><span class="tw">2個</span><span class="kr">2개</span></td>
+<td>5.0000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">滿潮迴廊地圖</span><span class="kr">만조의 회랑 지도</span></td>
+<td><span class="tw">3個</span><span class="kr">3개</span></td>
+<td>6.0000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">滿潮迴廊地圖袋子(可交易)</span><span class="kr">만조의 회랑 지도 주머니(거래 가능)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>1.0000%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">高級盼望的碎片</span><span class="kr">상급 갈망의 파편</span></td>
+<td><span class="tw">40個</span><span class="kr">40개</span></td>
+<td>1.5000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">永劫的渴望碎片</span><span class="kr">영겁의 갈망의 파편</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>15.0000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">永劫的渴望碎片</span><span class="kr">영겁의 갈망의 파편</span></td>
+<td><span class="tw">3個</span><span class="kr">3개</span></td>
+<td>3.0000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">秩序代幣</span><span class="kr">질서의 토큰</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>10.0000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">秩序代幣</span><span class="kr">질서의 토큰</span></td>
+<td><span class="tw">5個</span><span class="kr">5개</span></td>
+<td>2.0000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">古代人的圖紙</span><span class="kr">고대인의 도면</span></td>
+<td><span class="tw">10個</span><span class="kr">10개</span></td>
+<td>10.0000%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">卓越的古代智慧</span><span class="kr">뛰어난 고대의 지혜</span></td>
+<td><span class="tw">500個</span><span class="kr">500개</span></td>
+<td>3.0000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">混濁的希望</span><span class="kr">탁한 희망</span></td>
+<td><span class="tw">10個</span><span class="kr">10개</span></td>
+<td>2.5000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">混濁的希望</span><span class="kr">탁한 희망</span></td>
+<td><span class="tw">20個</span><span class="kr">20개</span></td>
+<td>2.0000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">龍鱗加工板</span><span class="kr">용 비늘 세공판</span></td>
+<td><span class="tw">3個</span><span class="kr">3개</span></td>
+<td>1.0000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">龍鱗加工板</span><span class="kr">용 비늘 세공판</span></td>
+<td><span class="tw">5個</span><span class="kr">5개</span></td>
+<td>0.6600%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">扭曲的根</span><span class="kr">뒤틀린 뿌리</span></td>
+<td><span class="tw">20個</span><span class="kr">20개</span></td>
+<td>1.0000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">扭曲的根</span><span class="kr">뒤틀린 뿌리</span></td>
+<td><span class="tw">50個</span><span class="kr">50개</span></td>
+<td>0.4000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">受到祝福的金色森嚴的強化紋章</span><span class="kr">축복받은 금빛 철벽의 강화문장</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0020%</td>
+<td><span class="tw">封印時可交易</span><span class="kr">봉인 시 가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">受到祝福的金色帳幕的強化紋章</span><span class="kr">축복받은 금빛 장막의 강화문장</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0020%</td>
+<td><span class="tw">封印時可交易</span><span class="kr">봉인 시 가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">受到祝福的金色致命的強化紋章</span><span class="kr">축복받은 금빛 치명의 강화문장</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0020%</td>
+<td><span class="tw">封印時可交易</span><span class="kr">봉인 시 가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">受到祝福的金色極限的強化紋章</span><span class="kr">축복받은 금빛 한계의 강화문장</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0020%</td>
+<td><span class="tw">封印時可交易</span><span class="kr">봉인 시 가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">裝在瓶中的石化者</span><span class="kr">병에 담긴 석화자</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.4000%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">祝福的黑龍的古代元素特殊托利斯曼袋子</span><span class="kr">축복받은 흑룡의 고대원소 특수 탈리스만 주머니</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0010%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+<tr>
+<td><span class="tw">變形進化加速器</span><span class="kr">변형 진화 가속기</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0080%</td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">凝聚骨龍力量的防具強化鎚 (+14)</span><span class="kr">고룡의 힘이 깃든 방어구 강화 망치 (+14강)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0010%</td>
+<td><span class="tw">封印時可交易</span><span class="kr">봉인 시 가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">凝聚骨龍力量的武器強化鎚 (+14)</span><span class="kr">고룡의 힘이 깃든 무기 강화 망치 (+14강)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0010%</td>
+<td><span class="tw">封印時可交易</span><span class="kr">봉인 시 가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">受祝福的杰倫特的成長</span><span class="kr">축복받은 제레인트의 성장</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>0.0010%</td>
+<td><span class="tw">封印時可交易</span><span class="kr">봉인 시 가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">哥淑幣</span><span class="kr">고숙이 코인</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>8.8250%</td>
+<td><span class="tw">不可</span><span class="kr">불가</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 新稱號</span><span class="kr">◆ 신규 칭호</span></h3>
+<p><span class="tw">• 可從聖誕夜哥淑箱子獲得2種新的替代稱號。</span><span class="kr">• 크리스마스 이브 고숙이 상쟈에서 신규 커버 칭호 2종을 획득할 수 있습니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">稱號種類</span><span class="kr">칭호 종류</span></th>
+<th><span class="tw">稱號名稱</span><span class="kr">칭호명</span></th>
+<th><span class="tw">稱號道具交易</span><span class="kr">칭호 아이템 거래</span></th>
+</tr>
+<tr>
+<td><span class="tw">替代稱號</span><span class="kr">커버 칭호</span></td>
+<td><span class="tw">聖誕老人的好秘友</span><span class="kr">산타의 비밀친구</span></td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+<tr>
+<td><span class="tw">替代稱號</span><span class="kr">커버 칭호</span></td>
+<td><span class="tw">騎著馴鹿到處跑的</span><span class="kr">순록을 타고 다니는</span></td>
+<td><span class="tw">可</span><span class="kr">가능</span></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 新增神聖/墮落的壺</span><span class="kr">◆ 신성/타락의 항아리 추가</span></h3>
+<p><span class="tw">• 新增可變更符文道具選項範圍的神聖/墮落的壺。</span><span class="kr">• 룬 아이템의 옵션 범위를 변경하는 신성/타락의 항아리가 신규 추가 되었습니다.</span></p>
+<p><span class="tw">• 使用墮落的壺時，凍結符文（第10階段確定）（上古）等級的第2個選項可出現的選項，將變更為與第1個選項的技能範圍相同。</span><span class="kr">• 타락의 항아리 사용 시 얼어붙은 룬(10단계 확정)(에이션트) 등급의 2번째 옵션의 등장 옵션이 1번째 옵션의 스킬 범위와 동일하게 변경됩니다.</span></p>
+<p><span class="tw">• 使用神聖的壺時，凍結符文（第10階段確定）（上古）等級的第3個選項可出現的選項，將變更為與第1個選項的技能範圍相同。</span><span class="kr">• 신성의 항아리 사용 시 얼어붙은 룬(10단계 확정)(에이션트) 등급의 3번째 옵션의 등장 옵션이 1번째 옵션의 스킬 범위와 동일하게 변경됩니다.</span></p>
+<p><span class="tw">• 第1個選項的技能範圍（各2轉職業指定技能）</span><span class="kr">• 1번째 옵션 스킬 범위(2차 전직 별 지정 스킬)</span></p>
+<p><span class="tw">• 職業精通3技能</span><span class="kr">• 클래스 마스터리3 스킬</span></p>
+<p><span class="tw">• 終極技能</span><span class="kr">• 궁극기 스킬</span></p>
+<p><span class="tw">• 2轉50等 EX技能</span><span class="kr">• 2차 50제 EX 스킬</span></p>
+<p><span class="tw">• 主力技能</span><span class="kr">• 주력 스킬</span></p>
+<p><span class="tw">• 輔助技能</span><span class="kr">• 보조 스킬</span></p>
+<p><span class="tw">• 技能最終傷害增加效果範圍</span><span class="kr">• 스킬 파이널데미지 증가 효과 범위</span></p>
+<p>• 182% ~ 257%</p>
+<p><span class="tw">• 使用墮落的壺時，原符文的第1個、第3個選項將會保留。</span><span class="kr">• 타락의 항아리 사용 시 기존 룬의 1번째, 3번째 옵션은 유지됩니다.</span></p>
+<p><span class="tw">• 使用神聖的壺時，原符文的第1個、第2個選項將會保留。</span><span class="kr">• 신성의 항아리 사용 시 기존 룬의 1번째, 2번째 옵션은 유지됩니다.</span></p>
+<p><span class="tw">• 神聖/墮落的壺僅可用於上古等級、第10階段確定的凍結符文。</span><span class="kr">• 신성/타락의 항아리는 에이션트 등급, 10단계 확정, 얼어붙은 룬에만 사용이 가능합니다.</span></p>
+<p><span class="tw">• 可於使用墮落的壺後再使用神聖的壺／使用神聖的壺後再使用墮落的壺。</span><span class="kr">• 타락의 항아리 사용 후 신성의 항아리 사용 / 신성의 항아리 사용 후 타락의 항아리 사용이 가능합니다.</span></p>
+<p><span class="tw">• 使用神聖/墮落的壺後，對象道具的方舟之力使用費用將會改變。</span><span class="kr">• 신성/타락의 항아리 사용 후 대상 아이템의 방주의 힘 사용 비용이 변경됩니다.</span></p>
+<p><span class="tw">• 神聖/墮落的壺可使用伺服器倉庫。</span><span class="kr">• 신성/타락의 항아리는 서버 창고 이용이 가능합니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="785" height="685" style="flex:0 1 785px" src="img2611/202611030028581425.webp"></div>
+<h3><span class="tw">◆ 神聖/墮落的壺 製作</span><span class="kr">◆ 신성/타락의 항아리 제작</span></h3>
+<p><span class="tw">• 可於鐵匠 – [鐵匠舖交易] – [道具製作] – [符文/根源] – [符文] – [壺] 中製作。</span><span class="kr">• 대장장이 – [대장간 거래] – [아이템 제작] – [룬, 근원] – [룬] – [항아리]에서 제작이 가능합니다.</span></p>
+<p><span class="tw">• 製作神聖/墮落的壺需要天界的碎塊100個與10萬金幣。</span><span class="kr">• 신성/타락의 항아리 제작을 위해서는 천계의 파편 100개와 10만 골드가 필요합니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="822" height="576" style="flex:0 1 822px" src="img2611/202611021950472208.webp"></div></section>
+<section id="c5" class="pane"><h2><span class="tw">角色平衡</span><span class="kr">캐릭터 밸런스</span></h2><h3><span class="tw">◆ 炮擊之星</span><span class="kr">◆ 슈팅스타</span></h3>
+<p><span class="tw">配合[超越] 夢幻龍玉的更新，為了讓龍玉對象技能火砲衝擊波在使用EX時的體驗不受影響，</span><span class="kr">[초월] 몽환의 용옥 업데이트에 맞춰서 용옥 대상스킬인 캐논 블래스터를 EX 의 사용 경험에 패널티가 없도록 하기 위하여</span></p>
+<p><span class="tw">將火砲衝擊波配置為EX技能，並將乒乓連擊配置為覺醒技能。</span><span class="kr">캐논 블래스터를 EX 스킬로 배치하고, 핑퐁 밤을 각성 스킬로 배치하였습니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="408" height="461" style="flex:0 1 408px" src="img2611/2026110219512342390.webp"><img loading="lazy" decoding="async" alt="" width="295" height="264" style="flex:0 1 295px" src="img2611/2026110219513392787.webp"></div>
+<h4><span class="tw">▷ 乒乓連擊EX</span><span class="kr">▷ 핑퐁 밤 EX</span></h4>
+<p><span class="tw">• 該技能已移除。</span><span class="kr">• 스킬이 제거되었습니다.</span></p>
+<p><span class="tw">• 「乒乓連擊」改為在覺醒習得階段強化，而非EX習得階段。</span><span class="kr">• ‘핑퐁 밤’은 EX 습득 단계 가 아닌 각성 습득 단계에서 강화됩니다.</span></p>
+<h4><span class="tw">▷ [覺醒] 火砲衝擊波</span><span class="kr">▷ [각성] 캐논 블래스터</span></h4>
+<p><span class="tw">• 該技能已移除。</span><span class="kr">• 스킬이 제거되었습니다.</span></p>
+<p><span class="tw">• 「火砲衝擊波」改為在EX習得階段強化，而非覺醒習得階段。</span><span class="kr">• ‘캐논 블래스터＇는 각성 습득 단계가 아닌 EX 습득 단계에서 강화됩니다.</span></p>
+<h4><span class="tw">▷ 火砲衝擊波</span><span class="kr">▷ 캐논 블래스터</span></h4>
+<p><span class="tw">• 冷卻時間變更為最多可儲存2次。</span><span class="kr">• 재사용 대기시간이 2회까지 저장되도록 변경되었습니다.</span></p>
+<h4><span class="tw">▷ 火砲衝擊波EX</span><span class="kr">▷ 캐논 블래스터 EX</span></h4>
+<p><span class="tw">• 已新增該技能。</span><span class="kr">• 스킬이 추가되었습니다.</span></p>
+<p><span class="tw">• 使用技能時獲得英雄格線。</span><span class="kr">• 스킬 사용 시 영웅 게이지를 획득합니다.</span></p>
+<p><span class="tw">• 效果與原有的「[覺醒] 火砲衝擊波」相同。</span><span class="kr">• 효과는 기존 ‘[각성] 캐논 블래스터’와 동일하게 적용됩니다.</span></p>
+<p><span class="tw">• 以[火砲衝擊波]設置的砲彈會再爆炸一次。</span><span class="kr">• [캐논 블래스터]로 설치된 포탄이 한 번 더 폭발한다.</span></p>
+<p><span class="tw">追加爆炸傷害：火砲衝擊波的100%</span><span class="kr">추가 폭발 대미지 : 캐논 블래스터의 100%</span></p>
+<h4><span class="tw">▷ [覺醒被動] 乒乓連擊</span><span class="kr">▷ [각성패시브] 핑퐁 밤</span></h4>
+<p><span class="tw">• 已新增該技能。</span><span class="kr">• 스킬이 추가되었습니다.</span></p>
+<p><span class="tw">• 不再獲得英雄格線。</span><span class="kr">• 더 이상 영웅 게이지를 획득하지 않습니다.</span></p>
+<p><span class="tw">• 效果與原有的「乒乓連擊EX」相同。</span><span class="kr">• 효과는 기존 ‘핑퐁 밤 EX’와 동일하게 적용됩니다.</span></p>
+<p><span class="tw">• [乒乓連擊]的傷害、移動次數，以及每剩餘移動次數的追加傷害會提升。</span><span class="kr">• [핑퐁 밤]의 대미지와 이동 횟수, 남은 이동 횟수당 추가 대미지가 증가한다.</span></p>
+<p><span class="tw">傷害增加20%</span><span class="kr">대미지 20% 증가</span></p>
+<p><span class="tw">移動次數增加2次</span><span class="kr">이동 횟수 2회 증가</span></p>
+<p><span class="tw">每剩餘移動次數的追加傷害增加5%</span><span class="kr">남은 이동 횟수당 추가 대미지 5% 증가</span></p>
+<p><span class="tw">角色平衡 (PvP)</span><span class="kr">캐릭터 밸런스 (PvP)</span></p>
+<h3><span class="tw">◆ 炮擊之星</span><span class="kr">◆ 슈팅스타</span></h3>
+<h4><span class="tw">▷ 乒乓連擊EX</span><span class="kr">▷ 핑퐁 밤 EX</span></h4>
+<p><span class="tw">• 該技能已移除。</span><span class="kr">• 스킬이 제거되었습니다.</span></p>
+<p><span class="tw">• 「乒乓連擊」改為在覺醒習得階段強化，而非EX習得階段。</span><span class="kr">• ‘핑퐁 밤’은 EX 습득 단계 가 아닌 각성 습득 단계에서 강화됩니다.</span></p>
+<h4><span class="tw">▷ [覺醒] 火砲衝擊波</span><span class="kr">▷ [각성] 캐논 블래스터</span></h4>
+<p><span class="tw">• 該技能已移除。</span><span class="kr">• 스킬이 제거되었습니다.</span></p>
+<p><span class="tw">• 「火砲衝擊波」改為在EX習得階段強化，而非覺醒習得階段。</span><span class="kr">• ‘캐논 블래스터＇는 각성 습득 단계가 아닌 EX 습득 단계에서 강화됩니다.</span></p>
+<h4><span class="tw">▷ 火砲衝擊波</span><span class="kr">▷ 캐논 블래스터</span></h4>
+<p><span class="tw">• 冷卻時間變更為最多可儲存2次。</span><span class="kr">• 재사용 대기시간이 2회까지 저장되도록 변경되었습니다.</span></p>
+<h4><span class="tw">▷ 火砲衝擊波EX</span><span class="kr">▷ 캐논 블래스터 EX</span></h4>
+<p><span class="tw">• 已新增該技能。</span><span class="kr">• 스킬이 추가되었습니다.</span></p>
+<p><span class="tw">• 效果與原有的「[覺醒] 火砲衝擊波」相同。</span><span class="kr">• 효과는 기존 ‘[각성] 캐논 블래스터’와 동일하게 적용됩니다.</span></p>
+<p><span class="tw">• 以[火砲衝擊波]設置的砲彈會再爆炸一次。</span><span class="kr">• [캐논 블래스터]로 설치된 포탄이 한 번 더 폭발한다.</span></p>
+<p><span class="tw">追加爆炸傷害：火砲衝擊波的30%</span><span class="kr">추가 폭발 대미지 : 캐논 블래스터의 30%</span></p>
+<h4><span class="tw">▷ [覺醒被動] 乒乓連擊</span><span class="kr">▷ [각성패시브] 핑퐁 밤</span></h4>
+<p><span class="tw">• 已新增該技能。</span><span class="kr">• 스킬이 추가되었습니다.</span></p>
+<p><span class="tw">• 效果與原有的「乒乓連擊EX」相同。</span><span class="kr">• 효과는 기존 ‘핑퐁 밤 EX’와 동일하게 적용됩니다.</span></p>
+<p><span class="tw">• [乒乓連擊]的傷害、移動次數，以及每剩餘移動次數的追加傷害會提升。</span><span class="kr">• [핑퐁 밤]의 대미지와 이동 횟수, 남은 이동 횟수당 추가 대미지가 증가한다.</span></p>
+<p><span class="tw">傷害增加20%</span><span class="kr">대미지 20% 증가</span></p>
+<p><span class="tw">移動次數增加1次</span><span class="kr">이동 횟수 1회 증가</span></p>
+<p><span class="tw">每剩餘移動次數的追加傷害增加2%</span><span class="kr">남은 이동 횟수당 추가 대미지 2% 증가</span></p></section>
+<section id="c6" class="pane"><h2><span class="tw">活動 EVENT</span><span class="kr">EVENT</span></h2><p class="sub">11月簽到活動 / 黃金哥布林PASS獎勵 / 強化的阿堤依亞潘朵拉盒子 / 海釣 / 落葉紛飛特別任務 / 其他</p><h3><span class="tw">◆ 11月簽到活動</span><span class="kr">◆ 11월 출석 이벤트</span></h3>
+<p><span class="tw">• 自更新維護後至下次更新前，可依累計天數領取對應的累計獎勵作為簽到獎勵。</span><span class="kr">• 업데이트 점검 후부터 다음 업데이트 전까지 누적 일차에 맞는 누적 보상을 출석 보상으로 받습니다.</span></p>
+<p><span class="tw">• 第28天簽到之後，可重複獲得第28天的獎勵。</span><span class="kr">• 28일차 출석 이후 부터는 28일차 보상을 반복 획득 할 수 있습니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">累計獎勵</span><span class="kr">누적 보상</span></th>
+<th><span class="tw">獎勵數量</span><span class="kr">보상 수량</span></th>
+<th><span class="tw">累計天數</span><span class="kr">누적 일차</span></th>
+</tr>
+<tr>
+<td><span class="tw">時空石 強風 (1天)</span><span class="kr">시공의 돌 강풍 (1일)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>1</td>
+</tr>
+<tr>
+<td><span class="tw">胸針鉤環</span><span class="kr">브로치 고리</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>2</td>
+</tr>
+<tr>
+<td><span class="tw">疲勞恢復劑 1500 (1天)</span><span class="kr">피로회복제 1500 (1일)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>3</td>
+</tr>
+<tr>
+<td><span class="tw">意志的碎片 (10天)</span><span class="kr">의지의 파편 (10일)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>4</td>
+</tr>
+<tr>
+<td><span class="tw">用龍火烤的雞蛋糕</span><span class="kr">드래곤 불길로 구운 케이크</span></td>
+<td><span class="tw">2個</span><span class="kr">2개</span></td>
+<td>5</td>
+</tr>
+<tr>
+<td><span class="tw">卓越的古代智慧</span><span class="kr">뛰어난 고대의 지혜</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>6</td>
+</tr>
+<tr>
+<td><span class="tw">失去光芒的摯友星</span><span class="kr">빛을 잃은 단짝별</span></td>
+<td><span class="tw">40個</span><span class="kr">40개</span></td>
+<td>7</td>
+</tr>
+<tr>
+<td><span class="tw">次元的骰子</span><span class="kr">차원의 주사위</span></td>
+<td><span class="tw">3個</span><span class="kr">3개</span></td>
+<td>8</td>
+</tr>
+<tr>
+<td><span class="tw">高級盟約攻擊秘藥 (7天)</span><span class="kr">상급 맹약의 공격 비약 (7일)</span></td>
+<td><span class="tw">3個</span><span class="kr">3개</span></td>
+<td>9</td>
+</tr>
+<tr>
+<td><span class="tw">好感度隨機袋子</span><span class="kr">호감도 랜덤 주머니</span></td>
+<td><span class="tw">2個</span><span class="kr">2개</span></td>
+<td>10</td>
+</tr>
+<tr>
+<td><span class="tw">疲勞恢復劑 1500 (1天)</span><span class="kr">피로회복제 1500 (1일)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>11</td>
+</tr>
+<tr>
+<td><span class="tw">卓越的古代智慧</span><span class="kr">뛰어난 고대의 지혜</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>12</td>
+</tr>
+<tr>
+<td><span class="tw">次元的骰子</span><span class="kr">차원의 주사위</span></td>
+<td><span class="tw">5個</span><span class="kr">5개</span></td>
+<td>13</td>
+</tr>
+<tr>
+<td><span class="tw">失去光芒的摯友星</span><span class="kr">빛을 잃은 단짝별</span></td>
+<td><span class="tw">40個</span><span class="kr">40개</span></td>
+<td>14</td>
+</tr>
+<tr>
+<td><span class="tw">時空石 強風 (1天)</span><span class="kr">시공의 돌 강풍 (1일)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>15</td>
+</tr>
+<tr>
+<td><span class="tw">胸針鉤環</span><span class="kr">브로치 고리</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>16</td>
+</tr>
+<tr>
+<td><span class="tw">疲勞恢復劑 1500 (1天)</span><span class="kr">피로회복제 1500 (1일)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>17</td>
+</tr>
+<tr>
+<td><span class="tw">龍妹的寶石</span><span class="kr">드네걸의 보석</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>18</td>
+</tr>
+<tr>
+<td><span class="tw">用龍火烤的雞蛋糕</span><span class="kr">드래곤 불길로 구운 케이크</span></td>
+<td><span class="tw">2個</span><span class="kr">2개</span></td>
+<td>19</td>
+</tr>
+<tr>
+<td><span class="tw">卓越的古代智慧</span><span class="kr">뛰어난 고대의 지혜</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>20</td>
+</tr>
+<tr>
+<td><span class="tw">胸針鉤環</span><span class="kr">브로치 고리</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>21</td>
+</tr>
+<tr>
+<td><span class="tw">次元的骰子</span><span class="kr">차원의 주사위</span></td>
+<td><span class="tw">3個</span><span class="kr">3개</span></td>
+<td>22</td>
+</tr>
+<tr>
+<td><span class="tw">高級盟約攻擊秘藥 (7天)</span><span class="kr">상급 맹약의 공격 비약 (7일)</span></td>
+<td><span class="tw">3個</span><span class="kr">3개</span></td>
+<td>23</td>
+</tr>
+<tr>
+<td><span class="tw">本月稱號：感冒中的</span><span class="kr">이달의 칭호 : 감기 걸린</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>24</td>
+</tr>
+<tr>
+<td><span class="tw">疲勞恢復劑 1500 (1天)</span><span class="kr">피로회복제 1500 (1일)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>25</td>
+</tr>
+<tr>
+<td><span class="tw">卓越的古代智慧</span><span class="kr">뛰어난 고대의 지혜</span></td>
+<td><span class="tw">100個</span><span class="kr">100개</span></td>
+<td>26</td>
+</tr>
+<tr>
+<td><span class="tw">失去光芒的摯友星</span><span class="kr">빛을 잃은 단짝별</span></td>
+<td><span class="tw">40個</span><span class="kr">40개</span></td>
+<td>27</td>
+</tr>
+<tr>
+<td><span class="tw">疲勞恢復劑 1500 (1天)</span><span class="kr">피로회복제 1500 (1일)</span></td>
+<td><span class="tw">1個</span><span class="kr">1개</span></td>
+<td>28 ~</td>
+</tr>
+</table></div>
+<p><span class="tw">• 稱號：感冒中的</span><span class="kr">• 칭호 : 감기 걸린</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="136" height="45" style="flex:0 1 136px" src="img2611/2026110219525736526.webp"></div>
+<h3><span class="tw">◆ 黃金哥布林PASS 獎勵</span><span class="kr">◆ 황블이 패스 보상</span></h3>
+<p><span class="tw">• 更新時，現有黃金哥布林PASS的賽季將結束。</span><span class="kr">• 업데이트 시 기존 황블이 패스의 시즌이 종료됩니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">階段</span><span class="kr">단계</span></th>
+<th><span class="tw">各階段</span><span class="kr">단계별</span><br><span class="tw">所需點數</span><span class="kr">필요 포인트</span></th>
+<th><span class="tw">一般路線</span><span class="kr">일반 라인</span></th>
+<th><span class="tw">銅鐵哥布林PASS</span><span class="kr">동블이 패스</span></th>
+<th><span class="tw">黃金哥布林PASS</span><span class="kr">황블이 패스</span></th>
+</tr>
+<tr>
+<td>1</td>
+<td>1000</td>
+<td><span class="tw">沙漠氣息花苞 20個</span><span class="kr">모래 숨결 꽃망울 20개</span></td>
+<td><span class="tw">發光的勇士黃金 20個</span><span class="kr">빛나는 용자의 금화 20개</span></td>
+<td><span class="tw">悖論邊界箱子 5個</span><span class="kr">패러독스의 경계 상자 5개</span></td>
+</tr>
+<tr>
+<td>2</td>
+<td>1000</td>
+<td><span class="tw">沙漠氣息花苞 20個</span><span class="kr">모래 숨결 꽃망울 20개</span></td>
+<td><span class="tw">閃耀的黃金墨水 300個</span><span class="kr">반짝이는 황금 잉크 300개</span></td>
+<td><span class="tw">失去光芒的摯友星 500個</span><span class="kr">빛을 잃은 단짝별 500개</span></td>
+</tr>
+<tr>
+<td>3</td>
+<td>1000</td>
+<td><span class="tw">沙漠氣息花苞 20個</span><span class="kr">모래 숨결 꽃망울 20개</span></td>
+<td><span class="tw">銅鐵哥布林的可疑點數 (15000) 1個</span><span class="kr">동블이의 수상한 포인트 (15000) 1개</span></td>
+<td><span class="tw">騎在頭上的貓咪 1個</span><span class="kr">머리에 올라탄 고양이 1개</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td>1000</td>
+<td><span class="tw">沙漠氣息花苞 20個</span><span class="kr">모래 숨결 꽃망울 20개</span></td>
+<td><span class="tw">次元的石榴石 1000個</span><span class="kr">차원의 잔흔 1000개</span></td>
+<td><span class="tw">稱號：我就是傳說中的 1個</span><span class="kr">칭호 : 내가 바로 전설의 1개</span></td>
+</tr>
+<tr>
+<td>5</td>
+<td>1000</td>
+<td><span class="tw">龍妹的寶石 1個</span><span class="kr">드네걸의 보석(14일) 1개</span></td>
+<td><span class="tw">印記刻印裝置 5個</span><span class="kr">표식 새김 장치 5개</span></td>
+<td><span class="tw">黃金哥布林的甜蜜點數 (15000) 1個</span><span class="kr">황블이의 꿀 뚝뚝 포인트 (15000) 1개</span></td>
+</tr>
+<tr>
+<td>6</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">巢穴隊伍門票隨機袋子 2個</span><span class="kr">네스트 파티 입장권 랜덤 주머니 2개</span></td>
+<td><span class="tw">星之粉末球</span><span class="kr">아스트랄 파우더 볼</span><br><span class="tw">（無法交易（14天））5個</span><span class="kr">(거래불가(14일)) 5개</span></td>
+</tr>
+<tr>
+<td>7</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">[活動][古代] 升級技能</span><span class="kr">[이벤트][고대] 스킬 레벨업</span><br><span class="tw">紋章袋子 1個</span><span class="kr">문장 주머니 1개</span></td>
+<td><span class="tw">星之粉末球</span><span class="kr">아스트랄 파우더 볼</span><br><span class="tw">（無法交易（14天））5個</span><span class="kr">(거래불가(14일)) 5개</span></td>
+</tr>
+<tr>
+<td>8</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">次元的氣息 1個</span><span class="kr">차원의 기운 1개</span></td>
+<td><span class="tw">星之粉末球</span><span class="kr">아스트랄 파우더 볼</span><br><span class="tw">（無法交易（14天））5個</span><span class="kr">(거래불가(14일)) 5개</span></td>
+</tr>
+<tr>
+<td>9</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">破碎黃金的武器結晶 1000個</span><span class="kr">부서진 금사의 무기 결정 1000개</span></td>
+<td><span class="tw">雪白核心球</span><span class="kr">화이트 코어 볼</span><br><span class="tw">（無法交易（14天））10個</span><span class="kr">(거래불가(14일)) 10개</span></td>
+</tr>
+<tr>
+<td>10</td>
+<td>1000</td>
+<td><span class="tw">好感度隨機袋子 3個</span><span class="kr">호감도 랜덤 주머니 3개</span></td>
+<td><span class="tw">破碎黃金的防具結晶 1000個</span><span class="kr">부서진 금사의 방어구 결정 1000개</span></td>
+<td><span class="tw">傳奇寵物選擇箱子 2個</span><span class="kr">레전드 펫 선택 상자 2개</span></td>
+</tr>
+<tr>
+<td>11</td>
+<td>1000</td>
+<td><span class="tw">沙漠氣息花苞 30個</span><span class="kr">모래 숨결 꽃망울 30개</span></td>
+<td><span class="tw">閃耀的黃金墨水 300個</span><span class="kr">반짝이는 황금 잉크 300개</span></td>
+<td><span class="tw">裝載次元的威爾斯肯特胸針盒 (14天) 15個</span><span class="kr">차원을 담은 벨스커드 브로치 상자 (14일) 15개</span></td>
+</tr>
+<tr>
+<td>12</td>
+<td>1000</td>
+<td><span class="tw">沙漠氣息花苞 30個</span><span class="kr">모래 숨결 꽃망울 30개</span></td>
+<td><span class="tw">巢穴隊伍門票隨機袋子 3個</span><span class="kr">네스트 파티 입장권 랜덤 주머니 3개</span></td>
+<td><span class="tw">裝載次元的威爾斯肯特胸針盒 (14天) 15個</span><span class="kr">차원을 담은 벨스커드 브로치 상자 (14일) 15개</span></td>
+</tr>
+<tr>
+<td>13</td>
+<td>1000</td>
+<td><span class="tw">沙漠氣息花苞 30個</span><span class="kr">모래 숨결 꽃망울 30개</span></td>
+<td><span class="tw">沙漠氣息花苞 3000個</span><span class="kr">모래 숨결 꽃망울 3000개</span></td>
+<td><span class="tw">發光的勇士黃金 10個</span><span class="kr">빛나는 용자의 금화 10개</span></td>
+</tr>
+<tr>
+<td>14</td>
+<td>1000</td>
+<td><span class="tw">沙漠氣息花苞 30個</span><span class="kr">모래 숨결 꽃망울 30개</span></td>
+<td><span class="tw">崩壞的頭盔刻印禮物袋 5個</span><span class="kr">붕괴된 투구 각인 선물 주머니 5개</span></td>
+<td><span class="tw">杰倫特的成長挑戰箱 (14天)</span><span class="kr">제레인트의 성장 도전 상자 (14일)</span><br><span class="tw">10個</span><span class="kr">10개</span></td>
+</tr>
+<tr>
+<td>15</td>
+<td>1000</td>
+<td><span class="tw">巢穴組隊門票</span><span class="kr">네스트 파티 입장권</span><br><span class="tw">隨機袋子 1個</span><span class="kr">랜덤 주머니 1개</span></td>
+<td><span class="tw">卓越的古代智慧 300個</span><span class="kr">뛰어난 고대의 지혜 300개</span></td>
+<td><span class="tw">黃金哥布林的甜蜜點數 (15000) 1個</span><span class="kr">황블이의 꿀 뚝뚝 포인트 (15000) 1개</span></td>
+</tr>
+<tr>
+<td>16</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">崩壞的上衣刻印禮物袋 5個</span><span class="kr">붕괴된 상의 각인 선물 주머니 5개</span></td>
+<td><span class="tw">崩壞的頭盔刻印禮物袋 1個</span><span class="kr">붕괴된 투구 각인 선물 주머니 1개</span></td>
+</tr>
+<tr>
+<td>17</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">古代人的基石 300個</span><span class="kr">고대인의 초석 300개</span></td>
+<td><span class="tw">崩壞的頭盔刻印禮物袋 1個</span><span class="kr">붕괴된 투구 각인 선물 주머니 1개</span></td>
+</tr>
+<tr>
+<td>18</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">沙漠氣息花苞 4000個</span><span class="kr">모래 숨결 꽃망울 4000개</span></td>
+<td><span class="tw">崩壞的上衣刻印禮物袋 1個</span><span class="kr">붕괴된 상의 각인 선물 주머니 1개</span></td>
+</tr>
+<tr>
+<td>19</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">裝載次元的威爾斯肯特胸針盒</span><span class="kr">차원을 담은 벨스커드 브로치 상자</span><br><span class="tw">(14天) 10個</span><span class="kr">(14일) 10개</span></td>
+<td><span class="tw">崩壞的下裝刻印禮物袋 1個</span><span class="kr">붕괴된 하의 각인 선물 주머니 1개</span></td>
+</tr>
+<tr>
+<td>20</td>
+<td>1000</td>
+<td><span class="tw">卓越的古代智慧 200個</span><span class="kr">뛰어난 고대의 지혜 200개</span></td>
+<td><span class="tw">巢穴隊伍門票選擇袋子 1個</span><span class="kr">네스트 파티 입장권 선택 주머니 1개</span></td>
+<td><span class="tw">異界封存的娜溫胸針盒</span><span class="kr">이계에 잠긴 네르윈 브로치 상자</span><br><span class="tw">(14天) 15個</span><span class="kr">(14일) 15개</span></td>
+</tr>
+<tr>
+<td>21</td>
+<td>1000</td>
+<td><span class="tw">金蓮寶 500個</span><span class="kr">금련보 500개</span></td>
+<td><span class="tw">閃耀的黃金墨水 300個</span><span class="kr">반짝이는 황금 잉크 300개</span></td>
+<td><span class="tw">異界封存的娜溫胸針盒</span><span class="kr">이계에 잠긴 네르윈 브로치 상자</span><br><span class="tw">(14天) 15個</span><span class="kr">(14일) 15개</span></td>
+</tr>
+<tr>
+<td>22</td>
+<td>1000</td>
+<td><span class="tw">金蓮寶 500個</span><span class="kr">금련보 500개</span></td>
+<td><span class="tw">巢穴隊伍門票隨機袋子 2個</span><span class="kr">네스트 파티 입장권 랜덤 주머니 2개</span></td>
+<td><span class="tw">雪白核心球</span><span class="kr">화이트 코어 볼</span><br><span class="tw">（無法交易（14天））10個</span><span class="kr">(거래불가(14일)) 10개</span></td>
+</tr>
+<tr>
+<td>23</td>
+<td>1000</td>
+<td><span class="tw">金蓮寶 500個</span><span class="kr">금련보 500개</span></td>
+<td><span class="tw">巢穴隊伍門票選擇袋子 2個</span><span class="kr">네스트 파티 입장권 선택 주머니 2개</span></td>
+<td><span class="tw">發光的勇士黃金 10個</span><span class="kr">빛나는 용자의 금화 10개</span></td>
+</tr>
+<tr>
+<td>24</td>
+<td>1000</td>
+<td><span class="tw">金蓮寶 500個</span><span class="kr">금련보 500개</span></td>
+<td><span class="tw">異界封存的娜溫胸針盒</span><span class="kr">이계에 잠긴 네르윈 브로치 상자</span><br><span class="tw">(14天) 10個</span><span class="kr">(14일) 10개</span></td>
+<td><span class="tw">威爾斯肯特的責任挑戰箱</span><span class="kr">벨스커드의 책임 도전 상자</span><br><span class="tw">(14天) 10個</span><span class="kr">(14일) 10개</span></td>
+</tr>
+<tr>
+<td>25</td>
+<td>1000</td>
+<td><span class="tw">星之粉末球</span><span class="kr">아스트랄 파우더 볼</span><br><span class="tw">(14天) 5個</span><span class="kr">(14일) 5개</span></td>
+<td><span class="tw">印記刻印裝置 10個</span><span class="kr">표식 새김 장치 10개</span></td>
+<td><span class="tw">黃金哥布林的甜蜜點數 (15000) 1個</span><span class="kr">황블이의 꿀 뚝뚝 포인트 (15000) 1개</span></td>
+</tr>
+<tr>
+<td>26</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">古代人的基石 600個</span><span class="kr">고대인의 초석 600개</span></td>
+<td><span class="tw">星之粉末球</span><span class="kr">아스트랄 파우더 볼</span><br><span class="tw">（無法交易（14天））5個</span><span class="kr">(거래불가(14일)) 5개</span></td>
+</tr>
+<tr>
+<td>27</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">破碎黃金的武器結晶 1000個</span><span class="kr">부서진 금사의 무기 결정 1000개</span></td>
+<td><span class="tw">星之粉末球</span><span class="kr">아스트랄 파우더 볼</span><br><span class="tw">（無法交易（14天））5個</span><span class="kr">(거래불가(14일)) 5개</span></td>
+</tr>
+<tr>
+<td>28</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">銅鐵哥布林的可疑點數 (15000) 1個</span><span class="kr">동블이의 수상한 포인트 (15000) 1개</span></td>
+<td><span class="tw">星之粉末球</span><span class="kr">아스트랄 파우더 볼</span><br><span class="tw">（無法交易（14天））5個</span><span class="kr">(거래불가(14일)) 5개</span></td>
+</tr>
+<tr>
+<td>29</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">古代人的基石 600個</span><span class="kr">고대인의 초석 600개</span></td>
+<td><span class="tw">雪白核心球</span><span class="kr">화이트 코어 볼</span><br><span class="tw">（無法交易（14天））10個</span><span class="kr">(거래불가(14일)) 10개</span></td>
+</tr>
+<tr>
+<td>30</td>
+<td>1000</td>
+<td><span class="tw">次元龍玉袋子(活動)</span><span class="kr">차원의 용옥 주머니(이벤트)</span><br><span class="tw">1個</span><span class="kr">1개</span></td>
+<td><span class="tw">巢穴隊伍門票選擇袋子 1個</span><span class="kr">네스트 파티 입장권 선택 주머니 1개</span></td>
+<td><span class="tw">傳奇寵物選擇箱子 2個</span><span class="kr">레전드 펫 선택 상자 2개</span></td>
+</tr>
+<tr>
+<td>31</td>
+<td>1000</td>
+<td><span class="tw">失去光芒的摯友星 50個</span><span class="kr">빛을 잃은 단짝별 50개</span></td>
+<td><span class="tw">次元的氣息 1個</span><span class="kr">차원의 기운 1개</span></td>
+<td><span class="tw">裝載次元的威爾斯肯特胸針盒 (14天) 15個</span><span class="kr">차원을 담은 벨스커드 브로치 상자 (14일) 15개</span></td>
+</tr>
+<tr>
+<td>32</td>
+<td>1000</td>
+<td><span class="tw">失去光芒的摯友星 50個</span><span class="kr">빛을 잃은 단짝별 50개</span></td>
+<td><span class="tw">閃耀的黃金墨水 300個</span><span class="kr">반짝이는 황금 잉크 300개</span></td>
+<td><span class="tw">裝載次元的威爾斯肯特胸針盒 (14天) 15個</span><span class="kr">차원을 담은 벨스커드 브로치 상자 (14일) 15개</span></td>
+</tr>
+<tr>
+<td>33</td>
+<td>1000</td>
+<td><span class="tw">失去光芒的摯友星 50個</span><span class="kr">빛을 잃은 단짝별 50개</span></td>
+<td><span class="tw">黃金哥布林硬幣 2個</span><span class="kr">골든 고블 코인 2개</span></td>
+<td><span class="tw">發光的勇士黃金 10個</span><span class="kr">빛나는 용자의 금화 10개</span></td>
+</tr>
+<tr>
+<td>34</td>
+<td>1000</td>
+<td><span class="tw">失去光芒的摯友星 50個</span><span class="kr">빛을 잃은 단짝별 50개</span></td>
+<td><span class="tw">破碎黃金的武器結晶 1100個</span><span class="kr">부서진 금사의 무기 결정 1100개</span></td>
+<td><span class="tw">信念的泰拉瑪伊胸針箱子</span><span class="kr">신념의 테라마이 브로치 상자</span><br><span class="tw">(14天) 10個</span><span class="kr">(14일) 10개</span></td>
+</tr>
+<tr>
+<td>35</td>
+<td>1000</td>
+<td><span class="tw">巢穴組隊門票</span><span class="kr">네스트 파티 입장권</span><br><span class="tw">隨機袋子 1個</span><span class="kr">랜덤 주머니 1개</span></td>
+<td><span class="tw">卓越的古代智慧 300個</span><span class="kr">뛰어난 고대의 지혜 300개</span></td>
+<td><span class="tw">黃金哥布林的甜蜜點數 (15000) 1個</span><span class="kr">황블이의 꿀 뚝뚝 포인트 (15000) 1개</span></td>
+</tr>
+<tr>
+<td>36</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">次元的氣息 1個</span><span class="kr">차원의 기운 1개</span></td>
+<td><span class="tw">崩壞的頭盔刻印禮物袋 1個</span><span class="kr">붕괴된 투구 각인 선물 주머니 1개</span></td>
+</tr>
+<tr>
+<td>37</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">星之粉末球</span><span class="kr">아스트랄 파우더 볼</span><br><span class="tw">（無法交易（14天））5個</span><span class="kr">(거래불가(14일)) 5개</span></td>
+<td><span class="tw">崩壞的頭盔刻印禮物袋 1個</span><span class="kr">붕괴된 투구 각인 선물 주머니 1개</span></td>
+</tr>
+<tr>
+<td>38</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">卓越的古代智慧 300個</span><span class="kr">뛰어난 고대의 지혜 300개</span></td>
+<td><span class="tw">崩壞的手套刻印禮物袋 1個</span><span class="kr">붕괴된 장갑 각인 선물 주머니 1개</span></td>
+</tr>
+<tr>
+<td>39</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">雪白核心球</span><span class="kr">화이트 코어 볼</span><br><span class="tw">（無法交易（14天））5個</span><span class="kr">(거래불가(14일)) 5개</span></td>
+<td><span class="tw">崩壞的鞋子刻印禮物袋 1個</span><span class="kr">붕괴된 신발 각인 선물 주머니 1개</span></td>
+</tr>
+<tr>
+<td>40</td>
+<td>1000</td>
+<td><span class="tw">技能符文袋子</span><span class="kr">스킬룬 주머니</span><br><span class="tw">（第10階段確定）3個</span><span class="kr">(10단계 확정) 3개</span></td>
+<td><span class="tw">沙漠氣息花苞 4000個</span><span class="kr">모래 숨결 꽃망울 4000개</span></td>
+<td><span class="tw">異界封存的娜溫胸針盒</span><span class="kr">이계에 잠긴 네르윈 브로치 상자</span><br><span class="tw">(14天) 15個</span><span class="kr">(14일) 15개</span></td>
+</tr>
+<tr>
+<td>41</td>
+<td>1000</td>
+<td><span class="tw">金蓮寶 500個</span><span class="kr">금련보 500개</span></td>
+<td><span class="tw">閃耀的黃金墨水 300個</span><span class="kr">반짝이는 황금 잉크 300개</span></td>
+<td><span class="tw">異界封存的娜溫胸針盒</span><span class="kr">이계에 잠긴 네르윈 브로치 상자</span><br><span class="tw">(14天) 15個</span><span class="kr">(14일) 15개</span></td>
+</tr>
+<tr>
+<td>42</td>
+<td>1000</td>
+<td><span class="tw">金蓮寶 500個</span><span class="kr">금련보 500개</span></td>
+<td><span class="tw">巢穴隊伍門票隨機袋子 2個</span><span class="kr">네스트 파티 입장권 랜덤 주머니 2개</span></td>
+<td><span class="tw">雪白核心球</span><span class="kr">화이트 코어 볼</span><br><span class="tw">（無法交易（14天））10個</span><span class="kr">(거래불가(14일)) 10개</span></td>
+</tr>
+<tr>
+<td>43</td>
+<td>1000</td>
+<td><span class="tw">金蓮寶 500個</span><span class="kr">금련보 500개</span></td>
+<td><span class="tw">沙漠氣息花苞 4000個</span><span class="kr">모래 숨결 꽃망울 4000개</span></td>
+<td><span class="tw">發光的勇士黃金 10個</span><span class="kr">빛나는 용자의 금화 10개</span></td>
+</tr>
+<tr>
+<td>44</td>
+<td>1000</td>
+<td><span class="tw">金蓮寶 500個</span><span class="kr">금련보 500개</span></td>
+<td><span class="tw">破碎黃金的防具結晶 1100個</span><span class="kr">부서진 금사의 방어구 결정 1100개</span></td>
+<td><span class="tw">信念的泰拉瑪伊胸針箱子</span><span class="kr">신념의 테라마이 브로치 상자</span><br><span class="tw">(14天) 10個</span><span class="kr">(14일) 10개</span></td>
+</tr>
+<tr>
+<td>45</td>
+<td>1000</td>
+<td><span class="tw">均衡代幣 1個</span><span class="kr">균형의 토큰 1개</span></td>
+<td><span class="tw">星之粉末球</span><span class="kr">아스트랄 파우더 볼</span><br><span class="tw">（無法交易（14天））5個</span><span class="kr">(거래불가(14일)) 5개</span></td>
+<td><span class="tw">黃金哥布林的甜蜜點數 (15000) 1個</span><span class="kr">황블이의 꿀 뚝뚝 포인트 (15000) 1개</span></td>
+</tr>
+<tr>
+<td>46</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">雪白核心球</span><span class="kr">화이트 코어 볼</span><br><span class="tw">（無法交易（14天））5個</span><span class="kr">(거래불가(14일)) 5개</span></td>
+<td><span class="tw">珠寶星之球</span><span class="kr">주얼 아스트랄 볼</span><br><span class="tw">（無法交易（14天））5個</span><span class="kr">(거래불가(14일)) 5개</span></td>
+</tr>
+<tr>
+<td>47</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">閃耀的黃金墨水 500個</span><span class="kr">반짝이는 황금 잉크 500개</span></td>
+<td><span class="tw">珠寶星之球</span><span class="kr">주얼 아스트랄 볼</span><br><span class="tw">（無法交易（14天））5個</span><span class="kr">(거래불가(14일)) 5개</span></td>
+</tr>
+<tr>
+<td>48</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">發光的勇士黃金 10個</span><span class="kr">빛나는 용자의 금화 10개</span></td>
+<td><span class="tw">濃縮的星之粉末球</span><span class="kr">농축된 아스트랄 파우더 볼</span><br><span class="tw">（無法交易（14天））2個</span><span class="kr">(거래불가(14일)) 2개</span></td>
+</tr>
+<tr>
+<td>49</td>
+<td>1000</td>
+<td><span class="tw">次元聖代 25個</span><span class="kr">차원 파르페 25개</span></td>
+<td><span class="tw">破碎黃金的武器結晶 1100個</span><span class="kr">부서진 금사의 무기 결정 1100개</span></td>
+<td><span class="tw">濃縮的星之粉末球</span><span class="kr">농축된 아스트랄 파우더 볼</span><br><span class="tw">（無法交易（14天））2個</span><span class="kr">(거래불가(14일)) 2개</span></td>
+</tr>
+<tr>
+<td><span class="tw">最終獎勵</span><span class="kr">최종 보상</span></td>
+<td>1000</td>
+<td><span class="tw">雪白核心球</span><span class="kr">화이트 코어 볼</span><br><span class="tw">(14天) 5個</span><span class="kr">(14일) 5개</span></td>
+<td><span class="tw">印記刻印裝置 20個</span><span class="kr">표식 새김 장치 20개</span></td>
+<td><span class="tw">濃縮的星之粉末球</span><span class="kr">농축된 아스트랄 파우더 볼</span><br><span class="tw">（無法交易（14天））3個</span><span class="kr">(거래불가(14일)) 3개</span></td>
+</tr>
+<tr>
+<td><span class="tw">重複獎勵</span><span class="kr">반복 보상</span></td>
+<td>1000</td>
+<td><span class="tw">裂縫的碎片 2個</span><span class="kr">틈의 조각 2개</span></td>
+<td><span class="tw">銅鐵哥布林的可疑點數 (100) 1個</span><span class="kr">동블이의 수상한 포인트 (100) 1개</span></td>
+<td><span class="tw">黃金哥布林的甜蜜點數 (100) 1個</span><span class="kr">황블이의 꿀 뚝뚝 포인트 (100) 1개</span></td>
+</tr>
+</table></div>
+<p><span class="tw">• 騎在頭上的貓咪</span><span class="kr">• 머리에 올라탄 고양이</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="539" height="296" style="flex:0 1 539px" src="img2611/2026110219532395665.webp"></div>
+<p><span class="tw">• 稱號：我就是傳說中的</span><span class="kr">• 칭호 : 내가 바로 전설의</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="257" height="48" style="flex:0 1 257px" src="img2611/2026110219533570491.webp"></div>
+<h3><span class="tw">◆ 強化的阿堤依亞潘朵拉盒子</span><span class="kr">◆ 강화된 알테이아 판도라 박스</span></h3>
+<p><span class="tw">• 強化的阿堤依亞潘朵拉盒子 內容物變更說明</span><span class="kr">• 강화된 알테이아 판도라 박스 구성품 변경 안내</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">移除</span><span class="kr">제거</span></th>
+<th><span class="tw">新增</span><span class="kr">신규</span></th>
+</tr>
+<tr>
+<td><span class="tw">鏡花水月翅膀</span><span class="kr">청명한 물빛 구름 날개</span></td>
+<td><span class="tw">片翼天使翅膀</span><span class="kr">타락 천사의 날개</span></td>
+</tr>
+<tr>
+<td><span class="tw">鏡花水月尾巴</span><span class="kr">청명한 물빛 구름 꼬리</span></td>
+<td><span class="tw">片翼天使尾巴</span><span class="kr">타락 천사의 꼬리</span></td>
+</tr>
+<tr>
+<td><span class="tw">鏡花水月刺青</span><span class="kr">청명한 물빛 구름 데칼</span></td>
+<td><span class="tw">片翼天使刺青</span><span class="kr">타락 천사의 데칼</span></td>
+</tr>
+<tr>
+<td><span class="tw">浩瀚無垠宇宙之星翅膀</span><span class="kr">눈부신 우주의 별자리 날개</span></td>
+<td><span class="tw">毛茸茸毛線翅膀</span><span class="kr">복슬복슬 털실 날개</span></td>
+</tr>
+<tr>
+<td><span class="tw">浩瀚無垠宇宙之星尾巴</span><span class="kr">눈부신 우주의 별자리 꼬리</span></td>
+<td><span class="tw">毛茸茸毛線尾巴</span><span class="kr">복슬복슬 털실 꼬리</span></td>
+</tr>
+<tr>
+<td><span class="tw">浩瀚無垠宇宙之星刺青</span><span class="kr">눈부신 우주의 별자리 데칼</span></td>
+<td><span class="tw">渴望愛的槲寄生刺青</span><span class="kr">사랑이 고픈 겨우살이 데칼</span></td>
+</tr>
+<tr>
+<td><span class="tw">點綴天空的星月</span><span class="kr">하늘을 수놓는 성월</span></td>
+<td><span class="tw">軟綿綿人偶包包</span><span class="kr">몽글몽글 인형 가방</span></td>
+</tr>
+<tr>
+<td><span class="tw">照耀天空的群星</span><span class="kr">하늘을 비추는 별무리</span></td>
+<td><span class="tw">輕飄飄人偶尾巴</span><span class="kr">살랑살랑 인형 꼬리</span></td>
+</tr>
+<tr>
+<td><span class="tw">劃過天空的流星</span><span class="kr">하늘을 가르는 별똥별</span></td>
+<td><span class="tw">轉轉圈人偶刺青</span><span class="kr">빙그르르 인형 데칼</span></td>
+</tr>
+<tr>
+<td><span class="tw">海洋閃亮珠寶戒指</span><span class="kr">아쿠아 샤인 쥬얼 반지</span></td>
+<td><span class="tw">悲劇的永恆戒指</span><span class="kr">비극의 이터니티링</span></td>
+</tr>
+<tr>
+<td><span class="tw">海洋閃亮珠寶項鍊</span><span class="kr">아쿠아 샤인 쥬얼 목걸이</span></td>
+<td><span class="tw">悲劇的永恆項鍊</span><span class="kr">비극의 이터니티 목걸이</span></td>
+</tr>
+<tr>
+<td><span class="tw">海洋閃亮珠寶耳環</span><span class="kr">아쿠아 샤인 쥬얼 귀걸이</span></td>
+<td><span class="tw">悲劇的永恆耳環</span><span class="kr">비극의 이터니티 귀걸이</span></td>
+</tr>
+<tr>
+<td><span class="tw">[閨蜜] 水晶藍色精靈</span><span class="kr">[단짝] 크리스탈 블루 정령</span></td>
+<td><span class="tw">[閨蜜] 春日祝福之綠草精靈</span><span class="kr">[단짝] 봄맞이 풀숲 정령</span></td>
+</tr>
+</table></div>
+<p><span class="tw">• 依據韓國《遊戲產業振興法》，公開的機率為四捨五入（或無條件捨去）後的數值，總和可能不等於100%。</span><span class="kr">• 공개된 확률은 게임산업진흥에 관한 법률에 따라 반올림 (또는 내림)한 값으로 총 합산이 100%가 아닐 수 있습니다.</span></p>
+<p><span class="tw">[強化的阿堤依亞潘朵拉盒子 資訊]</span><span class="kr">[강화된 알테이아 판도라 박스 정보]</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">品項</span><span class="kr">품목</span></th>
+<th><span class="tw">數量</span><span class="kr">수량</span></th>
+<th><span class="tw">機率</span><span class="kr">확률</span></th>
+<th><span class="tw">潛力機率</span><span class="kr">포텐 확률</span></th>
+</tr>
+<tr>
+<td><span class="tw">潘朵拉點數 10</span><span class="kr">판도라 포인트 10</span></td>
+<td>1</td>
+<td>40.49%</td>
+<td rowspan="7"></td>
+</tr>
+<tr>
+<td><span class="tw">潘朵拉點數 30</span><span class="kr">판도라 포인트 30</span></td>
+<td>1</td>
+<td>26.99%</td>
+</tr>
+<tr>
+<td><span class="tw">潘朵拉點數 50</span><span class="kr">판도라 포인트 50</span></td>
+<td>1</td>
+<td>13.50%</td>
+</tr>
+<tr>
+<td><span class="tw">潘朵拉點數 70</span><span class="kr">판도라 포인트 70</span></td>
+<td>1</td>
+<td>6.75%</td>
+</tr>
+<tr>
+<td><span class="tw">潘朵拉點數 100</span><span class="kr">판도라 포인트 100</span></td>
+<td>1</td>
+<td>2.43%</td>
+</tr>
+<tr>
+<td><span class="tw">潘朵拉點數 150</span><span class="kr">판도라 포인트 150</span></td>
+<td>1</td>
+<td>1.35%</td>
+</tr>
+<tr>
+<td><span class="tw">潘朵拉的璀璨寶石</span><span class="kr">판도라의 찬란한 보석</span></td>
+<td>1</td>
+<td>2.5000%</td>
+</tr>
+<tr>
+<td><span class="tw">片翼天使翅膀</span><span class="kr">타락 천사의 날개</span></td>
+<td>1</td>
+<td>0.1368%</td>
+<td>7.14%</td>
+</tr>
+<tr>
+<td><span class="tw">片翼天使尾巴</span><span class="kr">타락 천사의 꼬리</span></td>
+<td>1</td>
+<td>0.1368%</td>
+<td>7.14%</td>
+</tr>
+<tr>
+<td><span class="tw">片翼天使刺青</span><span class="kr">타락 천사의 데칼</span></td>
+<td>1</td>
+<td>0.1368%</td>
+<td>7.14%</td>
+</tr>
+<tr>
+<td><span class="tw">毛茸茸毛線翅膀</span><span class="kr">복슬복슬 털실 날개</span></td>
+<td>1</td>
+<td>0.1824%</td>
+<td>7.14%</td>
+</tr>
+<tr>
+<td><span class="tw">毛茸茸毛線尾巴</span><span class="kr">복슬복슬 털실 꼬리</span></td>
+<td>1</td>
+<td>0.1824%</td>
+<td>7.14%</td>
+</tr>
+<tr>
+<td><span class="tw">渴望愛的槲寄生刺青</span><span class="kr">사랑이 고픈 겨우살이 데칼</span></td>
+<td>1</td>
+<td>0.1824%</td>
+<td>7.14%</td>
+</tr>
+<tr>
+<td><span class="tw">軟綿綿人偶包包</span><span class="kr">몽글몽글 인형 가방</span></td>
+<td>1</td>
+<td>1.2857%</td>
+<td>7.14%</td>
+</tr>
+<tr>
+<td><span class="tw">輕飄飄人偶尾巴</span><span class="kr">살랑살랑 인형 꼬리</span></td>
+<td>1</td>
+<td>1.2857%</td>
+<td>7.14%</td>
+</tr>
+<tr>
+<td><span class="tw">轉轉圈人偶刺青</span><span class="kr">빙그르르 인형 데칼</span></td>
+<td>1</td>
+<td>1.2857%</td>
+<td>7.14%</td>
+</tr>
+<tr>
+<td><span class="tw">悲劇的永恆戒指</span><span class="kr">비극의 이터니티링</span></td>
+<td>1</td>
+<td>0.2736%</td>
+<td>7.14%</td>
+</tr>
+<tr>
+<td><span class="tw">悲劇的永恆項鍊</span><span class="kr">비극의 이터니티 목걸이</span></td>
+<td>1</td>
+<td>0.2736%</td>
+<td>7.14%</td>
+</tr>
+<tr>
+<td><span class="tw">悲劇的永恆耳環</span><span class="kr">비극의 이터니티 귀걸이</span></td>
+<td>1</td>
+<td>0.2736%</td>
+<td>7.14%</td>
+</tr>
+<tr>
+<td><span class="tw">[閨蜜] 春日祝福之綠草精靈</span><span class="kr">[단짝] 봄맞이 풀숲 정령</span></td>
+<td>1</td>
+<td>0.2280%</td>
+<td>7.14%</td>
+</tr>
+<tr>
+<td><span class="tw">稱號：流星流星流星</span><span class="kr">칭호 : 별똥별똥별</span></td>
+<td>1</td>
+<td>0.1368%</td>
+<td>7.14%</td>
+</tr>
+</table></div>
+<p><span class="tw">[潘朵拉商店 資訊]</span><span class="kr">[판도라 상점 정보]</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">品項</span><span class="kr">품목</span></th>
+<th><span class="tw">兌換所需貨幣</span><span class="kr">교환 시 필요 재화</span></th>
+<th><span class="tw">兌換所需貨幣</span><span class="kr">교환 시 필요 재화</span></th>
+</tr>
+<tr>
+<td><span class="tw">[閨蜜] 春日祝福之綠草精靈</span><span class="kr">[단짝] 봄맞이 풀숲 정령</span></td>
+<td><span class="tw">潘朵拉點數</span><span class="kr">판도라포인트</span></td>
+<td>1500</td>
+</tr>
+<tr>
+<td><span class="tw">片翼天使翅膀</span><span class="kr">타락 천사의 날개</span></td>
+<td><span class="tw">潘朵拉點數</span><span class="kr">판도라포인트</span></td>
+<td>3800</td>
+</tr>
+<tr>
+<td><span class="tw">片翼天使尾巴</span><span class="kr">타락 천사의 꼬리</span></td>
+<td><span class="tw">潘朵拉點數</span><span class="kr">판도라포인트</span></td>
+<td>3800</td>
+</tr>
+<tr>
+<td><span class="tw">片翼天使刺青</span><span class="kr">타락 천사의 데칼</span></td>
+<td><span class="tw">潘朵拉點數</span><span class="kr">판도라포인트</span></td>
+<td>3800</td>
+</tr>
+<tr>
+<td><span class="tw">毛茸茸毛線翅膀</span><span class="kr">복슬복슬 털실 날개</span></td>
+<td><span class="tw">潘朵拉點數</span><span class="kr">판도라포인트</span></td>
+<td>1800</td>
+</tr>
+<tr>
+<td><span class="tw">毛茸茸毛線尾巴</span><span class="kr">복슬복슬 털실 꼬리</span></td>
+<td><span class="tw">潘朵拉點數</span><span class="kr">판도라포인트</span></td>
+<td>1800</td>
+</tr>
+<tr>
+<td><span class="tw">渴望愛的槲寄生刺青</span><span class="kr">사랑이 고픈 겨우살이 데칼</span></td>
+<td><span class="tw">潘朵拉點數</span><span class="kr">판도라포인트</span></td>
+<td>1800</td>
+</tr>
+<tr>
+<td><span class="tw">軟綿綿人偶包包</span><span class="kr">몽글몽글 인형 가방</span></td>
+<td><span class="tw">潘朵拉點數</span><span class="kr">판도라포인트</span></td>
+<td>1800</td>
+</tr>
+<tr>
+<td><span class="tw">輕飄飄人偶尾巴</span><span class="kr">살랑살랑 인형 꼬리</span></td>
+<td><span class="tw">潘朵拉點數</span><span class="kr">판도라포인트</span></td>
+<td>1800</td>
+</tr>
+<tr>
+<td><span class="tw">轉轉圈人偶刺青</span><span class="kr">빙그르르 인형 데칼</span></td>
+<td><span class="tw">潘朵拉點數</span><span class="kr">판도라포인트</span></td>
+<td>1800</td>
+</tr>
+<tr>
+<td><span class="tw">悲劇的永恆戒指</span><span class="kr">비극의 이터니티링</span></td>
+<td><span class="tw">潘朵拉點數</span><span class="kr">판도라포인트</span></td>
+<td>800</td>
+</tr>
+<tr>
+<td><span class="tw">悲劇的永恆項鍊</span><span class="kr">비극의 이터니티 목걸이</span></td>
+<td><span class="tw">潘朵拉點數</span><span class="kr">판도라포인트</span></td>
+<td>1200</td>
+</tr>
+<tr>
+<td><span class="tw">悲劇的永恆耳環</span><span class="kr">비극의 이터니티 귀걸이</span></td>
+<td><span class="tw">潘朵拉點數</span><span class="kr">판도라포인트</span></td>
+<td>1200</td>
+</tr>
+<tr>
+<td><span class="tw">強化的阿堤依亞潘朵拉盒子</span><span class="kr">강화된 알테이아 판도라 박스</span></td>
+<td><span class="tw">潘朵拉盒兌換用代幣</span><span class="kr">판도라 박스 교환용 코인</span></td>
+<td>12</td>
+</tr>
+</table></div>
+<p><span class="tw">• 墮落天使特殊防具</span><span class="kr">• 타락천사 특수 방어구</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="451" height="368" style="flex:0 1 451px" src="img2611/2026110219535660165.webp"><img loading="lazy" decoding="async" alt="" width="181" height="219" style="flex:0 1 181px" src="img2611/2026110219541587780.webp"></div>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="665" height="446" style="flex:0 1 665px" src="img2611/2026110219540473586.webp"></div>
+<p><span class="tw">• 毛茸茸特殊防具</span><span class="kr">• 복슬복슬 특수 방어구</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="364" height="646" style="flex:0 1 364px" src="img2611/2026110219544312793.webp"><img loading="lazy" decoding="async" alt="" width="364" height="646" style="flex:0 1 364px" src="img2611/2026110219545384456.webp"></div>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="346" height="484" style="flex:0 1 346px" src="img2611/2026110219550831147.webp"></div>
+<p><span class="tw">• 玩偶特殊防具</span><span class="kr">• 인형 특수 방어구</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="352" height="657" style="flex:0 1 352px" src="img2611/2026110219553853768.webp"><img loading="lazy" decoding="async" alt="" width="379" height="657" style="flex:0 1 379px" src="img2611/2026110222192971344.webp"></div>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="380" height="657" style="flex:0 1 380px" src="img2611/202611021955265764.webp"><img loading="lazy" decoding="async" alt="" width="516" height="657" style="flex:0 1 516px" src="img2611/2026110219565991502.webp"></div>
+<p><span class="tw">• 悲劇永恆飾品</span><span class="kr">• 비극의 이터니티 액세서리</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="199" height="200" style="flex:0 1 199px" src="img2611/2026110219572333852.webp"><img loading="lazy" decoding="async" alt="" width="200" height="200" style="flex:0 1 200px" src="img2611/2026110219573296786.webp"><img loading="lazy" decoding="async" alt="" width="200" height="200" style="flex:0 1 200px" src="img2611/2026110219574875541.webp"></div>
+<h3><span class="tw">◆ 海釣</span><span class="kr">◆ 바다 낚시</span></h3>
+<p><span class="tw">1. 海釣開幕！</span><span class="kr">1. 바다 낚시 개장!</span></p>
+<p><span class="tw">為了狩獵累了的勇者們，活動又回來了！！</span><span class="kr">사냥에 지치신 용자님들을 위한 이벤트가 돌아왔습니다!!</span></p>
+<p><span class="tw">這次最多釣到大魚的[海洋傳說]會是誰呢？</span><span class="kr">이번에도 가장 많이 대어를 낚으신 [바다의 전설]은 누가 될까요?</span></p>
+<p><span class="tw">[釣魚場位置資訊]</span><span class="kr">[낚시터 위치 정보]</span></p>
+<p><span class="tw">神聖天堂5點鐘方向活動關卡 ▶ 神聖天堂附近海邊</span><span class="kr">세인트 헤이븐 5시 방향 이벤트 스테이지 ▶ 보누스 섬 바다 낚시터</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="1000" height="366" style="flex:0 1 1000px" src="img2611/2025090201042859405.webp"></div>
+<p><span class="tw">什麼是海釣？</span><span class="kr">바다 낚시란?</span></p>
+<p><span class="tw">與農場區的釣魚不同，這是僅能在活動進行時間內入場的釣魚大賽。</span><span class="kr">농장 지구의 낚시와는 다르게 이벤트 진행 시간에만 입장이 가능한 낚시 대회 입니다.</span></p>
+<p><span class="tw">1. 已學會[輔助技能]-[釣魚技能]的24等級以上勇者，可於[神聖天堂附近海邊]每個帳號進行30分鐘的海釣。</span><span class="kr">1. [보조스킬]-[낚시 스킬]을 배우신 24레벨 이상 용자님께서는 [보누스 섬 바다 낚시터]에서 계정 당 30분 동안 바다 낚시를 하실 수 있습니다.</span></p>
+<p><span class="tw">2. 在海釣場釣到的魚會累計至排名資料，釣到最多魚的第1～10名勇者可獲得排名獎勵。</span><span class="kr">2. 바다 낚시터에 낚은 물고기는 랭킹 정보에 누적되며, 가장 많이 낚은 1위 ~ 10위의 용자님들께서는 랭킹 보상을 받으실 수 있습니다.</span></p>
+<p><span class="tw">3. 排名會依賽季重新結算，獎勵將於上午9點以郵件發送。</span><span class="kr">3. 시즌별로 랭킹이 새로 정산되며, 보상은 오전 9시에 우편으로 지급되게 됩니다.</span></p>
+<p><span class="tw">• 一個賽季分為2次進行。（詳細內容請參考行程表。）</span><span class="kr">• 한 시즌을 2회로 나누어져 진행됩니다. (자세한 내용은 스케쥴 표를 참고해 주세요.)</span></p>
+<p><span class="tw">• 每個賽季每個帳號可使用30分鐘。</span><span class="kr">• 1시즌에 계정당 30분 이용이 가능합니다.</span></p>
+<p><span class="tw">[海釣進行]</span><span class="kr">[바다 낚시 진행]</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="356" height="820" style="flex:0 1 356px" src="img2611/2025090201050084445.webp"></div>
+<p><span class="tw">[海釣計時器]</span><span class="kr">[바다 낚시 타이머]</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="671" height="496" style="flex:0 1 671px" src="img2611/2025090201052189208.webp"></div>
+<p><span class="tw">[海釣入場]</span><span class="kr">[바다 낚시 입장]</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="1000" height="333" style="flex:0 1 1000px" src="img2611/2025090201060467338.webp"></div>
+<p><span class="tw">[海釣獨有的特別之處]</span><span class="kr">[바다 낚시만의 특별함]</span></p>
+<p><span class="tw">• 海釣的過程中，有機會釣到超～大隻的海魚。</span><span class="kr">• 바다 낚시를 하시다 보면 , 아~주 큰 바다 물고기를 낚을 수 있습니다.</span></p>
+<p><span class="tw">• 釣到大型海魚時，會出現特別的效果。</span><span class="kr">• 큰 바다 물고기를 낚았을 때에는 특별한 효과가 나타납니다.</span></p>
+<p><span class="tw">＊ 在此稍作說明！</span><span class="kr">* 여기서 잠깐!</span></p>
+<p><span class="tw">Q：要如何得知自己本賽季釣了多少魚呢？</span><span class="kr">Q : 자신이 이번 시즌에 물고기를 얼마나 낚았는지 어떻게 알죠?</span></p>
+<p><span class="tw">A：右上角會顯示本賽季釣起的魚的大小總和。</span><span class="kr">A : 오른쪽 상단에 이번 시즌에 낚아 올린 물고기 크기의 합이 표시됩니다.</span></p>
+<p><span class="tw">• 魚的大小合計僅於一個賽季內保留，下個賽季開始時將會重置。</span><span class="kr">• 물고기 크기 합산 표시는 한 시즌 동안만 유지되며 다음 시즌이 시작되면 초기화 됩니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="1000" height="467" style="flex:0 1 1000px" src="img2611/2025090201062564041.webp"></div>
+<p><span class="tw">[海釣專用NPC]</span><span class="kr">[바다 낚시 전용 NPC]</span></p>
+<p><span class="tw">• 位於[神聖天堂西南側]的[農場&amp;溫泉區]前的海釣專用NPC「海釣王虎克」，可查看海釣排名資料，或購買釣魚相關道具。</span><span class="kr">• [세인트 헤이븐 남서쪽]의 [농장 및 온천지구] 앞에 있는 바다 낚시 전용 NPC인 ‘낚시왕 후킹’에게 바다 낚시 랭킹 정보를 확인하거나 낚시에 관련된 도구를 구입할 수 있습니다.</span></p>
+<p><span class="tw">[海釣排名]</span><span class="kr">[바다 낚시 랭킹]</span></p>
+<p><span class="tw">• 與「海釣王虎克」NPC對話後，選擇[查看海釣排名]即可確認排名資料。</span><span class="kr">• ‘낚시왕 후킹’ NPC에게 대화하기 후 [바다 낚시 랭킹 보기]를 선택하면 랭킹 정보를 확인할 수 있습니다.</span></p>
+<p><span class="tw">• 比較[賽季]期間釣到的[魚的數量]與[合計大小]，第1名至第10名的勇者將獲得特別獎勵。</span><span class="kr">• [시즌] 동안 잡은 [물고기의 수]와 [합산 크기]를 비교하여 1위 부터 10위까지의 용자님들은 특별한 보상이 지급됩니다.</span></p>
+<p><span class="tw">釣魚所需的[釣竿]與[魚餌]也有販售，要不要趕快準備一下呢～？</span><span class="kr">낚시에 필요한 [낚시대]와 [미끼]도 판매하니 재빨리 준비해 보도록 할까요~?</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="910" height="647" style="flex:0 1 910px" src="img2611/2025090201065131064.webp"></div>
+<p><span class="tw">• 依回歸的海釣活動排名，可獲得以下清單中的道具。</span><span class="kr">• 돌아온 바다 낚시 이벤트의 순위에 따라 다음 목록의 아이템을 습득하게 됩니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">排名</span><span class="kr">순위</span></th>
+<th><span class="tw">獎勵</span><span class="kr">보상</span></th>
+<th><span class="tw">數量</span><span class="kr">개수</span></th>
+</tr>
+<tr>
+<td rowspan="3"><span class="tw">1位</span><span class="kr">1위</span></td>
+<td><span class="tw">沙漠氣息花苞</span><span class="kr">모래 숨결 꽃망울</span></td>
+<td>3000</td>
+</tr>
+<tr>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+<td>500</td>
+</tr>
+<tr>
+<td><span class="tw">30天期間制稱號（海洋傳說）</span><span class="kr">30일 기간제 칭호(바다의 전설)</span></td>
+<td>1</td>
+</tr>
+<tr>
+<td rowspan="3"><span class="tw">2位</span><span class="kr">2위</span></td>
+<td><span class="tw">沙漠氣息花苞</span><span class="kr">모래 숨결 꽃망울</span></td>
+<td>2500</td>
+</tr>
+<tr>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+<td>400</td>
+</tr>
+<tr>
+<td><span class="tw">30天期間制稱號（海釣之最大魚達人）</span><span class="kr">30일 기간제 칭호(바다의 월척왕)</span></td>
+<td>1</td>
+</tr>
+<tr>
+<td rowspan="3"><span class="tw">3位</span><span class="kr">3위</span></td>
+<td><span class="tw">沙漠氣息花苞</span><span class="kr">모래 숨결 꽃망울</span></td>
+<td>1500</td>
+</tr>
+<tr>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+<td>300</td>
+</tr>
+<tr>
+<td><span class="tw">30天期間制稱號（海釣狂熱者）</span><span class="kr">30일 기간제 칭호(바다의 낚시꾼)</span></td>
+<td>1</td>
+</tr>
+<tr>
+<td rowspan="3"><span class="tw">第4～5名</span><span class="kr">4 ~ 5위</span></td>
+<td><span class="tw">沙漠氣息花苞</span><span class="kr">모래 숨결 꽃망울</span></td>
+<td>1000</td>
+</tr>
+<tr>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+<td>200</td>
+</tr>
+<tr>
+<td><span class="tw">30天期間制稱號（享受海釣的）</span><span class="kr">30일 기간제 칭호(바다 낚시를 즐기는)</span></td>
+<td>1</td>
+</tr>
+<tr>
+<td rowspan="3"><span class="tw">第6～10名</span><span class="kr">6 ~ 10위</span></td>
+<td><span class="tw">沙漠氣息花苞</span><span class="kr">모래 숨결 꽃망울</span></td>
+<td>500</td>
+</tr>
+<tr>
+<td><span class="tw">次元的石榴石</span><span class="kr">차원의 잔흔</span></td>
+<td>100</td>
+</tr>
+<tr>
+<td><span class="tw">30天期間制稱號（享受海釣的）</span><span class="kr">30일 기간제 칭호(바다 낚시를 즐기는)</span></td>
+<td>1</td>
+</tr>
+</table></div>
+<p><span class="tw">■ [海釣獎勵袋(7天) 內容物]</span><span class="kr">■ [바다에서 건진 주머니(7일) 구성품]</span></p>
+<p><span class="tw">• 開啟海釣獎勵袋(7天)後，會隨機獲得以下內容物其中之一。</span><span class="kr">• 바다에서 건진 주머니(7일)을 개봉하면 아래의 구성품 중 하나를 랜덤으로 획득 합니다.</span></p>
+<p><span class="tw">• 海釣獎勵袋(7天)即使未使用，7天後也會被刪除。</span><span class="kr">• 바다에서 건진 주머니(7일)은 사용하지 않아도 7일 후 삭제 됩니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">海釣獎勵袋(7天) 內容物</span><span class="kr">바다에서 건진 주머니(7일) 구성품</span></th>
+</tr>
+<tr>
+<td><span class="tw">高級神聖的月蝕碎片 100個</span><span class="kr">상급 신성한 월식의 파편 100개</span></td>
+</tr>
+<tr>
+<td><span class="tw">高級皎潔的月蝕碎片 100個</span><span class="kr">상급 청명한 월식의 파편 100개</span></td>
+</tr>
+<tr>
+<td><span class="tw">高級燃燒的月蝕碎片 100個</span><span class="kr">상급 불타는 월식의 파편 100개</span></td>
+</tr>
+<tr>
+<td><span class="tw">高級漆黑的月蝕碎片 100個</span><span class="kr">상급 칠흑의 월식의 파편 100개</span></td>
+</tr>
+<tr>
+<td><span class="tw">高級順風的月蝕碎片 100個</span><span class="kr">상급 순풍의 월식의 파편 100개</span></td>
+</tr>
+<tr>
+<td><span class="tw">高級堅韌的月蝕碎片 100個</span><span class="kr">상급 굳건한 월식의 파편 100개</span></td>
+</tr>
+</table></div>
+<p><span class="tw">[行程表]</span><span class="kr">[스케줄]</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th colspan="2"><span class="tw">進行時間</span><span class="kr">진행 시간</span></th>
+<th><span class="tw">11月7日（六）</span><span class="kr">11월 7일 (토)</span></th>
+<th><span class="tw">11月8日（日）</span><span class="kr">11월 8일 (일)</span></th>
+<th><span class="tw">11月9日（一）</span><span class="kr">11월 9일 (월)</span></th>
+</tr>
+<tr>
+<td>9:00</td>
+<td>-</td>
+<td></td>
+<td><span class="tw">[賽季 197] 發送獎勵</span><span class="kr">[시즌 197] 보상 지급</span></td>
+<td><span class="tw">[賽季 198] 發送獎勵</span><span class="kr">[시즌 198] 보상 지급</span></td>
+</tr>
+<tr>
+<td>10:00~18:00</td>
+<td>8H</td>
+<td><span class="tw">海釣 [賽季 197]</span><span class="kr">바다 낚시 [시즌 197]</span></td>
+<td><span class="tw">海釣 [賽季 198]</span><span class="kr">바다 낚시 [시즌 198]</span></td>
+<td></td>
+</tr>
+<tr>
+<td>23:00~05:00</td>
+<td>6H</td>
+<td><span class="tw">海釣 [賽季 197]</span><span class="kr">바다 낚시 [시즌 197]</span></td>
+<td><span class="tw">海釣 [賽季 198]</span><span class="kr">바다 낚시 [시즌 198]</span></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2"><span class="tw">進行時間</span><span class="kr">진행 시간</span></td>
+<td><span class="tw">11月14日（六）</span><span class="kr">11월 14일 (토)</span></td>
+<td><span class="tw">11月15日（日）</span><span class="kr">11월 15일 (일)</span></td>
+<td><span class="tw">11月16日（一）</span><span class="kr">11월 16일 (월)</span></td>
+</tr>
+<tr>
+<td>9:00</td>
+<td>-</td>
+<td></td>
+<td><span class="tw">[賽季 199] 發送獎勵</span><span class="kr">[시즌 199] 보상 지급</span></td>
+<td><span class="tw">[賽季 200] 發送獎勵</span><span class="kr">[시즌 200] 보상 지급</span></td>
+</tr>
+<tr>
+<td>10:00~18:00</td>
+<td>8H</td>
+<td><span class="tw">海釣 [賽季 199]</span><span class="kr">바다 낚시 [시즌 199]</span></td>
+<td><span class="tw">海釣 [賽季 200]</span><span class="kr">바다 낚시 [시즌 200]</span></td>
+<td></td>
+</tr>
+<tr>
+<td>23:00~05:00</td>
+<td>6H</td>
+<td><span class="tw">海釣 [賽季 199]</span><span class="kr">바다 낚시 [시즌 199]</span></td>
+<td><span class="tw">海釣 [賽季 200]</span><span class="kr">바다 낚시 [시즌 200]</span></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2"><span class="tw">進行時間</span><span class="kr">진행 시간</span></td>
+<td><span class="tw">11月21日（六）</span><span class="kr">11월 21일 (토)</span></td>
+<td><span class="tw">11月22日（日）</span><span class="kr">11월 22일 (일)</span></td>
+<td><span class="tw">11月23日（一）</span><span class="kr">11월 23일 (월)</span></td>
+</tr>
+<tr>
+<td>9:00</td>
+<td>-</td>
+<td></td>
+<td><span class="tw">[賽季 201] 發送獎勵</span><span class="kr">[시즌 201] 보상 지급</span></td>
+<td><span class="tw">[賽季 202] 發送獎勵</span><span class="kr">[시즌 202] 보상 지급</span></td>
+</tr>
+<tr>
+<td>10:00~18:00</td>
+<td>8H</td>
+<td><span class="tw">海釣 [賽季 201]</span><span class="kr">바다 낚시 [시즌 201]</span></td>
+<td><span class="tw">海釣 [賽季 202]</span><span class="kr">바다 낚시 [시즌 202]</span></td>
+<td></td>
+</tr>
+<tr>
+<td>23:00~05:00</td>
+<td>6H</td>
+<td><span class="tw">海釣 [賽季 201]</span><span class="kr">바다 낚시 [시즌 201]</span></td>
+<td><span class="tw">海釣 [賽季 202]</span><span class="kr">바다 낚시 [시즌 202]</span></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2"><span class="tw">進行時間</span><span class="kr">진행 시간</span></td>
+<td><span class="tw">11月28日（六）</span><span class="kr">11월 28일 (토)</span></td>
+<td><span class="tw">11月29日（日）</span><span class="kr">11월 29일 (일)</span></td>
+<td><span class="tw">11月30日（一）</span><span class="kr">11월 30일 (월)</span></td>
+</tr>
+<tr>
+<td>9:00</td>
+<td>-</td>
+<td></td>
+<td><span class="tw">[賽季 203] 發送獎勵</span><span class="kr">[시즌 203] 보상 지급</span></td>
+<td><span class="tw">[賽季 204] 發送獎勵</span><span class="kr">[시즌 204] 보상 지급</span></td>
+</tr>
+<tr>
+<td>10:00~18:00</td>
+<td>8H</td>
+<td><span class="tw">海釣 [賽季 203]</span><span class="kr">바다 낚시 [시즌 203]</span></td>
+<td><span class="tw">海釣 [賽季 204]</span><span class="kr">바다 낚시 [시즌 204]</span></td>
+<td></td>
+</tr>
+<tr>
+<td>23:00~05:00</td>
+<td>6H</td>
+<td><span class="tw">海釣 [賽季 203]</span><span class="kr">바다 낚시 [시즌 203]</span></td>
+<td><span class="tw">海釣 [賽季 204]</span><span class="kr">바다 낚시 [시즌 204]</span></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2"><span class="tw">進行時間</span><span class="kr">진행 시간</span></td>
+<td><span class="tw">12月5日（六）</span><span class="kr">12월 5일 (토)</span></td>
+<td><span class="tw">12月6日（日）</span><span class="kr">12월 6일 (일)</span></td>
+<td><span class="tw">12月7日（一）</span><span class="kr">12월 7일 (월)</span></td>
+</tr>
+<tr>
+<td>9:00</td>
+<td>-</td>
+<td></td>
+<td><span class="tw">[賽季 205] 發送獎勵</span><span class="kr">[시즌 205] 보상 지급</span></td>
+<td><span class="tw">[賽季 206] 發送獎勵</span><span class="kr">[시즌 206] 보상 지급</span></td>
+</tr>
+<tr>
+<td>10:00~18:00</td>
+<td>8H</td>
+<td><span class="tw">海釣 [賽季 205]</span><span class="kr">바다 낚시 [시즌 205]</span></td>
+<td><span class="tw">海釣 [賽季 206]</span><span class="kr">바다 낚시 [시즌 206]</span></td>
+<td></td>
+</tr>
+<tr>
+<td>23:00~05:00</td>
+<td>6H</td>
+<td><span class="tw">海釣 [賽季 205]</span><span class="kr">바다 낚시 [시즌 205]</span></td>
+<td><span class="tw">海釣 [賽季 206]</span><span class="kr">바다 낚시 [시즌 206]</span></td>
+<td></td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 落葉紛飛特別任務</span><span class="kr">◆ 낙엽 부는 특별 미션</span></h3>
+<p><span class="tw">• 活動期間：11月更新維護後 ～ 12月更新維護前</span><span class="kr">• 이벤트 기간: 11월 업데이트 점검 후 ~ 12월 업데이트 점검 전까지</span></p>
+<p><span class="tw">• 活動參加方式：點擊右下角的活動按鈕後進行任務</span><span class="kr">• 이벤트 참여 방법: 우측 하단의 이벤트 버튼 클릭 후 미션 진행</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="233" height="150" style="flex:0 1 233px" src="img2611/2026110221585747554.jpg.webp"></div>
+<p><span class="tw">• 獎勵領取條件：活動期間內透過活動專屬任務即可領取獎勵</span><span class="kr">• 보상 수령 조건: 이벤트 기간 내 이벤트 전용 미션을 통해 보상 수령 가능</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="907" height="487" style="flex:0 1 907px" src="img2611/2026110222010596809.webp"></div>
+<p><span class="tw">• 活動獎勵說明</span><span class="kr">• 이벤트 보상 안내</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">每日任務</span><span class="kr">일일 미션</span></th>
+<th><span class="tw">每日任務獎勵</span><span class="kr">일일 미션 보상</span></th>
+</tr>
+<tr>
+<td><span class="tw">通關稻香苑關卡1次</span><span class="kr">도향원 스테이지 1회 클리어</span></td>
+<td><span class="tw">[GM] 潘朵拉活力恢復藥水袋子 (7天) 1個</span><span class="kr">[GM] 판도라의 활력 회복약 주머니 (7일) 1개</span></td>
+</tr>
+<tr>
+<td><span class="tw">通關關卡4次</span><span class="kr">스테이지 4회 클리어</span></td>
+<td><span class="tw">失去光芒的摯友星 5個</span><span class="kr">빛을 잃은 단짝별 5개</span></td>
+</tr>
+<tr>
+<td><span class="tw">於昇天神域1樓以上發動維度轉移2次</span><span class="kr">어센션 1층 이상 디멘션 시프트 2회 발동하기</span></td>
+<td><span class="tw">碎裂的胸針殘骸 20個</span><span class="kr">조각난 브로치 잔해 20개</span></td>
+</tr>
+<tr>
+<td><span class="tw">每週任務</span><span class="kr">주간 미션</span></td>
+<td><span class="tw">每週任務獎勵</span><span class="kr">주간 미션 보상</span></td>
+</tr>
+<tr>
+<td><span class="tw">通關分裂迷宮1次</span><span class="kr">분열된 미로 1회 클리어</span></td>
+<td><span class="tw">凝結的侵蝕碎片 10個</span><span class="kr">응축된 침식의 조각 10개</span></td>
+</tr>
+<tr>
+<td><span class="tw">完成每週委託4個</span><span class="kr">주간 의뢰 4개 완료</span></td>
+<td><span class="tw">古代人的圖紙 20個</span><span class="kr">고대인의 도면 20개</span></td>
+</tr>
+<tr>
+<td><span class="tw">通關一般巢穴2次</span><span class="kr">일반 네스트 2회 클리어</span></td>
+<td><span class="tw">扎根盼望的碎片 30個</span><span class="kr">뿌리 깊은 갈망의 파편 30개</span></td>
+</tr>
+</table></div>
+<p><span class="tw">• 活動注意事項說明</span><span class="kr">• 이벤트 유의사항 안내</span></p>
+<p><span class="tw">• 每日任務於每天上午9點重置，可參加至隔天上午8點59分。</span><span class="kr">• 일일 미션은 매일 오전 9시 초기화 ~ 익일 오전 8시 59분까지 참여가 가능합니다.</span></p>
+<p><span class="tw">• 每週任務於每週六上午9點重置，可參加至下週六上午8點59分。</span><span class="kr">• 주간 미션은 매주 토요일 오전 9시 초기화 ~ 차주 토요일 오전 8시 59분까지 참여가 가능합니다.</span></p>
+<p><span class="tw">• 限定任務於活動期間內可參加1次。</span><span class="kr">• 한정 미션은 이벤트 기간 내 1회 참여가 가능합니다.</span></p>
+<p><span class="tw">• 所有任務皆以帳號為單位參與，活動獎勵將即時發送至道具欄。</span><span class="kr">• 모든 미션은 계정 단위로 참여가 가능하며, 이벤트 보상은 소지품으로 즉시 지급됩니다.</span></p>
+<h3><span class="tw">◆ 活動結束</span><span class="kr">◆ 이벤트 종료</span></h3>
+<p><span class="tw">• 受污染的方舟之氣息已改為蒐集品。</span><span class="kr">• 오염된 방주의 기운이 수집품화 되었습니다.</span></p>
+<p><span class="tw">• 受污染的方舟之氣息商店已移除。</span><span class="kr">• 오염된 방주의 기운 상점이 제거되었습니다.</span></p>
+<p><span class="tw">• 下列道具將不再掉落。</span><span class="kr">• 하단의 아이템이 더 이상 드랍되지 않습니다.</span></p>
+<p><span class="tw">• 幽靈糖果</span><span class="kr">• 유령 사탕</span></p>
+<p><span class="tw">• 滿滿愛意翅膀箱</span><span class="kr">• 사랑 듬뿍 날개 상자</span></p>
+<p><span class="tw">• 稱號：夜間巡邏者</span><span class="kr">• 칭호 : 야간 순찰자</span></p>
+<p><span class="tw">• 稱號：黎明討伐者</span><span class="kr">• 칭호 : 새벽 토벌자</span></p>
+<h3><span class="tw">◆ 其他</span><span class="kr">◆ 기타</span></h3>
+<p><span class="tw">• 每日任務獎勵中的哈洛麗日落慶典門票將被移除。</span><span class="kr">• 일일 임무 보상에서 하로리 선셋 페스타 입장권이 제거됩니다.</span></p></section>
+<section id="c7" class="pane"><h2><span class="tw">購物商城便利性改善</span><span class="kr">캐시샵 편의성 개선</span></h2><h3><span class="tw">◆ 購物商城商品清單變更</span><span class="kr">◆ 캐시샵 상품 리스트 변경</span></h3>
+<p><span class="tw">• 新增數量選擇功能</span><span class="kr">• 수량 선택 기능 추가</span></p>
+<p><span class="tw">• 改善了商品依販售數量個別顯示的問題，部分商品新增可選擇數量的功能。</span><span class="kr">• 판매 수량에 따라 상품이 개별로 노출되던 문제를 개선하여 일부 상품에 수량 선택 가능한 기능이 추가되었습니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="638" height="222" style="flex:0 1 638px" src="img2611/2026110219585162332.webp"></div>
+<p><span class="tw">• 折扣商品標示</span><span class="kr">• 할인 상품 표시</span></p>
+<p><span class="tw">• 折扣中的商品在選擇數量時，會以綠色的「數量★」標示。</span><span class="kr">• 할인 중인 상품은 수량 선택 시 초록 색상의 ‘수량★’ 로 표시됩니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="599" height="180" style="flex:0 1 599px" src="img2611/2026110219591258979.webp"></div>
+<h3><span class="tw">◆ 內容物及機率資訊</span><span class="kr">◆ 구성품 및 확률 정보</span></h3>
+<p><span class="tw">• 新增放大鏡按鈕，可確認禮盒商品、機率型商品的內容物、伺服器倉庫、交易及機率資訊。</span><span class="kr">• 패키지 상품, 확률성 상품의 구성품, 서버 창고, 거래, 확률 정보를 확인할 수 있도록 돋보기 버튼이 추가되었습니다.</span></p>
+<p><span class="tw">• 需要封印的道具，將以封印前的狀態為基準顯示資訊。</span><span class="kr">• 봉인이 필요한 아이템은 봉인 전 상태를 기준으로 정보가 표시됩니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="819" height="471" style="flex:0 1 819px" src="img2611/2026110219593127708.webp"></div>
+<h3><span class="tw">◆ 內容物及機率資訊 - 預覽</span><span class="kr">◆ 구성품 및 확률 정보 - 미리보기</span></h3>
+<p><span class="tw">• 時裝、兌換券類道具點擊圖示後，可於右側預覽畫面確認外觀。（部分武器時裝需裝備一般裝備才會顯示於預覽中。）</span><span class="kr">• 코스튬, 교환권류 아이템은 아이콘 클릭 시 우측 미리보기 화면에서 외형을 확인할 수 있습니다. (일부 무기 코스튬은 일반 장비를 장착해야 미리보기에 노출됩니다.)</span></p>
+<p><span class="tw">• 可預覽的道具：防具、特殊防具、飾品、武器時裝、坐騎、精靈、寵物、武器兌換券等</span><span class="kr">• 미리보기 가능 아이템 : 방어구, 특수 방어구, 악세서리, 무기 코스튬, 탈 것, 정령, 펫, 무기 교환권 등</span></p>
+<p><span class="tw">• 點擊兌換券類道具時，預覽中新增可選擇職業的功能。</span><span class="kr">• 교환권류 클릭 시 미리보기에 직업 선택을 할 수 있는 기능이 추가됩니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="1000" height="500" style="flex:0 1 1000px" src="img2611/2026110219595178667.webp"></div>
+<h3><span class="tw">◆ 結帳視窗變更</span><span class="kr">◆ 결제창 변경</span></h3>
+<p><span class="tw">• 點擊購買按鈕時顯示的結帳視窗已變更。</span><span class="kr">• 구입 버튼 클릭 시 노출되는 결제 창이 변경되었습니다.</span></p>
+<p><span class="tw">• 可於結帳視窗右側確認禮盒類、機率型商品的道具資訊。</span><span class="kr">• 결제창 우측에서 패키지류, 확률성 상품의 아이템 정보를 확인할 수 있습니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="942" height="578" style="flex:0 1 942px" src="img2611/2026110220002097794.webp"></div>
+<p><span class="tw">• 欲購買多項商品時，可於左側清單選擇道具，並在右側確認內容物及資訊。</span><span class="kr">• 여러 상품을 구매하고자 할 때, 좌측 목록에서 아이템을 선택하여 우측에서 구성품 및 정보를 확인할 수 있습니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="1000" height="502" style="flex:0 1 1000px" src="img2611/2026110220003640669.webp"></div>
+<p><span class="tw">• 在結帳視窗右側的道具清單中，點擊時裝類、兌換券類道具圖示，即可於右側預覽中確認外觀。</span><span class="kr">• 결제창 우측의 아이템 목록에서 코스튬류, 교환권류 아이템 아이콘 클릭 시 우측 미리보기에서 외형을 확인할 수 있습니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="933" height="575" style="flex:0 1 933px" src="img2611/2026110220005256722.webp"></div>
+<h3><span class="tw">◆ 購物商城每日獎勵</span><span class="kr">◆ 캐시샵 일일 보상</span></h3>
+<p><span class="tw">• 進入購物商城後，可每天從左上角的莉莉獲得1次免費獎勵。（重置時間為00:00。）</span><span class="kr">• 캐시샵 진입 후 좌측 상단 릴리로부터 매일 1회 무료 보상을 획득할 수 있습니다. (초기화 시간은 00:00입니다.)</span></p>
+<p><span class="tw">• 為了獲得獎勵，道具欄需至少有1格以上的空位。</span><span class="kr">• 보상 획득을 위해 인벤토리는 1칸 이상의 빈 슬롯이 존재해야 합니다.</span></p>
+<p><span class="tw">• 成功獲得獎勵時，將發送至道具欄。</span><span class="kr">• 보상 획득 성공 시 인벤토리로 지급됩니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="414" height="135" style="flex:0 1 414px" src="img2611/2026110220011166896.webp"></div>
+<h3><span class="tw">◆ 購物商城客製化推薦</span><span class="kr">◆ 캐시샵 맞춤 추천</span></h3>
+<p><span class="tw">• 原本顯示購物商城商品橫幅的區域，已變更為客製化推薦區域。</span><span class="kr">• 기존 캐시샵 상품 배너가 노출되던 영역이 맞춤 추천 영역으로 변경되었습니다.</span></p>
+<p><span class="tw">• 點擊客製化推薦中的道具圖示時，同樣可於右側預覽確認外觀。</span><span class="kr">• 맞춤 추천의 아이템 아이콘 클릭 시에도 우측 미리보기에서 외형 확인이 가능합니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="673" height="520" style="flex:0 1 673px" src="img2611/2026110220013674782.webp"></div>
+<h3><span class="tw">◆ 購物商城其他事項</span><span class="kr">◆ 캐시샵 기타 사항</span></h3>
+<p><span class="tw">• 無論遊戲內解析度及介面大小為何，購物商城的介面大小一律固定。</span><span class="kr">• 게임 내 해상도 및 UI 크기와 상관없이 캐시샵 UI 크기가 상시 고정됩니다.</span></p>
+<p><span class="tw">• 搜尋商品時，包含搜尋對象道具的禮盒商品、機率型商品也會一併顯示。</span><span class="kr">• 상품 검색 시 검색 대상 아이템이 포함되어 있는 패키지 상품, 확률성 상품도 노출됩니다.</span></p>
+<p><span class="tw">• 購物商城中原本選為「所有職業」的職業欄位，將變更為配合自己角色的職業。</span><span class="kr">• 캐시샵 내 ‘모든 직업＇으로 선택되던 직업 부분이 본인의 캐릭터 직업에 맞게 변경됩니다.</span></p>
+<p><span class="tw">• 篩選器中原有的「所有職業」項目將被移除。</span><span class="kr">• 필터에 존재하던 ‘모든 직업‘ 항목은 제거됩니다.</span></p>
+<p><span class="tw">• 購物商城內販售的部分商品，變更為購買時可一次全部開啟。</span><span class="kr">• 캐시샵 내 판매 중인 일부 상품이 구매 시 한 번에 열기가 가능하도록 변경되었습니다.</span></p>
+<p><span class="tw">• （一次最多可開啟100個。）</span><span class="kr">• (한 번에 최대 100개 수량까지 열기 가능합니다.)</span></p></section>
+<section id="c8" class="pane"><h2><span class="tw">商城道具</span><span class="kr">캐시아이템</span></h2><p class="sub">飛行員時裝 / 無法預測命運的箱子 / 結緣更新 / 購物商城相關事項</p><h3><span class="tw">◆ 飛行員時裝</span><span class="kr">◆ 파일럿 코스튬</span></h3>
+<p><span class="tw">• 販售位置：&lt;時裝-本月時裝&gt;</span><span class="kr">• 판매 위치 : &lt;코스튬-이달의 코스튬&gt;</span></p>
+<p><span class="tw">• 禮盒種類：3種</span><span class="kr">• 패키지 종류 : 3종</span></p>
+<p><span class="tw">• 是否包含武器：包含</span><span class="kr">• 무기 포함 여부 : 포함</span></p>
+<p><span class="tw">• 販售等級：稀有</span><span class="kr">• 판매 등급 : 레어</span></p>
+<p><span class="tw">• 販售價格：8,900 G幣</span><span class="kr">• 판매 가격 : 8,900캐시</span></p>
+<p><span class="tw">• 販售期限：11月更新維護後 ～ 另行公告為止</span><span class="kr">• 판매 기한 : 11월 업데이트 점검 후 ~ 별도 공지 시까지</span></p>
+<p><span class="tw">• 不單獨販售單品。</span><span class="kr">• 단품은 따로 판매하지 않습니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="1000" height="236" style="flex:0 1 1000px" src="img2611/2026110220021763172.webp"></div>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="1000" height="236" style="flex:0 1 1000px" src="img2611/2026110220022645624.webp"></div>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="1000" height="235" style="flex:0 1 1000px" src="img2611/2026110220023571591.webp"></div>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="885" height="793" style="flex:0 1 885px" src="img2611/2026110220024630386.webp"></div>
+<h3><span class="tw">◆ 無法預測命運的箱子</span><span class="kr">◆ 예측불가 운명 상자</span></h3>
+<p><span class="tw">• 無法預測命運的箱子 內容物變更說明</span><span class="kr">• 예측불가 운명 상자 구성품 변경 안내</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">移除</span><span class="kr">제거</span></th>
+<th><span class="tw">新增</span><span class="kr">신규</span></th>
+</tr>
+<tr>
+<td><span class="tw">雪月九尾狐翅膀</span><span class="kr">설월 구미호 날개</span></td>
+<td><span class="tw">弧光翅膀</span><span class="kr">아크라이트 윙</span></td>
+</tr>
+<tr>
+<td><span class="tw">雪月九尾狐尾巴</span><span class="kr">설월 구미호 꼬리</span></td>
+<td><span class="tw">弧光尾翼</span><span class="kr">아크라이트 테일</span></td>
+</tr>
+<tr>
+<td><span class="tw">九尾狐刺青</span><span class="kr">구미호 데칼</span></td>
+<td><span class="tw">弧光飾品</span><span class="kr">아크라이트 데칼</span></td>
+</tr>
+<tr>
+<td><span class="tw">烈日千陽翅膀</span><span class="kr">강렬히 불타오르는 날개</span></td>
+<td><span class="tw">霓虹燈天使翅膀</span><span class="kr">네온 글로우 천사 날개</span></td>
+</tr>
+<tr>
+<td><span class="tw">烈日千陽尾巴</span><span class="kr">강렬히 불타오르는 꼬리</span></td>
+<td><span class="tw">霓虹燈貓尾巴</span><span class="kr">네온 글로우 고양이 꼬리</span></td>
+</tr>
+<tr>
+<td><span class="tw">烈日千陽刺青</span><span class="kr">강렬히 불타오르는 데칼</span></td>
+<td><span class="tw">霓虹燈貓鬍鬚</span><span class="kr">네온 글로우 고양이 수염</span></td>
+</tr>
+</table></div>
+<p><span class="tw">• 依據韓國《遊戲產業振興法》，公開的機率為四捨五入（或無條件捨去）後的數值，總和可能不等於100%。</span><span class="kr">• 공개된 확률은 게임산업진흥에 관한 법률에 따라 반올림 (또는 내림)한 값으로 총 합산이 100%가 아닐 수 있습니다.</span></p>
+<p><span class="tw">[無法預測命運的箱子 資訊]</span><span class="kr">[예측불가 운명 상자 정보]</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">品項</span><span class="kr">품목</span></th>
+<th><span class="tw">數量</span><span class="kr">수량</span></th>
+<th><span class="tw">機率</span><span class="kr">확률</span></th>
+</tr>
+<tr>
+<td><span class="tw">[摯友] 血焰軍刀</span><span class="kr">[단짝] 블러드플레어 세이버</span></td>
+<td>1</td>
+<td>0.02%</td>
+</tr>
+<tr>
+<td><span class="tw">[閨蜜] 紅蓮雲夢</span><span class="kr">[단짝] 홍련운몽</span></td>
+<td>1</td>
+<td>0.06%</td>
+</tr>
+<tr>
+<td><span class="tw">[閨蜜] 青蓮雲夢</span><span class="kr">[단짝] 청련운몽</span></td>
+<td>1</td>
+<td>0.06%</td>
+</tr>
+<tr>
+<td><span class="tw">[摯友] 無龍</span><span class="kr">[단짝] 무룡이</span></td>
+<td>1</td>
+<td>0.80%</td>
+</tr>
+<tr>
+<td><span class="tw">[閨蜜] 小女僕 薇菲</span><span class="kr">[단짝] 하녀장 위피</span></td>
+<td>1</td>
+<td>0.95%</td>
+</tr>
+<tr>
+<td><span class="tw">混沌鬱金香戒指</span><span class="kr">레드 튤립 반지</span></td>
+<td>1</td>
+<td>0.60%</td>
+</tr>
+<tr>
+<td><span class="tw">混沌鬱金香項鍊</span><span class="kr">레드 튤립 목걸이</span></td>
+<td>1</td>
+<td>0.60%</td>
+</tr>
+<tr>
+<td><span class="tw">混沌鬱金香耳環</span><span class="kr">레드튤립 귀걸이</span></td>
+<td>1</td>
+<td>0.60%</td>
+</tr>
+<tr>
+<td><span class="tw">弧光翅膀</span><span class="kr">아크라이트 윙</span></td>
+<td>1</td>
+<td>0.50%</td>
+</tr>
+<tr>
+<td><span class="tw">弧光尾翼</span><span class="kr">아크라이트 테일</span></td>
+<td>1</td>
+<td>0.70%</td>
+</tr>
+<tr>
+<td><span class="tw">弧光飾品</span><span class="kr">아크라이트 데칼</span></td>
+<td>1</td>
+<td>0.70%</td>
+</tr>
+<tr>
+<td><span class="tw">霓虹燈天使翅膀</span><span class="kr">네온 글로우 천사 날개</span></td>
+<td>1</td>
+<td>0.50%</td>
+</tr>
+<tr>
+<td><span class="tw">霓虹燈貓尾巴</span><span class="kr">네온 글로우 고양이 꼬리</span></td>
+<td>1</td>
+<td>0.70%</td>
+</tr>
+<tr>
+<td><span class="tw">霓虹燈貓鬍鬚</span><span class="kr">네온 글로우 고양이 수염</span></td>
+<td>1</td>
+<td>0.70%</td>
+</tr>
+<tr>
+<td><span class="tw">水波蕩漾武器兌換券</span><span class="kr">일렁이는 물결 무기 교환권</span></td>
+<td>1</td>
+<td>0.35%</td>
+</tr>
+<tr>
+<td><span class="tw">熊熊燃燒的火花武器兌換劵</span><span class="kr">이글거리는 불꽃 무기 교환권</span></td>
+<td>1</td>
+<td>0.35%</td>
+</tr>
+<tr>
+<td><span class="tw">露比那特時裝兌換券</span><span class="kr">루비나트 코스튬 교환권</span></td>
+<td>1</td>
+<td>0.45%</td>
+</tr>
+<tr>
+<td><span class="tw">[活動] 失去光芒的摯友星</span><span class="kr">[이벤트] 빛을 잃은 단짝별</span></td>
+<td>10</td>
+<td>15.29%</td>
+</tr>
+<tr>
+<td><span class="tw">[活動] 失去光芒的摯友星</span><span class="kr">[이벤트] 빛을 잃은 단짝별</span></td>
+<td>15</td>
+<td>14.09%</td>
+</tr>
+<tr>
+<td><span class="tw">[活動] 失去光芒的摯友星</span><span class="kr">[이벤트] 빛을 잃은 단짝별</span></td>
+<td>20</td>
+<td>12.46%</td>
+</tr>
+<tr>
+<td><span class="tw">發光的摯友星</span><span class="kr">빛나는 단짝별</span></td>
+<td>8</td>
+<td>11.14%</td>
+</tr>
+<tr>
+<td><span class="tw">發光的摯友星</span><span class="kr">빛나는 단짝별</span></td>
+<td>13</td>
+<td>8.49%</td>
+</tr>
+<tr>
+<td><span class="tw">[活動] 彩虹星</span><span class="kr">[이벤트] 무지개별</span></td>
+<td>1</td>
+<td>3.55%</td>
+</tr>
+<tr>
+<td><span class="tw">[活動] 彩虹星</span><span class="kr">[이벤트] 무지개별</span></td>
+<td>2</td>
+<td>2.25%</td>
+</tr>
+<tr>
+<td><span class="tw">保護道具魔法果凍</span><span class="kr">아이템 보호 마법젤리</span></td>
+<td>200</td>
+<td>8.00%</td>
+</tr>
+<tr>
+<td><span class="tw">保護道具魔法果凍</span><span class="kr">아이템 보호 마법젤리</span></td>
+<td>500</td>
+<td>6.00%</td>
+</tr>
+<tr>
+<td><span class="tw">胸針鉤環</span><span class="kr">브로치 고리</span></td>
+<td>1</td>
+<td>5.80%</td>
+</tr>
+<tr>
+<td><span class="tw">胸針鉤環</span><span class="kr">브로치 고리</span></td>
+<td>2</td>
+<td>3.25%</td>
+</tr>
+<tr>
+<td><span class="tw">艾奥娜飾品選擇箱子</span><span class="kr">아이오나 악세서리 선택 상자</span></td>
+<td>1</td>
+<td>0.002%</td>
+</tr>
+<tr>
+<td><span class="tw">金光誓言</span><span class="kr">금빛 서약</span></td>
+<td>1</td>
+<td>1.00%</td>
+</tr>
+<tr>
+<td><span class="tw">受到祝福的金光戰甲</span><span class="kr">축복받은 금빛 플레이트</span></td>
+<td>1</td>
+<td>0.04%</td>
+</tr>
+</table></div>
+<p><span class="tw">• 阿克萊特特殊防具</span><span class="kr">• 아크라이트 특수 방어구</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="595" height="528" style="flex:0 1 595px" src="img2611/2026110220030864330.webp"><img loading="lazy" decoding="async" alt="" width="710" height="529" style="flex:0 1 710px" src="img2611/2026110220031656494.webp"></div>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="430" height="528" style="flex:0 1 430px" src="img2611/2026110220035091764.webp"><img loading="lazy" decoding="async" alt="" width="324" height="528" style="flex:0 1 324px" src="img2611/2026110220040667033.webp"></div>
+<p><span class="tw">• 霓虹光輝特殊防具</span><span class="kr">• 네온 글로우 특수 방어구</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="458" height="793" style="flex:0 1 458px" src="img2611/2026110220042249283.webp"><img loading="lazy" decoding="async" alt="" width="489" height="793" style="flex:0 1 489px" src="img2611/2026110220043395532.webp"></div>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="402" height="535" style="flex:0 1 402px" src="img2611/2026110220045162845.webp"></div>
+<h3><span class="tw">◆ 無法預測命運的箱子 更新紀念消費活動</span><span class="kr">◆ 예측불가 운명 상자 업데이트 기념 소비 이벤트</span></h3>
+<p><span class="tw">• 活動期間：11月更新維護後 ～ 12月更新維護前</span><span class="kr">• 이벤트 기간: 11월 업데이트 점검 후 ~ 12월 업데이트 점검 전까지</span></p>
+<p><span class="tw">• 活動參加方式：依[無法預測命運的箱子]的使用數量，即可獲得額外獎勵！</span><span class="kr">• 이벤트 참여 방법: [예측불가 운명 상자] 사용 개수에 따라 추가 보상을 획득할 수 있습니다!</span></p>
+<p><span class="tw">• 獎勵領取條件：活動期間內透過活動專屬任務即可領取獎勵</span><span class="kr">• 보상 수령 조건: 이벤트 기간 내 이벤트 전용 미션을 통해 보상 수령 가능</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="921" height="490" style="flex:0 1 921px" src="img2611/2026110221145689683.webp"></div>
+<p><span class="tw">• 活動獎勵說明</span><span class="kr">• 이벤트 보상 안내</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">任務清單</span><span class="kr">미션 목록</span></th>
+<th><span class="tw">獎勵</span><span class="kr">보상</span></th>
+</tr>
+<tr>
+<td><span class="tw">消耗無法預測命運的箱子 100個</span><span class="kr">예측불가 운명 상자 100개 소모</span></td>
+<td><span class="tw">弧光飾品</span><span class="kr">아크라이트 데칼</span></td>
+</tr>
+<tr>
+<td><span class="tw">消耗無法預測命運的箱子 200個</span><span class="kr">예측불가 운명 상자 200개 소모</span></td>
+<td><span class="tw">弧光尾翼</span><span class="kr">아크라이트 테일</span></td>
+</tr>
+<tr>
+<td><span class="tw">消耗無法預測命運的箱子 300個</span><span class="kr">예측불가 운명 상자 300개 소모</span></td>
+<td><span class="tw">弧光翅膀</span><span class="kr">아크라이트 윙</span></td>
+</tr>
+</table></div>
+<p><span class="tw">• 活動注意事項說明</span><span class="kr">• 이벤트 유의사항 안내</span></p>
+<p><span class="tw">• 該活動以世界為單位適用，期間內僅可達成1次。</span><span class="kr">• 해당 이벤트는 월드 단위로 적용되며, 기간 내 1회만 달성할 수 있습니다.</span></p>
+<p><span class="tw">• [阿克萊特特殊防具] 道具可使用伺服器倉庫。</span><span class="kr">• [아크라이트 특수 방어구 ] 아이템은 서버 창고 이용이 가능합니다.</span></p>
+<h3><span class="tw">◆ 結緣更新</span><span class="kr">◆ 인연 맺기 업데이트</span></h3>
+<p><span class="tw">&lt;Pick Up! 變更&gt;</span><span class="kr">&lt;Pick Up! 변경&gt;</span></p>
+<p><span class="tw">• 進行傳奇等級結緣時，較容易遇到的寵物已變更。</span><span class="kr">• 레전드 등급의 인연 맺기 시, 보다 만나기 쉬운 펫이 변경됩니다.</span></p>
+<p><span class="tw">• 更新後至下次更換前，可透過Pick Up獲得[自動跟隨行李箱]外觀。</span><span class="kr">• 업데이트 이후부터 다음 교체 시까지 [바리바리] 외형을 Pick Up으로 획득 할 수 있습니다.</span></p>
+<p><span class="tw">• 依據韓國《遊戲產業振興法》，公開的機率為四捨五入（或無條件捨去）後的數值，總和可能不等於100%。</span><span class="kr">• 공개된 확률은 게임산업진흥에 관한 법률에 따라 반올림 (또는 내림)한 값으로 총 합산이 100%가 아닐 수 있습니다.</span></p>
+<p><span class="tw">• 進行傳奇等級結緣時的寵物獲得機率資訊 – 寵物外觀</span><span class="kr">• 레전드 등급 인연 맺기 진행 시 펫 획득 확률 정보 – 펫 외형</span></p>
+<p><span class="tw">• 此機率為獲得寵物時適用的外觀機率。</span><span class="kr">• 해당 확률은 펫 획득 시에 적용되는 외형 확률입니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">名稱</span><span class="kr">이름</span></th>
+<th><span class="tw">機率</span><span class="kr">확률</span></th>
+<th><span class="tw">備註</span><span class="kr">비고</span></th>
+</tr>
+<tr>
+<td><span class="tw">鋼鐵機器人</span><span class="kr">강철의 레트로보</span></td>
+<td>1.2000%</td>
+<td></td>
+</tr>
+<tr>
+<td><span class="tw">潔白的雪花豹</span><span class="kr">새하얀 눈꽃표범</span></td>
+<td>1.2000%</td>
+<td></td>
+</tr>
+<tr>
+<td><span class="tw">月光之傳奇萊昂</span><span class="kr">달빛의 전설 레옹</span></td>
+<td>1.2000%</td>
+<td></td>
+</tr>
+<tr>
+<td><span class="tw">愛擔心的刺蝟</span><span class="kr">아등바등 도치</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">巨大巴風特</span><span class="kr">왕 무서운 앙마</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">小福星娜可露</span><span class="kr">복덩이 카우나</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">蔓駝蘿</span><span class="kr">맨드라</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">小不點死靈術士</span><span class="kr">꼬마 사령술사</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">優雅修道士 傑米瑞</span><span class="kr">고요한 수도사 제레미</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">黑虎寶寶</span><span class="kr">아기 흑호</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">小龐</span><span class="kr">미니콩</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">萊特里</span><span class="kr">레트리</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">可愛的蕾西</span><span class="kr">깜찍한 레시</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">獅蠍寶寶</span><span class="kr">만티코어 주니어</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">黑米蒸糕</span><span class="kr">흑설기</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">呱呱蛙</span><span class="kr">깨꼬</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">自動跟隨行李箱</span><span class="kr">바리바리</span></td>
+<td>70.0000%</td>
+<td>Pick Up!</td>
+</tr>
+<tr>
+<td><span class="tw">勇猛的拉口</span><span class="kr">용맹한 라코</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">QQ彈彈海波咪</span><span class="kr">말랑말랑 물뽀미</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">搖滾貓王</span><span class="kr">로큰롤 엘비스</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">飄飄欲仙露露</span><span class="kr">둥실둥실 루루</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">超級明星哈洛麗</span><span class="kr">슈퍼스타 하로리</span></td>
+<td>1.2000%</td>
+<td></td>
+</tr>
+<tr>
+<td><span class="tw">威風凜凜小雞軍團</span><span class="kr">위풍당당 병아리단</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">威風小馬兒</span><span class="kr">마이티 포니</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">悠閒的普雷多</span><span class="kr">느긋한 프레도</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">Q彈布丁</span><span class="kr">탱글탱글 푸딩</span></td>
+<td>1.2000%</td>
+<td>-</td>
+</tr>
+</table></div>
+<p><span class="tw">• 進行傳奇等級結緣時的寵物獲得機率資訊 – 寵物能力值</span><span class="kr">• 레전드 등급 인연 맺기 진행 시 펫 획득 확률 정보 – 펫 능력치</span></p>
+<p><span class="tw">• 擁有[命運：穩定/從容/開朗/意志/信賴]能力值的寵物，可透過交易所交易4次。</span><span class="kr">• [운명 : 안정/여유/명랑/의지/신뢰] 능력치를 가진 펫은 거래소를 통하여 4회 거래가 가능합니다.</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">區分</span><span class="kr">구분</span></th>
+<th><span class="tw">機率</span><span class="kr">확률</span></th>
+<th><span class="tw">備註</span><span class="kr">비고</span></th>
+</tr>
+<tr>
+<td><span class="tw">[初見]</span><span class="kr">[첫만남]</span></td>
+<td>15.6668%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[初見]</span><span class="kr">[첫만남]</span></td>
+<td>12.8183%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[初見]</span><span class="kr">[첫만남]</span></td>
+<td>10.4445%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[初見]</span><span class="kr">[첫만남]</span></td>
+<td>7.5960%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[緣分]</span><span class="kr">[인연]</span></td>
+<td>7.4916%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[緣分]</span><span class="kr">[인연]</span></td>
+<td>5.9629%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[緣分]</span><span class="kr">[인연]</span></td>
+<td>5.3932%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[緣分]</span><span class="kr">[인연]</span></td>
+<td>5.1273%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[朋友]</span><span class="kr">[친구]</span></td>
+<td>3.9879%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[朋友]</span><span class="kr">[친구]</span></td>
+<td>3.7980%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[朋友]</span><span class="kr">[친구]</span></td>
+<td>3.6081%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[朋友]</span><span class="kr">[친구]</span></td>
+<td>3.3233%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[摯友]</span><span class="kr">[절친]</span></td>
+<td>3.0384%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[摯友]</span><span class="kr">[절친]</span></td>
+<td>2.7536%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[摯友]</span><span class="kr">[절친]</span></td>
+<td>1.9940%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[摯友]</span><span class="kr">[절친]</span></td>
+<td>1.8041%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[命運]</span><span class="kr">[운명]</span></td>
+<td>0.1424%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[命運：穩定]</span><span class="kr">[운명 : 안정]</span></td>
+<td>0.0038%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[命運：從容]</span><span class="kr">[운명 : 여유]</span></td>
+<td>0.0038%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[命運：開朗]</span><span class="kr">[운명 : 명랑]</span></td>
+<td>0.0038%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[命運：意志]</span><span class="kr">[운명 : 의지]</span></td>
+<td>0.0038%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">[命運：信賴]</span><span class="kr">[운명 : 신뢰]</span></td>
+<td>0.0350%</td>
+<td>Pick Up !</td>
+</tr>
+<tr>
+<td><span class="tw">寵物飾品選擇箱子</span><span class="kr">펫 악세서리 선택 상자</span></td>
+<td>4.0000%</td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="tw">怦怦寵物飾品選擇箱子</span><span class="kr">두근두근 펫 악세서리 선택 상자</span></td>
+<td>1.0000%</td>
+<td>-</td>
+</tr>
+</table></div>
+<h3><span class="tw">◆ 購物商城相關事項</span><span class="kr">◆ 캐시샵 관련 사항</span></h3>
+<p><span class="tw">[新增商品]</span><span class="kr">[상품 추가]</span></p>
+<p><span class="tw">• 禮盒 &gt; 龍玉商品分頁中，新增「永恆的變異型龍玉進化器」商品。</span><span class="kr">• 패키지 &gt; 용옥 상품 탭에 ‘영원한 변이형 용옥 진화기‘ 상품이 추가되었습니다.</span></p>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="285" height="121" style="flex:0 1 285px" src="img2611/2026110220051592980.webp"></div>
+<div class="im"><img loading="lazy" decoding="async" alt="" width="219" height="188" style="flex:0 1 219px" src="img2611/2026110220053457893.webp"></div>
+<p><span class="tw">[停售]</span><span class="kr">[판매 종료]</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">商品名稱</span><span class="kr">상품명</span></th>
+</tr>
+<tr>
+<td><span class="tw">[超特價] 杰倫特的成長挑戰箱子</span><span class="kr">[초특가] 제레인트의 성장 도전 상자</span></td>
+</tr>
+<tr>
+<td><span class="tw">[超特價] 精製鋼筆(無法交易)袋子</span><span class="kr">[초특가] 정제의 만년필(거래불가) 주머니</span></td>
+</tr>
+<tr>
+<td><span class="tw">回歸的星之粉末球 (不可交易)</span><span class="kr">돌아온 아스트랄 파우더 볼 (거래 불가)</span></td>
+</tr>
+<tr>
+<td><span class="tw">無瑕之核袋子 (10個)</span><span class="kr">무결의 핵 주머니 (10개)</span></td>
+</tr>
+<tr>
+<td><span class="tw">扎根盼望的碎片500個袋子</span><span class="kr">뿌리 깊은 갈망의 파편 500개 주머니</span></td>
+</tr>
+<tr>
+<td><span class="tw">扭曲的根100個袋子 (2個)</span><span class="kr">뒤틀린 뿌리 100개 주머니 (2개)</span></td>
+</tr>
+<tr>
+<td><span class="tw">神秘的幻想方塊 1個 / 10個 / 100個</span><span class="kr">신비한 환상 큐브 1개 / 10개 / 100개</span></td>
+</tr>
+<tr>
+<td><span class="tw">嘉年華飾品龍玉禮盒</span><span class="kr">카니발 악세서리 용옥 패키지</span></td>
+</tr>
+<tr>
+<td><span class="tw">嘉年華胸針禮盒</span><span class="kr">카니발 브로치 패키지</span></td>
+</tr>
+</table></div>
+<p><span class="tw">[販售分頁移動]</span><span class="kr">[판매 탭 이동]</span></p>
+<div class="tw-wrap"><table>
+<tr>
+<th><span class="tw">商品名稱</span><span class="kr">상품명</span></th>
+<th><span class="tw">變更前</span><span class="kr">기존</span></th>
+<th><span class="tw">變更</span><span class="kr">변경</span></th>
+</tr>
+<tr>
+<td><span class="tw">珠寶星之球(不可交易) 1個 / 11個</span><span class="kr">주얼 아스트랄 볼 (거래 불가) 1개 / 11개</span></td>
+<td><span class="tw">主頁 &gt; 推薦商品</span><span class="kr">메인 &gt; 추천 상품</span></td>
+<td><span class="tw">禮盒 &gt; 轉換商品</span><span class="kr">패키지 &gt; 변환 상품</span></td>
+</tr>
+<tr>
+<td><span class="tw">悖論邊界箱子 1個 / 10個 / 100個</span><span class="kr">패러독스의 경계 상자 1개 / 10개 / 100개</span></td>
+<td><span class="tw">主頁 &gt; 推薦商品</span><span class="kr">메인 &gt; 추천 상품</span></td>
+<td><span class="tw">禮盒 &gt; 隨機禮盒</span><span class="kr">패키지 &gt; 랜덤 패키지</span></td>
+</tr>
+</table></div></section>
+<section id="c9" class="pane"><h2><span class="tw">錯誤修正事項</span><span class="kr">오류 수정 사항</span></h2><h3><span class="tw">◆ 內容</span><span class="kr">◆ 컨텐츠</span></h3>
+<p><span class="tw">▶ 修正了染血的根部之乾涸的詛咒、腐敗的劇毒減益效果圖示的說明文字。</span><span class="kr">▶ 붉게 물든 뿌리굴의 메마름의 저주, 부패의 맹독 디버프 아이콘 설명 텍스트가 수정되었습니다.</span></p>
+<p><span class="tw">▶ 修正了通關方舟墜落地點關卡時，無法獲得次元經驗值的現象。</span><span class="kr">▶ 방주 추락 지점 스테이지 클리어 시 차원 경험치가 획득되지 않던 현상이 수정되었습니다.</span></p>
+<p><span class="tw">▶ 修正了夕陽迴廊：銀光藤蔓森林中，未套用希望之花復活設定的現象。</span><span class="kr">▶ 낙조의 회랑 : 은빛넝쿨의 숲 에서 희망의 꽃 부활 설정이 적용되지 않던 현상이 수정되었습니다.</span></p>
+<h3><span class="tw">◆ 技能</span><span class="kr">◆ 스킬</span></h3>
+<p><span class="tw">▶ 修正了縱雷機師夢幻龍玉的提示說明所標示的攻擊力高於實際攻擊力的現象。</span><span class="kr">▶ 레이메카닉 몽환의 용옥 툴팁이 실제 공격력 보다 높게 기재된 현상이 수정되었습니다.</span></p>
+<p><span class="tw">- 攻擊力：[進化] 原子翼刀的250% → 攻擊力：[進化] 原子翼刀的160%</span><span class="kr">- 공격력 : [진] 아토믹 블레이드의 250% → 공격력 : [진] 아토믹 블레이드의 160%</span></p>
+<p><span class="tw">▶ 修正了幻魔槍騎夢幻龍玉的提示說明所標示的攻擊力高於實際攻擊力的現象。</span><span class="kr">▶ 스팅브리저 몽환의 용옥 툴팁이 실제 공격력 보다 높게 기재된 현상이 수정되었습니다.</span></p>
+<p><span class="tw">- 攻擊力：凌空投擲 EX的550% → 攻擊力：凌空投擲 EX的220%</span><span class="kr">- 공격력 : 피어싱 스파이크 EX의 550%→ 공격력 : 피어싱 스파이크 EX의 220%</span></p>
+<p><span class="tw">▶ 修正了卡牌戲法師次元龍玉+12強化的最終傷害增加數值與提示說明不符的現象。</span><span class="kr">▶ 링마스터 차원의 용옥 +12강 파이널데미지 증가 수치가 툴팁과 상이하던 현상이 수정되었습니다.</span></p>
+<h3><span class="tw">◆ 系統</span><span class="kr">◆ 시스템</span></h3>
+<p><span class="tw">▶ 修正了透過角色互動查看時，在特定分頁中未顯示角色暱稱的現象。</span><span class="kr">▶ 캐릭터 상호작용으로 살펴보기 시 특정 탭에서 캐릭터 닉네임이 표시되지 않는 현상이 수정되었습니다.</span></p>
+<p><span class="tw">▶ 改善排名留言版的職業篩選與排名清單，使滑鼠游標所在的區域才會以滾輪捲動。</span><span class="kr">▶ 랭킹 게시판의 직업 필터와 랭킹 리스트에서 마우스 커서가 위치한 영역만 휠 스크롤되도록 개선됩니다.</span></p>
+<p><span class="tw">▶ 修正了角色資訊 - 技能強化龍玉分頁中，依古代龍玉強化階段顯示的最終傷害數值與提示說明不同的現象。</span><span class="kr">▶ 캐릭터 정보 - 스킬강화용옥 탭에서 고대의 용옥 강화 단계에 따라 파이널 데미지 표기 수치가 툴팁과 다르게 노출되던 현상이 수정되었습니다.</span></p>
+<p><span class="tw">▶ 修正了部分次元等級中，屬性攻擊力小數點%標示錯誤的現象。</span><span class="kr">▶ 일부 차원 레벨에서 속성 공격력의 소수점 % 표기가 잘못 나오던 현상이 수정되었습니다.</span></p>
+<h3><span class="tw">◆ 道具</span><span class="kr">◆ 아이템</span></h3>
+<p><span class="tw">▶ 修正了露比那特的誓言、露比那特的意志、露比那特的權能 3種飾品無法使用特殊倉庫的現象。</span><span class="kr">▶ 루비나트의 맹세, 루비나트의 의지, 루비나트의 권능 악세서리 3종 특별창고 이용 불가능하던 현상이 수정되었습니다.</span></p>
+<p><span class="tw">▶ 修正了部分職業（謫仙使、悖論戰士）的技能龍玉無法使用無瑕之鐵鎚的現象。</span><span class="kr">▶ 일부 직업(성휘무제, 패러독스워리어)의 스킬 용옥에 무결의 망치 사용이 불가한 현상이 수정되었습니다.</span></p>
+<h3><span class="tw">◆ 任務</span><span class="kr">◆ 퀘스트</span></h3>
+<p><span class="tw">▶ 修正了悖論戰士「教學：戰鬥修復」任務接受畫面中，文字重疊顯示的現象。</span><span class="kr">▶ 패러독스 워리어 &#x27;튜토리얼: 전투 복구&#x27; 퀘스트 수락 화면에서 텍스트가 겹쳐서 노출되던 현상이 수정되었습니다.</span></p>
+<p><span class="tw">▶ 修正了悖論戰士「教學：戰鬥修復」任務中，選擇特定選項時無法進行下一步驟的現象。</span><span class="kr">▶ 패러독스 워리어 &#x27;튜토리얼: 전투 복구&#x27; 퀘스트에서 특정 선택지를 선택하는 경우 다음 스텝 진행 불가능하던 현상이 수정되었습니다.</span></p>
+<p><span class="tw">▶ 修正了以透過編年史完成轉職的卡莉角色進入利伯偉特停泊處時，仍可接受「[轉職] 力量的主人」任務的現象。</span><span class="kr">▶ 크로니클을 통해 전직을 완료한 칼리 캐릭터로 리버워트 선착장에 입장 시 &#x27;[전직] 힘의 주인&#x27; 퀘스트 수락 가능하던 현상이 수정되었습니다.</span></p>
+<h3><span class="tw">◆ 圖像</span><span class="kr">◆ 그래픽</span></h3>
+<p><span class="tw">▶ 修正了DX11環境下，「粉嫩皇室翅膀」部分特效顯示異常的現象。</span><span class="kr">▶ DX11 환경에서 &#x27;선홍빛 황실 날개&#x27; 이펙트 일부가 비정상적으로 노출되던 현상이 수정되었습니다.</span></p>
+<p><span class="tw">▶ 修正了啟用DOF選項的狀態下，魔法師「飛行員法杖」外觀變得模糊的現象。</span><span class="kr">▶ DOF 옵션 활성화 상태에서 소서리스 &#x27;파일럿 스태프 외형이 뿌옇게 흐려지던 현상이 수정되었습니다.</span></p>
+<p><span class="tw">▶ 修正了瑪奇娜、機甲蘿莉僅穿著「幽靈時裝」服裝部分時，頸部出現縫隙的現象。</span><span class="kr">▶ 마키나, 아카데믹이 &#x27;유령 코스튬&#x27; 의상 부분만 착용 시 목 부분에 빈틈이 발생하던 현상이 수정되었습니다.</span></p>
+<p><span class="tw">▶ 修正了機甲蘿莉「青檸莓果花園喀巴拉」時裝的攻擊特效未顯示的現象。</span><span class="kr">▶ 아카데믹 &#x27;라임베리 가든 카발라&#x27; 코스튬의 공격 이펙트가 노출되지 않던 현상이 수정되었습니다.</span></p></section>
+</main>
+<button class="top" id="top" aria-label="回到頂部" title="回到頂部">↑</button>
+<script>
+(function(){
+var panes=[].slice.call(document.querySelectorAll('.pane')),links=[].slice.call(document.querySelectorAll('#nav a'));
+function show(id){if(!document.getElementById(id))id='c1';panes.forEach(function(p){p.classList.toggle('on',p.id===id)});links.forEach(function(a){a.classList.toggle('on',a.dataset.t===id)});window.scrollTo(0,0)}
+function route(){show((location.hash||'#c1').slice(1))}
+var tb=document.getElementById('top');function sc(){tb.classList.toggle('on',(window.pageYOffset||document.documentElement.scrollTop)>300)}window.addEventListener('scroll',sc,{passive:true});tb.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})};window.addEventListener('hashchange',route);route();
+[].forEach.call(document.querySelectorAll('.mode button'),function(b){b.onclick=function(){document.body.className=b.dataset.m;[].forEach.call(document.querySelectorAll('.mode button'),function(x){x.classList.toggle('on',x===b)})}});
+})();
+</script>
+</body>
+</html>
